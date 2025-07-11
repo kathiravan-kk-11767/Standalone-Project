@@ -1,0 +1,78 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Zoho.UWP.AppSuite.Resources.ThemeDictionaries">
+
+    <!--  Accent Color Brushes  -->
+    <SolidColorBrush x:Key="SystemControlBackgroundAccentBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemControlDisabledAccentBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemControlRevealFocusVisualBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemControlForegroundAccentBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemControlHighlightAccentBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemControlHighlightAltAccentBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush
+        x:Key="SystemControlHighlightAltListAccentHighBrush"
+        Opacity="0.9"
+        Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush
+        x:Key="SystemControlHighlightAltListAccentLowBrush"
+        Opacity="0.6"
+        Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush
+        x:Key="SystemControlHighlightAltListAccentMediumBrush"
+        Opacity="0.8"
+        Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush
+        x:Key="SystemControlHighlightListAccentHighBrush"
+        Opacity="0.9"
+        Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush
+        x:Key="SystemControlHighlightListAccentLowBrush"
+        Opacity="0.6"
+        Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush
+        x:Key="SystemControlHighlightListAccentMediumBrush"
+        Opacity="0.8"
+        Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemControlHyperlinkTextBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="ContentDialogBorderThemeBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="InkToolbarAccentColorThemeBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SwipeItemBackground" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="JumpListDefaultEnabledBackground" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemColorControlAccentColorBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SystemAccentColorBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="SelectionHighlightColor" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="TextSelectionHighlightColorThemeBrush" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="TextSelectionHighlightThemeColor" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <SolidColorBrush x:Key="TextControlSelectionHighlightColor" Color="{Binding Color, Source={StaticResource ZAccentBrush}}" />
+    <x:Double x:Key="CheckBoxBorderThemeThickness">1</x:Double>
+    <SolidColorBrush x:Key="ZTransparentBrush" Color="Transparent" />
+
+    <!--<Color x:Key="SystemAccentColorDark1">#00000000</Color>
+    <Color x:Key="SystemAccentColorDark2">#00000000</Color>
+    <Color x:Key="SystemAccentColorDark3">#00000000</Color>
+    <Color x:Key="SystemAccentColorLight1">#00000000</Color>
+    <Color x:Key="SystemAccentColorLight2">#00000000</Color>
+    <Color x:Key="SystemAccentColorLight3">#00000000</Color>-->
+
+    <!--  TODO: Remove unmnecessary FontFamily entries  -->
+   
+    <FontFamily x:Key="ZWindowsIconFontFamily">/Assets/Font/windowsIcons.ttf#windowsIcons</FontFamily>
+   
+
+    <SolidColorBrush x:Key="ZWhiteOrAccentFGBrush" Color="#FFFFFFFF" />
+    <SolidColorBrush
+        x:Key="MenuButtonBGBrush"
+        Opacity="0.15"
+        Color="{Binding Color, Source={StaticResource ZBWThemedFGBrush}}" />
+
+    <!--  Overlay brushes  -->
+    <SolidColorBrush
+        x:Key="ZFolderViewOverlayBrush"
+        Opacity="0"
+        Color="#00000000" />
+    <SolidColorBrush x:Key="ZLightThemeBaseBrush" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ZDarkThemeBaseBrush" Color="Black" />
+    <SolidColorBrush x:Key="ZClassicThemeBaseBrush" Color="#FFE3E3E3" />
+
+</ResourceDictionary>

@@ -1,0 +1,16 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Zoho.UWP.AppSuite.Resources"
+    xmlns:msConverter="using:Microsoft.Toolkit.Uwp.UI.Converters">
+    <msConverter:BoolToVisibilityConverter
+        x:Key="BoolToVisibleConverter"
+        FalseValue="Collapsed"
+        TrueValue="Visible" />
+    <msConverter:BoolToVisibilityConverter
+        x:Key="InverseBoolToVisibleConverter"
+        FalseValue="Visible"
+        TrueValue="Collapsed" />
+    <msConverter:BoolNegationConverter
+        x:Key="BoolNegationConverter" />
+</ResourceDictionary>

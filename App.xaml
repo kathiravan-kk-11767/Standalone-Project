@@ -2,6 +2,62 @@
     x:Class="SemSeparation.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SemSeparation">
+    xmlns:local="using:SemSeparation" xmlns:model="using:Zoho.UWP.Components.Theme.Model" xmlns:appSuite="using:Zoho.UWP.AppSuite.Resources">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light" Source="/AppSuite/Resources/ThemeDictionaries/Light/ZThemeDictionaryLight.xaml" />
+                <ResourceDictionary x:Key="Dark" Source="/AppSuite/Resources/ThemeDictionaries/Dark/ZThemeDictionaryDark.xaml" />
+            </ResourceDictionary.ThemeDictionaries>
+
+
+            <Style x:Key="TextBlockSelectionStyle" TargetType="TextBlock">
+                <Setter Property="IsTextSelectionEnabled" Value="True" />
+                <Setter Property="SelectionHighlightColor" Value="{ThemeResource ZAccentBrush}" />
+            </Style>
+
+            <model:ZThemeFont x:Key="AppThemeFont" />
+
+            <appSuite:ZCommandBarResource x:Key="ZCommandBarResource" DefaultLabelPosition="Right" />
+
+            <x:Double x:Key="TopBarHeight">40</x:Double>
+            <!--  To fit List View header and detail header heights  -->
+            <x:Double x:Key="BaseBarHeight">36</x:Double>
+            <!--  To fit chat bar and chat items pinned at bottom  -->
+
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" ControlsResourcesVersion="Version1" />
+
+                <!--  START: Meeting Control Styles  -->
+                <!--  END: Meeting Control Styles  -->
+
+                <ResourceDictionary Source="/AppSuite/Resources/ThemeDictionaries/ZThemeDictionary.xaml" />
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Theme/Generic.xaml" />
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Theme/Resources/ZCommonResourceDictionary.xaml" />
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZListViewItemStyleDictionary.xaml"/>
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZFlyoutStyleDictionary.xaml"/>
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZFlyoutItemStyleDictionary.xaml"/>
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZTeachingTipStyleDictionary.xaml"/>
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZDropShadowPanelStyleDictionary.xaml"/>
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZComboBoxStyleDictionary.xaml"/>
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZGridSplitterStyleDictionary.xaml"/>
+                <ResourceDictionary Source="ms-appx:///ZohoUWPCommon/Theme/Resources/ZControlStyles/ZControlStyleDictionary.xaml" />
+                <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Controls/Resources/ZTextCommandBarFlyoutStyleDictionary.xaml" />
+
+               
+                <!---TO DO:- Conference related styles are currently externalized to consume for meeting and cliq. 
+                   This will be unified once the meeting upstream changes are merged with group calls-->
+                <ResourceDictionary Source="/AppSuite/Resources/ZControlsStyleDictionary.xaml" />
+                <ResourceDictionary Source="/AppSuite/Resources/ZConverterDictionary.xaml" />
+                <ResourceDictionary Source="/AppSuite/Resources/ZCheckBoxTemplate.xaml" />
+
+                <!--  START: Control Styles  -->
+                <ResourceDictionary Source="/AppSuite/Resources/ControlStyles/ZAppBarButtonStyleDictionary.xaml" />
+                <ResourceDictionary Source="/AppSuite/Resources/ControlStyles/ZAutoSuggestBoxStyleDictionary.xaml" />
+                <ResourceDictionary Source="/AppSuite/Resources/ControlStyles/ZTextBoxStyleDictionary.xaml" />
+                <!--  END: Control Styles  -->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
 
 </Application>

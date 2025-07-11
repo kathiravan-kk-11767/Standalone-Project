@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock>Welcome</TextBlock>
+        <TextBlock Foreground="{ThemeResource ZAccentBrush}">Welcome</TextBlock>
     </Grid>
 </Page>

@@ -1,0 +1,118 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Zoho.UWP.AppSuite.Resources.ThemeDictionaries.Dark">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///ZohoUWPComponents/Theme/Resources/ZCommonThemeDictionaryDark.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <SolidColorBrush x:Key="ZBaseBrush" Color="Black" />
+
+    <!--  Border Brushes  -->
+    <SolidColorBrush x:Key="ZBorderBrushLight" Color="#FF232323" />
+    <SolidColorBrush x:Key="ZBorderBrush" Color="#FF3F3F3F" />
+    <SolidColorBrush x:Key="ZLabelBorderBrush" Color="#373737" />
+    <SolidColorBrush x:Key="ZBorderBrushExtraLight" Color="#FF232323" />
+
+    <!--  Extra Light in light dictionary alone  -->
+    <SolidColorBrush x:Key="ZTransientControlBorderBrush" Color="#FF767676" />
+
+    <!--  BG Brushes  -->
+    <SolidColorBrush x:Key="ZPrimaryContentBGBrush" Color="#FF333333" />
+    <SolidColorBrush x:Key="ZSecondaryContentBGBrush" Color="#FF232323" />
+    <SolidColorBrush x:Key="ZChatBubbleControlBGBrush" Color="#FF222222" />
+    <SolidColorBrush x:Key="ZSearchBarBGBrush" Color="#FF484848" />
+    <SolidColorBrush x:Key="ComposeFormattingBarBGBrush" Color="#FF3F3F3F" />
+    <SolidColorBrush x:Key="DisabledButtonBackground">#FF717171</SolidColorBrush>
+    <SolidColorBrush x:Key="ChatControlBackGroundBrush">#FF313131</SolidColorBrush>
+    <SolidColorBrush x:Key="ZTabDarkBGBrush" Color="#FF191919" />
+
+    <!--  Light Acrylic Brushes | used in 2nd pane in 3 pane view  -->
+
+    <AcrylicBrush
+        x:Key="ZLightAcrylicBrushWithBackdrop"
+        BackgroundSource="Backdrop"
+        FallbackColor="#FF000000"
+        TintColor="#FF000000"
+        TintOpacity="0.8" />
+
+    <AcrylicBrush
+        x:Key="ZInAppThemeAcrylicBrush"
+        BackgroundSource="Backdrop"
+        FallbackColor="{Binding Color, Source={StaticResource ZThemeBrush}}"
+        Opacity="0.5"
+        TintColor="{Binding Color, Source={StaticResource ZThemeBrush}}"
+        TintOpacity="0.1" />
+
+    <AcrylicBrush
+        x:Key="ZInAppLightAcrylicBrush"
+        BackgroundSource="Backdrop"
+        FallbackColor="#CC000000"
+        TintColor="#CCFFFFFF"
+        TintOpacity="0.7" />
+
+    <!--  FG Brushes  -->
+    <SolidColorBrush x:Key="ZSearchBarFGBrush" Color="#FFC3C3C3" />
+    <SolidColorBrush x:Key="ZChatTitleFGBrush" Color="#FFC3C3C3" />
+    <SolidColorBrush x:Key="ZActionButtonForegroundBrush" Color="#FFE6E6E6" />
+    <SolidColorBrush
+        x:Key="LabelForegroundBrush"
+        Opacity="0.5"
+        Color="White" />
+    <SolidColorBrush x:Key="ZServicePointerOverFGBrush" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ZBaseFGBrush" Color="#FFDCDCDC" />
+    <SolidColorBrush x:Key="ZSecondaryContentFGBrush" Color="#FF929292" />
+
+    <!--  Brushes for Service Navigation  -->
+    <SolidColorBrush x:Key="ZActiveServiceFGBrush" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ZActiveLeftServiceFGBrush" Color="#FFFFFFFF" />
+    <Color x:Key="ZServiceHoverColor">#FFFFFFFF</Color>
+    <x:Double x:Key="ZServiceHoverOpacity">0.04</x:Double>
+    <Color x:Key="ZServicePressedColor">#FFFFFFFF</Color>
+    <x:Double x:Key="ZServicePressedOpacity">0.12</x:Double>
+    <SolidColorBrush
+        x:Key="ZInactiveServiceFGBrush"
+        Opacity="0.65"
+        Color="#FFFFFFFF" />
+    <SolidColorBrush
+        x:Key="ZInactiveLeftServiceFGBrush"
+        Opacity="0.65"
+        Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ZInactiveLeftServiceEllipseFGBrush" Color="#575656" />
+
+    <SolidColorBrush
+        x:Key="ZFolderViewSectionHeaderBrush"
+        Opacity="0.5"
+        Color="White" />
+
+    <!--  ListviewItem Brush Styles  -->
+    <SolidColorBrush
+        x:Key="ZLVItemSelectedDarkBGBrush"
+        Opacity="0.3"
+        Color="#AAFFFFFF" />
+    <SolidColorBrush
+        x:Key="ZLVItemSelectedPressedDarkBGBrush"
+        Opacity="0.3"
+        Color="#AAFFFFFF" />
+    <SolidColorBrush
+        x:Key="ZLVItemPointerOverDarkBGBrush"
+        Opacity="0.1"
+        Color="#AAFFFFFF" />
+    <SolidColorBrush
+        x:Key="ZLVItemSelectedPointerOverDarkBGBrush"
+        Opacity="0.1"
+        Color="#AAFFFFFF" />
+    <SolidColorBrush
+        x:Key="ListContextHighlightBrush"
+        Opacity=".2"
+        Color="#AAFFFFFF" />
+
+    <Color x:Key="ZDropShadowPanelShadowColor">White</Color>
+    <Color x:Key="ZDropShadowPanelShadowBlackColor">Black</Color>
+    <Color x:Key="ZSeparatorDotColor">#FF404040</Color> 
+    <SolidColorBrush x:Key="ReadStatusBrush" Color="#FF707070" />
+    <SolidColorBrush x:Key="ZSeparatorDotBrush" Color="{StaticResource ZSeparatorDotColor}" />
+    <SolidColorBrush x:Key="ZAppBarButtonIconFGBrush" Color="{Binding ZAccentColor,Source={StaticResource ZCommonAccentColorPalette}}"/>
+    <SolidColorBrush x:Key="ZAppBarButtonTextFGBrush" Color="{Binding Color,Source={StaticResource ZPrimaryFGBrush}}"/>
+
+</ResourceDictionary>
