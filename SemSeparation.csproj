@@ -131,6 +131,10 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TasksNetHandler.cs" />
+    <Compile Include="Tasks\ITasksNetHandler.cs" />
+    <Compile Include="Tasks\TasksDIServiceProvider.cs" />
+    <Compile Include="Tasks\TasksServiceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -650,6 +654,10 @@
     <ProjectReference Include="..\ZohoWinLogger\ZohoWinLogger.csproj">
       <Project>{A929CFA6-4BCD-072A-8EA2-7BA857BF087C}</Project>
       <Name>ZohoWinLogger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZohoWinNetAdapter\ZohoWinNetAdapter.csproj">
+      <Project>{5CF3A2D1-8D67-B911-77FA-DBDD652B2F30}</Project>
+      <Name>ZohoWinNetAdapter</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZohoWinSQLiteDBAdapter\ZohoWinSQLiteDBAdapter.csproj">
       <Project>{00209c3e-d967-7ed7-f2ef-4577dedcaacb}</Project>

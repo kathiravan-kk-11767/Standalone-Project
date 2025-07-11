@@ -28,6 +28,7 @@ using Zoho.UWP;
 using Zoho.UWP.Common.Error;
 using Zoho.UWP.Common.Util;
 using Zoho.UWP.Components.OnBoarding.View;
+using Zoho.UWP.Tasks;
 
 namespace SemSeparation
 {
@@ -140,8 +141,8 @@ namespace SemSeparation
 
         public async Task InitializeYourServiceHere()
         {
+            TasksServiceManager.Instance.InitializeAsync();
             // NotesServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid());
-            await Task.CompletedTask;
         }
 
         /// <summary>

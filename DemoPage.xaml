@@ -2,13 +2,34 @@
     x:Class="Zoho.UWP.DemoPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Zoho.UWP"
+    xmlns:controls="using:Zoho.UWP.Components.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Zoho.UWP"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
 
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Background="{ThemeResource ZPrimaryBGBrush}">
-        <TextBlock Foreground="{ThemeResource ZAccentBrush}"> Vanakkam da theni laerunthu</TextBlock>    
-    </Grid>
+    <StackPanel
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Background="{ThemeResource ZPrimaryBGBrush}">
+        <TextBlock
+            FontSize="{Binding Source={StaticResource AppThemeFont}, Path=FontSizeContentExtraLarge, Mode=OneWay}"
+            Foreground="{ThemeResource ZAccentBrush}"
+            Tapped="TextBlock_Tapped">
+            Vanakkam da theni laerunthu
+        </TextBlock>
+
+        <controls:ZButton
+            x:Name="TasksDetailsMoreIcon"
+            Grid.Column="8"
+            Margin="6,4,4,0"
+            Padding="4"
+            Content="&#xe96e;"
+            FontFamily="{StaticResource ZWindowsIconFontFamily}"
+            FontSize="{Binding Source={StaticResource AppThemeFont}, Path=FontSizeButton, Mode=OneWay}"
+            Foreground="{ThemeResource ZPrimaryIconBrush}"
+            IsEnabled="True"
+            Style="{StaticResource ZTextBlockButtonBaseStyle}" />
+    </StackPanel>
 </Page>

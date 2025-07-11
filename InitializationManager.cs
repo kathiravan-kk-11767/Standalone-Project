@@ -75,7 +75,7 @@ namespace Zoho.UWP
 
             FileSystemProvider.Initialize(FileSystemProviderUtil.GetDefaultServices(new ServiceCollection().AddSingleton<IFileSystemAppInfo>(ZAppInfoProvider.ZAppInfo)));
 
-            ZCommonServiceManager.Instance.InitializeDI(new ServiceCollection()
+            ZCommonServiceManager.InitializeWinCommonDI(new ServiceCollection()
                 .AddSingleton<IBackgroundTransferFilterFactory, BackgroundTransferFilterFactory>()
                 .AddSingleton<IBackgroundTransferManager, BackgroundTransferManager>());
             //ComponentsDIServiceProvider.Initialize(new ServiceCollection()
