@@ -1,0 +1,149 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../accounts_windows_ssoframework/Accounts_Windows_SsoFramework/Windows_SsoFramework.csproj" Id="6ab3cf06-826d-4de7-9866-555bf86d1215">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/Core/ZCoreComponents.UWP/ZCoreComponents.UWP.csproj" Id="ff5aa7cb-37ba-42ba-906d-cde7f8c8e97e">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZInAppToast/ZInAppToast.Entities/ZInAppToast.Entities.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+  <Project Path="../ZComponents/ZInAppToast/ZInAppToast.ViewContracts/ZInAppToast.ViewContracts.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZInAppToast/ZInAppToast.Views.UWP/ZInAppToast.Views.UWP.csproj" Id="856f2fc6-d653-4280-8120-a3393cd5409d">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZContacts/ZContacts.ServiceContracts/ZContacts.ServiceContracts.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZContacts/ZContactsEntities/ZContactsEntities.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+  <Project Path="../ZFileSystemAdapter/ZFileSystemAdapter.UWP/ZFileSystemAdapter.UWP.csproj" Id="70defede-3c7c-40a2-8da6-68a15c2dce6e">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZFileSystemAdapter/ZFileSystemAdapter/ZFileSystemAdapter.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoUWPCalendarCommonLibrary/ZohoUWPCalendarCommonLibrary.csproj" Id="0f152218-3378-4bac-8251-9dbd3aba9c3a">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoUWPCommon/ZohoUWPCommon.csproj" Id="1d390024-a862-45e5-828c-973441b57a8f">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoUWPComponents/ZohoUWPComponents.csproj" Id="dc34e0e9-79bf-4762-8b32-cd55df13c5be">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoUWPContactsLibrary/ZohoUWPContactsLibrary.csproj" Id="73b6e81c-e77c-4df9-a6e8-652f1e14f31a">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoUWPMailSuiteLibrary/ZohoUWPMailSuiteLibrary.csproj" Id="d072bf92-dc5c-49ab-b448-508931b63872">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoWinCommon/ZohoWinCommon.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoWinLogger/ZohoWinLogger.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoWinMailSuiteLibrary/ZohoWinMailSuiteLibrary.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoWinNetAdapter/ZohoWinNetAdapter.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoWinNetAdapterCommon/ZohoWinNetAdapterCommon.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoWinSQLiteDBAdapter/ZohoWinSQLiteDBAdapter.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZohoWinWebSocketAdapter/ZohoWinWebSocketAdapter.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZSSOAdapter/ZSSOAdapter.UWP/ZSSOAdapter.UWP.csproj" Id="475e5c0b-54ab-4f46-8606-e69da94ef415">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZSSOAdapter/ZSSOAdapter/ZSSOAdapter.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZWidgets/ZWidgetEntities/ZWidgetEntities.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZWidgets/ZWidgetLibrary/ZWidgetLibrary.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+  <Project Path="../ZWidgets/ZWidgetViewContracts/ZWidgetViewContracts.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZWidgets/ZWidgetViewModels.UWP/ZWidgetViewModels.csproj" Id="24e0441e-71e1-4f62-b659-5fe906d15dc4">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZWidgets/ZWidgetViews.UWP/ZWidgetViews.csproj" Id="45be10ca-a405-42bd-a41c-b582a9e0b27d">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="SemSeparation.csproj" Id="d47a3f8e-1a33-4978-8a2c-6700fbaec88b">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Deploy />
+  </Project>
+</Solution>

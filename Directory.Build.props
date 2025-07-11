@@ -1,0 +1,6 @@
+<Project>
+    <PropertyGroup>
+        <Windows10SDKVersion>10.0.19041.0</Windows10SDKVersion>
+        <Windows10MinSDKVersion>10.0.18362.0</Windows10MinSDKVersion>
+    </PropertyGroup>
+</Project>
