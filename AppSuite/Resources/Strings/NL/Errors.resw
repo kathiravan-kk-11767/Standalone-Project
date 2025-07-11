@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Trident_AppUpgrade_Error.Text" xml:space="preserve">
+    <value>Fout bij bijwerken van app</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Desc.Text" xml:space="preserve">
+    <value>Er is een fout opgetreden bij het bijwerken van de app. Voor het voltooien van de app-update en doorgaan met het gebruik van Trident, moet u de app-gegevens resetten.</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note.Text" xml:space="preserve">
+    <value>Alle aanpassingen worden gereset naar hun standaard instellingen, en niet-gesynchroniseerde lokale gegevens gaan wellicht verloren tijdens het proces.</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Reset.Text" xml:space="preserve">
+    <value>App-gegevens resetten</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_QuitApp.Text" xml:space="preserve">
+    <value>App afsluiten</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_Head.Text" xml:space="preserve">
+    <value>Opmerking:</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_LearnMore.Text" xml:space="preserve">
+    <value>Meer informatie</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Guide.Text" xml:space="preserve">
+    <value>Volg de stappen in deze helpgids om de app-gegevens te resetten.</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_OK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="API_ThresholdLimitExceeded.Text" xml:space="preserve">
+    <value>Kan niet {0}. Probeer het later opnieuw.</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Description.Text" xml:space="preserve">
+    <value>De oude versie van Trident is nog steeds op uw apparaat geïnstalleerd. We raden u aan de oude versie te verwijderen voordat u zich aanmeldt.</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Title.Text" xml:space="preserve">
+    <value>Oude versie van Trident verwijderen</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_OK_Button.Content" xml:space="preserve">
+    <value>Oké</value>
+  </data>
+  <data name="SignIn_AuthtokenLimitExceeded.Text" xml:space="preserve">
+    <value>You have exceeded your authtoken limit</value>
+    <comment>Error message when authtoken limit Exceeds</comment>
+  </data>
+  <data name="SignIn_NoNetwork.Text" xml:space="preserve">
+    <value>No Network. Please connect to the internet and try again.</value>
+    <comment>Error message when network connection not found</comment>
+  </data>
+  <data name="PageLoadingError.Text" xml:space="preserve">
+    <value>An error occurred while loading the page</value>
+    <comment>General error message when error in loading a page</comment>
+  </data>
+  <data name="AppSuite_Offline" xml:space="preserve">
+    <value>Offline</value>
+    <comment>If no network found then this will be shown in App status bar</comment>
+  </data>
+  <data name="General_NoNetwork.Text" xml:space="preserve">
+    <value>No Network. Please connect to the internet and try again.</value>
+    <comment>Generic error message to be shown when an attempt to API call is made and no internet connection found</comment>
+  </data>
+  <data name="No_Default_User_Available.Text" xml:space="preserve">
+    <value>No default user available</value>
+    <comment>Error message to be shown when there is no default user available in DB</comment>
+  </data>
+  <data name="Invalid_Tag_Name.Text" xml:space="preserve">
+    <value>Invalid character(s) found in tag name</value>
+    <comment>If tag name validation failed the error message is shown </comment>
+  </data>
+  <data name="Tag_Name_AlreadyExist.Text" xml:space="preserve">
+    <value>This tag already exists. Please choose a different tag name.</value>
+    <comment>If tag already present the error message is shown</comment>
+  </data>
+  <data name="Connectivity_Error_Info.Text" xml:space="preserve">
+    <value>Network connection lost. Unable to check for updates.</value>
+    <comment>Error message to show when network not found while checking for updates </comment>
+  </data>
+  <data name="Error_Info.Text" xml:space="preserve">
+    <value>An error occurred while checking for updates. Please try again later.</value>
+    <comment>General error message when error in checking for updates</comment>
+  </data>
+  <data name="No_Updates_Info.Text" xml:space="preserve">
+    <value>You are up-to-date</value>
+    <comment>Message to show no new updates are available for the app</comment>
+  </data>
+  <data name="ErrorType_AuthenticationFailed.Text" xml:space="preserve">
+    <value>Authentication failed</value>
+  </data>
+  <data name="ErrorType_FailedServerResponse.Text" xml:space="preserve">
+    <value>Server error</value>
+  </data>
+  <data name="ErrorType_NoInternetAccess.Text" xml:space="preserve">
+    <value>No internet access. Please connect to the internet and try again.</value>
+  </data>
+  <data name="ErrorType_RequestTimeOut.Text" xml:space="preserve">
+    <value>Request timed out</value>
+  </data>
+  <data name="ErrorType_Unknown.Text" xml:space="preserve">
+    <value>An unknown error occurred</value>
+  </data>
+  <data name="ErrorType_InvalidRequest.Text" xml:space="preserve">
+    <value>Invalid request</value>
+  </data>
+  <data name="ErrorType_SomethingWentWrong.Text" xml:space="preserve">
+    <value>Er is iets fout gegaan. Probeer het opnieuw.</value>
+  </data>
+  <data name="Streams_AddCommentOffline.Text" xml:space="preserve">
+    <value>Adding comments is not supported offline</value>
+  </data>
+  <data name="Streams_LockPostOffline.Text" xml:space="preserve">
+    <value>Lock/unlock post is not supported offline</value>
+  </data>
+  <data name="Stream_AddInviteeOffline.Text" xml:space="preserve">
+    <value>Adding invitees is not supported offline</value>
+  </data>
+  <data name="Stream_LikeOffline.Text" xml:space="preserve">
+    <value>Likes are not supported offline</value>
+  </data>
+  <data name="UserSwitch_ErrorInfo.Text" xml:space="preserve">
+    <value>An error occurred while switching the primary user</value>
+  </data>
+  <data name="AppSuite_HomePageStillTakingLongerToLoad.Text" xml:space="preserve">
+    <value>Laden, een moment geduld...</value>
+  </data>
+  <data name="AppSuite_HomePageTakesLongerToLoad.Text" xml:space="preserve">
+    <value>Looks like this is taking a little longer than usual</value>
+  </data>
+  <data name="Mail_UnprocessedMultipleImages.Text" xml:space="preserve">
+    <value>Kan enkele van de afbeeldingen niet verwerken</value>
+  </data>
+  <data name="Mail_UnprocessedSingleImage.Text" xml:space="preserve">
+    <value>Kan de afbeelding niet verwerken</value>
+  </data>
+  <data name="AllNotificationsReadStatus_ErrorInfo.Text" xml:space="preserve">
+    <value>Er is een fout opgetreden bij het markeren van alle meldingen als gelezen</value>
+  </data>
+  <data name="NotificationReadStatus_ErrorInfo.Text" xml:space="preserve">
+    <value>Er is een fout opgetreden bij het markeren van melding als gelezen</value>
+  </data>
+</root>

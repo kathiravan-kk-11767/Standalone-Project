@@ -1,0 +1,518 @@
+<style type="text/css">
+
+body {
+    overflow : hidden;
+}
+
+.cover{
+    width: 830px;
+    height: 670px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 50;
+}
+@keyframes slideup {
+  0% {
+    transform: translate(15px,283px);
+    opacity: 0;
+  }
+
+30%{
+  transform: translate(15px,83px);
+    opacity: 1;
+}
+80%{
+  transform: translate(15px,72px) scale(1);
+    opacity: 1;
+}
+
+
+  100% {
+    transform: translate(-447px,258px) scale(1.8);
+    opacity: 1;
+  }
+}
+
+
+@keyframes showbottom {
+  0% {
+   transform: translate(-447px,258px) scale(1.8);
+  }
+
+  100% {
+    transform: translate(-447px,-192px) scale(1.8);
+  }
+}
+
+@keyframes positionthree {
+  0% {
+    transform: translate(-447px, -262px) scale(1.8);
+  }
+
+  100% {
+    transform: translate(-400px,208px) scale(1.7);
+  }
+}
+@keyframes positionfour {
+  0% {
+    transform: translate(-400px,208px) scale(1.7);
+  }
+
+  100% {
+    transform: translate(-140px,228px) scale(1.7);
+  }
+}
+@keyframes positionfive {
+  0% {
+    transform: translate(-140px,228px) scale(1.7)
+  }
+
+  100% {
+    transform: translate(-1640px,208px) scale(1.7);
+  }
+}
+
+
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeoutwidget {
+  0% {
+    transform: translate(280px, 30px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(280px, 60px);
+    opacity: 0;
+  }
+}
+
+  @keyframes fadeinwidget {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+  }
+
+
+@keyframes slideupanim {
+  0% {
+    transform: translate(0px,300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+@keyframes logoslideup {
+0% {
+    transform: translate(105px,400px);
+    opacity: 0;
+}
+
+ 100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+}
+
+
+
+@keyframes threetofour{
+    0% {
+    transform: translate(570px,406px) rotate(0deg) scale(0.8);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(660px,406px) rotate(0deg) scale(0.8);
+    opacity: 1;
+  }
+}
+
+body{
+  background: #000000;
+}
+
+@keyframes tapanim-anim {
+  0% {
+    transform: scale(1);
+    opacity: 1
+
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes movedown {
+  0% {
+    transform: translate(0px,0px);
+    opacity: 1
+
+  }
+
+  100% {
+    transform: translate(0px,20px);
+    opacity: 0;
+  }
+}
+
+
+@keyframes w3endpsotion {
+  0% {
+    transform: translate(681px, 21px);
+        height: 500px;
+        box-shadow: 1px 1px 12px rgb(0 0 0 / 0%);
+        overflow: hidden;
+        opacity: 1;
+  }
+
+  100% {
+transform: translate(430px, 0px);
+        height: 500px;
+        box-shadow: 1px 1px 12px rgb(0 0 0 / 10%);
+        overflow: hidden;
+        opacity: 1;
+  }
+}
+
+@keyframes wright {
+  0% {
+    transform: translate(580px, 50px);
+    opacity: 0;
+  }
+
+  100% {
+transform: translate(580px, 30px);
+opacity: 0.9;
+
+  }
+}
+
+@keyframes wcenter {
+  0% {
+    transform: translate(580px, 30px);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translate(430px, 0px);
+    opacity: 1;
+
+  }
+}
+
+@keyframes wleft {
+  0% {
+    transform: translate(430px, 0px);
+     opacity: 1;
+  }
+
+  100% {
+transform: translate(280px, 30px);
+ opacity: 0.9;
+
+  }
+}
+
+
+
+
+@keyframes removeshadow{
+  0% {
+    box-shadow: 0px 12px 49px rgba(0, 0, 0, 0.401634);
+  }
+
+  100% {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.401634);
+  }
+}
+
+
+
+
+.container .image1 {
+  animation: slideup 2s ease-out 1s, showbottom 1s ease-in-out 5s forwards, positionthree 1s ease-in-out 11s forwards,positionfour 1s ease-in-out 15.5s forwards, removeshadow .5s ease-in-out 15s forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+.wg-1{
+  animation: fadeout .5s ease-in-out 15s forwards;
+}
+
+.container .tapanim {
+  animation: tapanim-anim .5s ease-out 3.5s forwards;/* tapanim-anim2 .5s ease-out 10.8s forwards;*/
+  position: absolute;
+    top: 65px;
+    left: 620px;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+.wg-full{
+  animation: fadeout .4s ease-in-out 4s forwards;
+}
+.wg-empty{
+  animation: fadein .4s ease-in-out 4s forwards, fadeout .1s ease-in-out 15s forwards;
+}
+
+.widgetadd{
+    animation: fadein .4s ease-in-out 7s forwards, fadeout .5s ease-in-out 9.5s forwards;
+    transform: translate(677px,217px);
+        width: 123px !important;
+    opacity: 0;
+    z-index: 1;
+}
+
+.widgetaddone{
+    animation: fadein .5s ease-in-out 9s forwards, fadeout .5s ease-in-out 11s forwards;
+    transform: translate(677px,217px);
+        width: 123px !important;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.container .tapanim2 {
+  animation: tapanim-anim .5s ease-out 13.5s forwards;
+  position: absolute;
+  top: 80px;
+  left: 637px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.widgetpop{
+  animation: fadein .5s ease-out 13.8s forwards, fadeout .5s ease-out 15s forwards;
+  position: absolute;
+    width: 120px;
+    top: 30px;
+    right: 0px;
+    z-index: 10;
+    opacity: 0;
+}
+
+.container .tapanim3 {
+  animation: tapanim-anim .5s ease-out 15s forwards;/* tapanim-anim2 .5s ease-out 10.8s forwards;*/
+  position: absolute;
+    top: 96px;
+    left: 537px;
+  opacity: 0;
+  z-index: 2;
+}
+
+
+.widget3{
+animation: fadein 1s ease-out 11s forwards, w3endpsotion 1s ease-in-out 15.5s forwards,wleft .7s ease-in-out 19s forwards, fadeoutwidget .5s ease-in-out 22s forwards;
+}
+.bgfullwindow{
+    animation: fadein 1s ease-out 15.5s forwards;
+    top: -50px;
+    left: 80px;
+    z-index: -1;
+    opacity: 0;
+}
+.widget2{
+  animation: wright 1s ease-out 17s forwards, wcenter .7s ease-in-out 19s forwards, wleft .7s ease-in-out 22s forwards, fadeoutwidget .5s ease-in-out 25s forwards;
+}
+.widget1{
+animation: wright 1s ease-in-out 19s forwards, wcenter .7s ease-in-out 22s forwards, wleft .7s ease-in-out 25s forwards, fadeoutwidget .5s ease-in-out 28s forwards;
+}
+
+.widget4{
+animation: wright 1s ease-in-out 22s forwards,wcenter .7s ease-in-out 25s forwards, wleft .7s ease-in-out 28s forwards, fadeoutwidget .5s ease-in-out 31s forwards;
+}
+.widget5{
+animation: wright 1s ease-in-out 25s forwards,wcenter .7s ease-in-out 28s forwards, wleft .7s ease-in-out 31s forwards, fadeoutwidget .5s ease-in-out 34s forwards;
+}
+
+.widget6{
+animation: wright 1s ease-in-out 28s forwards,wcenter .7s ease-in-out 31s forwards, wleft .7s ease-in-out 34s forwards,fadeinwidget .5s ease-in-out 37s forwards;
+}
+
+.widget7{
+animation: wright 1s ease-in-out 31s forwards,wcenter .7s ease-in-out 34s forwards;
+}
+
+.widget8{
+animation: wright 1s ease-in-out 34s forwards,fadeinwidget 1s ease-out 37s forwards;
+}
+
+.widget1, .widget2, .widget4, .widget5, .widget6, .widget7, .widget8{
+    width: 119px;
+    position: absolute;
+      transform: translate(681px, 21.5px);
+  height: 500px;
+  box-shadow: 1px 1px 12px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.wg-empty,.widget3{
+opacity: 0;
+    width: 124px;
+    position: absolute;
+    transform: translate(676px, 36px);
+}
+.image1{
+    height: 500px;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    transform: translate(15px,583px);
+opacity: 0;
+    box-shadow: 0px 12px 49px rgba(0, 0, 0, 0.401634);
+}
+
+.image1 img{
+  position: absolute;
+  width: 100%;
+}
+
+/*Base*/
+
+.wrapper{
+  position: relative;
+    width: 1200px;
+    height: 670;
+    background: #fafafa;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    width: 830px;
+    height: 670px;
+    background: #fafafa;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    background: radial-gradient(80.05% 80.05% at 58.91% 19.95%, #F8FBFE 0%, #CFD2D5 100%);
+    top: 0px;
+    right: 0;
+}
+.bottomcontainer {
+    position: absolute;
+    height: 100%;
+    width: 370px;
+    bottom: 0px;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: left;
+    border-right: 1px solid #e4e4e4;
+}
+.bottomcontainer h2 {
+    font-size: 29px;
+    line-height: 39px;
+    padding: 0px;
+    margin: 70px 0px 0px 0px;
+}
+
+.bottomcontainer p{
+
+font-size: 15px;
+line-height: 22px;
+}
+p, h2, a{
+  color: #3E3E3E;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+.topcontainer p{
+  text-align: center;
+  font-size: 29px;
+  font-weight: bold;
+}
+.bottomnav {
+    display: inline-block;
+    position: absolute;
+    bottom: 75px;
+    left: 40px;
+}
+.bottomnav a, .bottomnav p{
+font-family: SF Pro Text;
+    display: inline-block;
+    margin: 0px 10px;
+    color: #3E3E3E;
+}
+.bottomnav a{
+  text-decoration: none;
+}
+
+/*_______*/
+
+
+
+</style>
+
+
+
+ <div class="cover"></div>
+
+<div class="container ">
+
+
+   <img class="tapanim" src="tapanim.png" >
+  <img class="tapanim2" src="tapanim.png" >
+  <img class="tapanim3" src="tapanim.png" >
+
+  <div class="image1">
+    <div class="widgetpop"><img src="widgetpop.png"></div>
+    <img class="wg-1" src="wg-1.png" alt="">
+  <img class="wg-full" src="wg-full.png" alt="">
+
+    <img class="widgetadd" src="widgetadd.png" alt="">
+    <img class="widgetaddone" src="widgetadd1.png" alt="">
+    <div class="wg-empty"> <img src="wg-empty.png" alt=""></div>
+    <div class="widget1"> <img src="widget1.png" alt=""> </div>
+    <div class="widget2"> <img src="widget2.png" alt=""> </div>
+    <div class="widget3"> <img src="widget3.png" alt=""> </div>
+    <div class="widget4"> <img src="widget4.png" alt=""></div>
+    <div class="widget5"> <img  src="widget5.png" alt=""></div>
+    <div class="widget6"> <img  src="widget6.png" alt=""></div>
+    <div class="widget7"> <img  src="widget7.png" alt=""></div>
+    <div class="widget8"> <img  src="widget8.png" alt=""></div>
+     <img class="bgfullwindow" src="bgfullwindow.jpg" >
+
+  </div>
+
+  
+</div>

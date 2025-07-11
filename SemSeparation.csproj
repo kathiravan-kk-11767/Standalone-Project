@@ -122,6 +122,11 @@
     <Compile Include="AppSuite\Resources\AppSuiteTemplateSelector.cs" />
     <Compile Include="AppSuite\Resources\ThemeDictionaries\Class1.cs" />
     <Compile Include="AppSuite\Resources\ZCommandBarResource.cs" />
+    <Compile Include="DemoPage.xaml.cs">
+      <DependentUpon>DemoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DI\AppDIServiceProvider.cs" />
+    <Compile Include="InitializationManager.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -133,6 +138,422 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\AppIcon\SplashScreen.scale-400.png" />
+    <Content Include="Assets\AppIcon\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\AppIcon\Square310x310Logo.scale-400.png" />
+    <Content Include="Assets\AppIcon\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\AppIcon\Square44x44Logo.targetsize-256_altform-lightunplated.png" />
+    <Content Include="Assets\AppIcon\Square44x44Logo.targetsize-256_altform-unplated.png" />
+    <Content Include="Assets\AppIcon\Square71x71Logo.scale-400.png" />
+    <Content Include="Assets\AppIcon\StoreLogo.scale-400.png" />
+    <Content Include="Assets\AppIcon\TransparentBackgroundIcon.png" />
+    <Content Include="Assets\AppIcon\Wide310x150Logo.scale-400.png" />
+    <Content Include="Assets\FileIcons\audio%402x.png" />
+    <Content Include="Assets\FileIcons\audio.png" />
+    <Content Include="Assets\FileIcons\Audio.svg" />
+    <Content Include="Assets\FileIcons\doc%402x.png" />
+    <Content Include="Assets\FileIcons\doc.png" />
+    <Content Include="Assets\FileIcons\html.png" />
+    <Content Include="Assets\FileIcons\ics.png" />
+    <Content Include="Assets\FileIcons\image%402x.png" />
+    <Content Include="Assets\FileIcons\image.png" />
+    <Content Include="Assets\FileIcons\Image.svg" />
+    <Content Include="Assets\FileIcons\pdf%402x.png" />
+    <Content Include="Assets\FileIcons\pdf.png" />
+    <Content Include="Assets\FileIcons\Pdf.svg" />
+    <Content Include="Assets\FileIcons\presentation%402x.png" />
+    <Content Include="Assets\FileIcons\presentation.png" />
+    <Content Include="Assets\FileIcons\script.png" />
+    <Content Include="Assets\FileIcons\sheet%402x.png" />
+    <Content Include="Assets\FileIcons\sheet-white.png" />
+    <Content Include="Assets\FileIcons\sheet.png" />
+    <Content Include="Assets\FileIcons\Sheet.svg" />
+    <Content Include="Assets\FileIcons\show.png" />
+    <Content Include="Assets\FileIcons\txt%402x.png" />
+    <Content Include="Assets\FileIcons\txt.png" />
+    <Content Include="Assets\FileIcons\unknown%402x.png" />
+    <Content Include="Assets\FileIcons\unknown.png" />
+    <Content Include="Assets\FileIcons\Unknown.svg" />
+    <Content Include="Assets\FileIcons\video%402x.png" />
+    <Content Include="Assets\FileIcons\video.png" />
+    <Content Include="Assets\FileIcons\Video.svg" />
+    <Content Include="Assets\FileIcons\writer.png" />
+    <Content Include="Assets\FileIcons\zip%402x.png" />
+    <Content Include="Assets\FileIcons\zip.png" />
+    <Content Include="Assets\FileIcons\ZIP.svg" />
+    <Content Include="Assets\FolderIcons\Default\drafts.png" />
+    <Content Include="Assets\FolderIcons\Default\drafts_dark.png" />
+    <Content Include="Assets\FolderIcons\Default\folder.png" />
+    <Content Include="Assets\FolderIcons\Default\folder_dark.png" />
+    <Content Include="Assets\FolderIcons\Default\inbox.png" />
+    <Content Include="Assets\FolderIcons\Default\inbox_dark.png" />
+    <Content Include="Assets\FolderIcons\Default\outbox.png" />
+    <Content Include="Assets\FolderIcons\Default\outbox_dark.png" />
+    <Content Include="Assets\FolderIcons\Default\sent.png" />
+    <Content Include="Assets\FolderIcons\Default\sent_dark.png" />
+    <Content Include="Assets\FolderIcons\Default\spam.png" />
+    <Content Include="Assets\FolderIcons\Default\spam_dark.png" />
+    <Content Include="Assets\FolderIcons\Default\template.png" />
+    <Content Include="Assets\FolderIcons\Default\template_dark.png" />
+    <Content Include="Assets\FolderIcons\Default\trash.png" />
+    <Content Include="Assets\FolderIcons\Default\trash_dark.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_action.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_alarmclock.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_archivemail.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_bag.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_bell.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_book.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_brain.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_bug.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_butterfly.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_calendar.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_camera.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_chart.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_clap.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_clip.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_coffee.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_cool.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_crown.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_dart.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_dollar.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_dollareyes.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_donut.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_earth.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_filmroll.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_fire.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_flower.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_fol.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_ghost.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_giftbox.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_golf.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_hand.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_heart.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_hearteyes.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_hole.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_horn.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_house.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_key.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_lock.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_lotus.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_mail.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_mailbox.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_namaste.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_partycap.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_pig.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_pointfinger.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_postbox.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_prohibited.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_redleaf.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_rocket.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_sandclock.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_searchlens.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_skeleton.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_sleep.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_smiley.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_star.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_super.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_thumbsup.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_tick.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_ticket.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_trashcan.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_trolleycart.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_trophy.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_twofingers.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_unicorn.png" />
+    <Content Include="Assets\FolderIcons\Emoji\_write.png" />
+    <Content Include="Assets\FolderIcons\Foji\Adapt.png" />
+    <Content Include="Assets\FolderIcons\Foji\Analytics.png" />
+    <Content Include="Assets\FolderIcons\Foji\Apptics.png" />
+    <Content Include="Assets\FolderIcons\Foji\Assist.png" />
+    <Content Include="Assets\FolderIcons\Foji\Autogarage.png" />
+    <Content Include="Assets\FolderIcons\Foji\Backstage.png" />
+    <Content Include="Assets\FolderIcons\Foji\Bigin.png" />
+    <Content Include="Assets\FolderIcons\Foji\Books-White.png" />
+    <Content Include="Assets\FolderIcons\Foji\Bugtracker.png" />
+    <Content Include="Assets\FolderIcons\Foji\Calendar.png" />
+    <Content Include="Assets\FolderIcons\Foji\Chartistic.png" />
+    <Content Include="Assets\FolderIcons\Foji\Checkout.png" />
+    <Content Include="Assets\FolderIcons\Foji\Circuit.png" />
+    <Content Include="Assets\FolderIcons\Foji\Cliq.png" />
+    <Content Include="Assets\FolderIcons\Foji\Connect.png" />
+    <Content Include="Assets\FolderIcons\Foji\Creator.png" />
+    <Content Include="Assets\FolderIcons\Foji\crm.png" />
+    <Content Include="Assets\FolderIcons\Foji\Dashboards.png" />
+    <Content Include="Assets\FolderIcons\Foji\DataPrep.png" />
+    <Content Include="Assets\FolderIcons\Foji\Deluge.png" />
+    <Content Include="Assets\FolderIcons\Foji\Desk.png" />
+    <Content Include="Assets\FolderIcons\Foji\Directory.png" />
+    <Content Include="Assets\FolderIcons\Foji\E-Discovery.png" />
+    <Content Include="Assets\FolderIcons\Foji\Expense.png" />
+    <Content Include="Assets\FolderIcons\Foji\Flow.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame993.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame994.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame995.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame996.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame997.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame998.png" />
+    <Content Include="Assets\FolderIcons\Foji\Frame999.png" />
+    <Content Include="Assets\FolderIcons\Foji\FSM.png" />
+    <Content Include="Assets\FolderIcons\Foji\Inventory.png" />
+    <Content Include="Assets\FolderIcons\Foji\Invoice.png" />
+    <Content Include="Assets\FolderIcons\Foji\Jeeves.png" />
+    <Content Include="Assets\FolderIcons\Foji\Learn.png" />
+    <Content Include="Assets\FolderIcons\Foji\Lens.png" />
+    <Content Include="Assets\FolderIcons\Foji\Mail.png" />
+    <Content Include="Assets\FolderIcons\Foji\Mail360.png" />
+    <Content Include="Assets\FolderIcons\Foji\Marketplace.png" />
+    <Content Include="Assets\FolderIcons\Foji\Meeting.png" />
+    <Content Include="Assets\FolderIcons\Foji\Motivator.png" />
+    <Content Include="Assets\FolderIcons\Foji\Notebook.png" />
+    <Content Include="Assets\FolderIcons\Foji\office.png" />
+    <Content Include="Assets\FolderIcons\Foji\Orchestly.png" />
+    <Content Include="Assets\FolderIcons\Foji\PageSense.png" />
+    <Content Include="Assets\FolderIcons\Foji\Payroll.png" />
+    <Content Include="Assets\FolderIcons\Foji\People.png" />
+    <Content Include="Assets\FolderIcons\Foji\PhoneBridge.png" />
+    <Content Include="Assets\FolderIcons\Foji\POS.png" />
+    <Content Include="Assets\FolderIcons\Foji\Primeum-Browser.png" />
+    <Content Include="Assets\FolderIcons\Foji\Projects.png" />
+    <Content Include="Assets\FolderIcons\Foji\Recruit.png" />
+    <Content Include="Assets\FolderIcons\Foji\Remotely.png" />
+    <Content Include="Assets\FolderIcons\Foji\RouteIQ.png" />
+    <Content Include="Assets\FolderIcons\Foji\SalesInbox.png" />
+    <Content Include="Assets\FolderIcons\Foji\SalesIQ.png" />
+    <Content Include="Assets\FolderIcons\Foji\Sheet-white.png" />
+    <Content Include="Assets\FolderIcons\Foji\ShowTime.png" />
+    <Content Include="Assets\FolderIcons\Foji\Sigma.png" />
+    <Content Include="Assets\FolderIcons\Foji\Sign.png" />
+    <Content Include="Assets\FolderIcons\Foji\Site.png" />
+    <Content Include="Assets\FolderIcons\Foji\Sites.png" />
+    <Content Include="Assets\FolderIcons\Foji\Social.png" />
+    <Content Include="Assets\FolderIcons\Foji\Sprints.png" />
+    <Content Include="Assets\FolderIcons\Foji\Stagecraft.png" />
+    <Content Include="Assets\FolderIcons\Foji\Store.png" />
+    <Content Include="Assets\FolderIcons\Foji\streams.png" />
+    <Content Include="Assets\FolderIcons\Foji\Subscriptions.png" />
+    <Content Include="Assets\FolderIcons\Foji\Survey.png" />
+    <Content Include="Assets\FolderIcons\Foji\TeamInbox.png" />
+    <Content Include="Assets\FolderIcons\Foji\Thrive.png" />
+    <Content Include="Assets\FolderIcons\Foji\TransMail.png" />
+    <Content Include="Assets\FolderIcons\Foji\Vault.png" />
+    <Content Include="Assets\FolderIcons\Foji\WorkDrive.png" />
+    <Content Include="Assets\FolderIcons\Foji\Workerly.png" />
+    <Content Include="Assets\FolderIcons\Foji\writer.png" />
+    <Content Include="Assets\FolderIcons\Foji\Zia-Logo.png" />
+    <Content Include="Assets\Images\AccountsGroupHeaderLoadingShimmer.svg" />
+    <Content Include="Assets\Images\AccountsListViewShimmer.png" />
+    <Content Include="Assets\Images\AccountsLoadingShimmer.svg" />
+    <Content Include="Assets\Images\add_circle%402x.png" />
+    <Content Include="Assets\Images\announcement.png" />
+    <Content Include="Assets\Images\Cliq.png" />
+    <Content Include="Assets\Images\ConversationShimmer.svg" />
+    <Content Include="Assets\Images\CRMCalendarOrgLoadingShimmer.svg" />
+    <Content Include="Assets\Images\ExpiredTileDark.png" />
+    <Content Include="Assets\Images\ExpiredTileLight.png" />
+    <Content Include="Assets\Images\ListViewShimmer.png" />
+    <Content Include="Assets\Images\Mail.png" />
+    <Content Include="Assets\Images\MultiSelectMails_dark.png" />
+    <Content Include="Assets\Images\MultiSelectMails_light.png" />
+    <Content Include="Assets\Images\NoImagePlaceholder.png" />
+    <Content Include="Assets\Images\NoImagePlaceholderDark.png" />
+    <Content Include="Assets\Images\Notes.png" />
+    <Content Include="Assets\Images\placeHolderImage.png" />
+    <Content Include="Assets\Images\remove_circle%402x.png" />
+    <Content Include="Assets\Images\Shimmers\CompactWithDPHorizontal.svg" />
+    <Content Include="Assets\Images\Shimmers\CompactWithoutDPHorizontal.svg" />
+    <Content Include="Assets\Images\Shimmers\MailDetailView.svg" />
+    <Content Include="Assets\Images\Shimmers\MailDetailWithoutSenderDetails.svg" />
+    <Content Include="Assets\Images\Shimmers\MailListViewComfortWithDP.svg" />
+    <Content Include="Assets\Images\Shimmers\MailListViewComfortWithoutDP.svg" />
+    <Content Include="Assets\Images\Shimmers\MailListViewCompactWithDPVertical.svg" />
+    <Content Include="Assets\Images\Shimmers\MailListViewCompactWithoutDPVertical.svg" />
+    <Content Include="Assets\Images\Shimmers\MailThread.svg" />
+    <Content Include="Assets\Images\Shimmers\PlatformAI.svg" />
+    <Content Include="Assets\Images\Shimmers\PSTFileNameShimmer.svg" />
+    <Content Include="Assets\Images\Shimmers\PSTFilePathShimmer.svg" />
+    <Content Include="Assets\Images\Tasks.png" />
+    <Content Include="Assets\Images\tile.png" />
+    <Content Include="Assets\Images\VideoPlaceHolderDark.png" />
+    <Content Include="Assets\Images\VideoPlaceHolderLight.png" />
+    <Content Include="Assets\Images\Work-in-progress.png" />
+    <Content Include="Assets\Images\ZohoCrm.png" />
+    <Content Include="Assets\Images\ZohoDesk.png" />
+    <Content Include="Assets\Images\ZohoPeople.png" />
+    <Content Include="Assets\Images\ZohoProjects.png" />
+    <Content Include="Assets\Onboarding\Background\group-7.png" />
+    <Content Include="Assets\Onboarding\Background\Welcome.png" />
+    <Content Include="Assets\Onboarding\ContextualOnboarding\cliqConOnboarding1.png" />
+    <Content Include="Assets\Onboarding\ContextualOnboarding\cliqConOnboarding2.png" />
+    <Content Include="Assets\Onboarding\ContextualOnboarding\mailConOnboarding1.png" />
+    <Content Include="Assets\Onboarding\ContextualOnboarding\mailConOnboarding2.png" />
+    <Content Include="Assets\Onboarding\ContextualOnboarding\mailConOnboarding3.png" />
+    <Content Include="Assets\Onboarding\ContextualOnboarding\mailConOnboarding4.png" />
+    <Content Include="Assets\Onboarding\ContextualOnboarding\mailConOnboarding5.png" />
+    <Content Include="Assets\Onboarding\Icons\allset.png" />
+    <Content Include="Assets\Onboarding\Icons\facebook%402x.png" />
+    <Content Include="Assets\Onboarding\Icons\facebook.png" />
+    <Content Include="Assets\Onboarding\Icons\google.png" />
+    <Content Include="Assets\Onboarding\Icons\hi.png" />
+    <Content Include="Assets\Onboarding\Icons\icloud.png" />
+    <Content Include="Assets\Onboarding\Icons\icon-gmail%402x.png" />
+    <Content Include="Assets\Onboarding\Icons\icon-gmail%403x.png" />
+    <Content Include="Assets\Onboarding\Icons\icon-gmail.png" />
+    <Content Include="Assets\Onboarding\Icons\linked-in%402x.png" />
+    <Content Include="Assets\Onboarding\Icons\linked-in%403x.png" />
+    <Content Include="Assets\Onboarding\Icons\linked-in.png" />
+    <Content Include="Assets\Onboarding\Icons\logo%402x.png" />
+    <Content Include="Assets\Onboarding\Icons\logo%403x.png" />
+    <Content Include="Assets\Onboarding\Icons\logo.png" />
+    <Content Include="Assets\Onboarding\Icons\Mail.svg" />
+    <Content Include="Assets\Onboarding\Icons\TnCPageLogo.png" />
+    <Content Include="Assets\Onboarding\Icons\twitter%402x.png" />
+    <Content Include="Assets\Onboarding\Icons\twitter%403x.png" />
+    <Content Include="Assets\Onboarding\Icons\twitter.png" />
+    <Content Include="Assets\Onboarding\Icons\twitterbird%402x.png" />
+    <Content Include="Assets\Onboarding\Icons\twitterbird%403x.png" />
+    <Content Include="Assets\Onboarding\Icons\twitterbird.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Dark-Module-On-Left-Coloured-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Dark-Module-On-Left-Native-Font-1%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Dark-Module-On-Left-Plain-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Dark-Module-On-Top-Coloured-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Dark-Module-On-Top-Native-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Dark-Module-On-Top-Plain-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Light-Module-On-Left-Coloured-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Light-Module-On-Left-Native-Font-1%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Light-Module-On-Left-Plain-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Light-Module-On-Top-Coloured-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Light-Module-On-Top-Native-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingPreviewWindow\Light-Module-On-Top-Plain-Image%402x.png" />
+    <Content Include="Assets\Onboarding\OnboardingTourVideo\1-workspace.mp4" />
+    <Content Include="Assets\Onboarding\OnboardingTourVideo\2-cliq.mp4" />
+    <Content Include="Assets\Onboarding\OnboardingTourVideo\3-sm.mp4" />
+    <Content Include="Assets\Onboarding\OnboardingTourVideo\4-sa.mp4" />
+    <Content Include="Assets\Onboarding\OnboardingTourVideo\5-widgets.mp4" />
+    <Content Include="Assets\Onboarding\OnboardingTourVideo\7-offline.mp4" />
+    <Content Include="Assets\Onboarding\OnboardingTour\arrowcursor.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\bgfullwindow.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\blinkcursor.gif" />
+    <Content Include="Assets\Onboarding\OnboardingTour\broadsheet.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\broadsheet1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\broadsheet2-1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\broadsheet2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\broadsheetChatbg.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\calendar-month.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\calicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\callcard1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\callcard2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\callcontrol.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\chatboxsmall.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\chatlauncher.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\checkbox.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\checkboxactive.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\cliq.html" />
+    <Content Include="Assets\Onboarding\OnboardingTour\CliqAsModule.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\cliqicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\CliqWindowFrame.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\coicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\crmicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\deskicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\enter.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\eventandmeet.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\exicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\inicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\key1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\key2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\logo.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\mail-2.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\mail.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\mailicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\main-module-left.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\menubar.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\menubarapp.html" />
+    <Content Include="Assets\Onboarding\OnboardingTour\message.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\My-task2.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\note-threepane.jpg" />
+    <Content Include="Assets\Onboarding\OnboardingTour\notesicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\offline.html" />
+    <Content Include="Assets\Onboarding\OnboardingTour\offlinemailswitch.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\offlinepopover.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\offlinequickreply.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\offlinequickreply2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\offlinereddot.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\pricon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\replay.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\s1calendar.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\s1cliq.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\s1mail.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\s1notes.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\s1tasks.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-3.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-4.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-callcard1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-callcard2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-flimg1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-flimg2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-flimg3.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-flimg4.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-flimg5.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-flimg6.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext1-1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext2-1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext3.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext4.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext5.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-fltext6.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-text3.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sa-text4.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\singlesheet.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\sm-base.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smartassist.html" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smartmails.html" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smbottombg.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smdetail0.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smdetail1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smdetail2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smdetail3.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smdetail4.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smdetail5.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smdetail6.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smlist1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smlist2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smlist3.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smlist4.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smlist5.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\smlist6.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\tabmode.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\tapanim.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\taskicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\text1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\text2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\touchbar.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\wdicon.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\wg-1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\wg-empty.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\wg-full.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget2.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget3.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget4.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget5.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget6.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget7.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widget8.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widgetadd.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widgetadd1.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widgetpop.png" />
+    <Content Include="Assets\Onboarding\OnboardingTour\widgets.html" />
+    <Content Include="Assets\Onboarding\OnboardingTour\workplace.html" />
+    <Content Include="Assets\Onboarding\OnboardingTour\zoommenubar.png" />
+    <Content Include="Assets\Onboarding\SignInFlow\page01.png" />
+    <Content Include="Assets\Onboarding\SignInFlow\page02.png" />
+    <Content Include="Assets\Onboarding\SignInFlow\page03.png" />
+    <Content Include="Assets\Onboarding\SignInFlow\page04.png" />
+    <Content Include="Assets\Onboarding\SignInFlow\page05.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -183,6 +604,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="DemoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -202,6 +627,14 @@
       <Project>{856f2fc6-d653-4280-8120-a3393cd5409d}</Project>
       <Name>ZInAppToast.Views.UWP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZFileSystemAdapter\ZFileSystemAdapter.UWP\ZFileSystemAdapter.UWP.csproj">
+      <Project>{70DEFEDE-3C7C-40A2-8DA6-68A15C2DCE6E}</Project>
+      <Name>ZFileSystemAdapter.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZFileSystemAdapter\ZFileSystemAdapter\ZFileSystemAdapter.csproj">
+      <Project>{1D2FECC2-E97A-98B4-1EDE-E73553E03BCE}</Project>
+      <Name>ZFileSystemAdapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZohoUWPCommon\ZohoUWPCommon.csproj">
       <Project>{1d390024-a862-45e5-828c-973441b57a8f}</Project>
       <Name>ZohoUWPCommon</Name>
@@ -214,9 +647,17 @@
       <Project>{75bbe2cb-1c56-48d4-ee3e-893882098e65}</Project>
       <Name>ZohoWinCommon</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZohoWinLogger\ZohoWinLogger.csproj">
+      <Project>{A929CFA6-4BCD-072A-8EA2-7BA857BF087C}</Project>
+      <Name>ZohoWinLogger</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZohoWinSQLiteDBAdapter\ZohoWinSQLiteDBAdapter.csproj">
       <Project>{00209c3e-d967-7ed7-f2ef-4577dedcaacb}</Project>
       <Name>ZohoWinSQLiteDBAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZSSOAdapter\ZSSOAdapter.UWP\ZSSOAdapter.UWP.csproj">
+      <Project>{475e5c0b-54ab-4f46-8606-e69da94ef415}</Project>
+      <Name>ZSSOAdapter.UWP</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZSSOAdapter\ZSSOAdapter\ZSSOAdapter.csproj">
       <Project>{9400391b-357b-83dc-6f3b-80164d085193}</Project>
@@ -225,6 +666,80 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SemSeparation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\accentColor.json" />
+    <Content Include="Assets\Font\windowsIcons.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\DE\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\DE\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\en-US\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\ES\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\ES\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\FR\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\FR\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\hi-IN\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\hi-IN\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\IT\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\IT\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\ja\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\ja\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\NL\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\NL\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\pt-BR\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\pt-BR\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\ta-IN\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\ta-IN\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\zh-CN\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="AppSuite\Resources\Strings\zh-CN\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Onboarding\OnBoardingJson\InitialLoading.json" />
+    <None Include="Assets\Onboarding\OnBoardingJson\LastLoading.json" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

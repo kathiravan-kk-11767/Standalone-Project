@@ -1,0 +1,24 @@
+<svg width="482" min-width="280" max-width="1400" hasStretchableElementInBetween="true" height="140" viewBox="0 0 482 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" clip-rule="evenodd"
+    d="M66.4975 18.2778C66.8168 18.1327 67.1832 18.1327 67.5025 18.2778L71.2882 19.9986C71.5558 20.1202 71.7642 20.3314 71.8846 20.5873C71.8525 20.5963 71.8209 20.6092 71.7906 20.6262L67.6282 22.9574C67.2379 23.176 66.762 23.176 66.3717 22.9574L62.2094 20.6262C62.179 20.6092 62.1475 20.5963 62.1154 20.5873C62.2358 20.3314 62.4442 20.1202 62.7118 19.9986L66.4975 18.2778ZM62 21.4914V25.7859C62 26.4565 62.5437 27.0002 63.2143 27.0002H70.7857C71.4563 27.0002 72 26.4565 72 25.7859V21.4914L68.0471 23.7053C67.3965 24.0696 66.6034 24.0696 65.9529 23.7053L62 21.4914ZM67.9163 17.3674C67.3341 17.1028 66.6659 17.1028 66.0837 17.3674L62.298 19.0882C61.5075 19.4475 61 20.2357 61 21.104V25.7859C61 27.0088 61.9914 28.0002 63.2143 28.0002H70.7857C72.0086 28.0002 73 27.0088 73 25.7859V21.104C73 20.2357 72.4925 19.4475 71.702 19.0882L67.9163 17.3674Z"
+    fill="#9E9E9E" isStretchable="false" lineId="0" width="14" margin-left="60" margin-right="8"/>
+	<rect x="60" y="16" height="14" rx="2" fill="#EEEEEE" isStretchable="false" lineId="0" width="14"/>
+	<rect id="rect1" x="82" y="16" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="0" rel-width="0.33" margin-right="8" shouldRepositionNextElement="true"/>
+	<rect x="205" y="16" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="0" rel-width="0.35" margin-right="8" shouldRepositionNextElement="true"/>
+	<rect x="316" y="16" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="0" rel-width="0.25"/>
+
+	<path fill-rule="evenodd" clip-rule="evenodd"
+    d="M66.4975 65.2778C66.8168 65.1327 67.1832 65.1327 67.5025 65.2778L71.2882 66.9986C71.5558 67.1202 71.7642 67.3314 71.8846 67.5873C71.8525 67.5963 71.8209 67.6092 71.7906 67.6262L67.6282 69.9574C67.2379 70.176 66.762 70.176 66.3717 69.9574L62.2094 67.6262C62.179 67.6092 62.1475 67.5963 62.1154 67.5873C62.2358 67.3314 62.4442 67.1202 62.7118 66.9986L66.4975 65.2778ZM62 68.4914V72.7859C62 73.4565 62.5437 74.0002 63.2143 74.0002H70.7857C71.4563 74.0002 72 73.4565 72 72.7859V68.4914L68.0471 70.7053C67.3965 71.0696 66.6034 71.0696 65.9529 70.7053L62 68.4914ZM67.9163 64.3674C67.3341 64.1028 66.6659 64.1028 66.0837 64.3674L62.298 66.0882C61.5075 66.4475 61 67.2357 61 68.104V72.7859C61 74.0088 61.9914 75.0002 63.2143 75.0002H70.7857C72.0086 75.0002 73 74.0088 73 72.7859V68.104C73 67.2357 72.4925 66.4475 71.702 66.0882L67.9163 64.3674Z"
+    fill="#9E9E9E" isStretchable="false" lineId="1" width="14" margin-left="60" margin-right="8"/>
+	<rect x="60" y="63" height="14" rx="2" fill="#EEEEEE" isStretchable="false" lineId="1" width="14"/>
+	<rect id="rect2" x="82" y="63" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="1" rel-width="0.33" margin-right="8" shouldRepositionNextElement="true"/>
+	<rect x="205" y="63" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="1" rel-width="0.35" margin-right="8" shouldRepositionNextElement="true"/>
+	<rect x="316" y="63" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="1" rel-width="0.25"/>
+
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M66.4975 112.278C66.8168 112.133 67.1832 112.133 67.5025 112.278L71.2882 113.999C71.5558 114.12 71.7642 114.331 71.8846 114.587C71.8525 114.596 71.8209 114.609 71.7906 114.626L67.6282 116.957C67.2379 117.176 66.762 117.176 66.3717 116.957L62.2094 114.626C62.179 114.609 62.1475 114.596 62.1154 114.587C62.2358 114.331 62.4442 114.12 62.7118 113.999L66.4975 112.278ZM62 115.491V119.786C62 120.457 62.5437 121 63.2143 121H70.7857C71.4563 121 72 120.457 72 119.786V115.491L68.0471 117.705C67.3965 118.07 66.6034 118.07 65.9529 117.705L62 115.491ZM67.9163 111.367C67.3341 111.103 66.6659 111.103 66.0837 111.367L62.298 113.088C61.5075 113.448 61 114.236 61 115.104V119.786C61 121.009 61.9914 122 63.2143 122H70.7857C72.0086 122 73 121.009 73 119.786V115.104C73 114.236 72.4925 113.448 71.702 113.088L67.9163 111.367Z"
+    fill="#9E9E9E" isStretchable="false" width="14" margin-left="60" margin-right="8"/>
+	<rect x="60" y="110" height="14" rx="2" fill="#EEEEEE" isStretchable="false" lineId="1" width="14"/>
+	<rect id="rect3" x="82" y="110" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" rel-width="0.33" margin-right="8" shouldRepositionNextElement="true"/>
+	<rect x="205" y="110" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" rel-width="0.35" margin-right="8" shouldRepositionNextElement="true"/>
+	<rect x="316" y="110" width="99" height="14" rx="3" fill="#EEEEEE" isStretchable="true" rel-width="0.25"/>
+</svg>

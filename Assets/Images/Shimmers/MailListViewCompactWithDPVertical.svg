@@ -1,0 +1,22 @@
+<svg width="320" min-width="280" max-width="1400" hasStretchableElementInBetween="true" height="140" viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" clip-rule="evenodd"
+    d="M76 39C84.8366 39 92 31.8366 92 23C92 14.1634 84.8366 7 76 7C67.1634 7 60 14.1634 60 23C60 31.8366 67.1634 39 76 39Z" fill="#EEEEEE"
+    isStretchable="false" lineId="0" width="32" margin-left="60" margin-right="8"/>
+	<rect x="100" y="16" height="14" rx="3" fill="#EEEEEE" isStretchable="false" lineId="0" width="64" margin-right="24"/>
+	<rect id="rect1" x="188" y="16" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="0" rel-width="0.80" min-width="52" margin-right="12" shouldRepositionNextElement="true"/>
+	<rect x="252" y="16" height="14" rx="3" fill="#EEEEEE" isStretchable="false" lineId="0" width="52"/>
+
+	<path fill-rule="evenodd" clip-rule="evenodd"
+    d="M76 86C84.8366 86 92 78.8366 92 70C92 61.1634 84.8366 54 76 54C67.1634 54 60 61.1634 60 70C60 78.8366 67.1634 86 76 86Z" fill="#EEEEEE"
+    isStretchable="false" lineId="1" width="32" margin-left="60" margin-right="8"/>
+	<rect x="100" y="63" height="14" rx="3" fill="#EEEEEE" isStretchable="false" lineId="1" width="64" margin-right="24"/>
+	<rect id="rect2" x="188" y="63" width="52" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="1" rel-width="0.80" min-width="52" margin-right="12" shouldRepositionNextElement="true"/>
+	<rect x="252" y="63" height="14" rx="3" fill="#EEEEEE" isStretchable="false" lineId="1" width="52"/>
+
+	<path fill-rule="evenodd" clip-rule="evenodd"
+    d="M76 133C84.8366 133 92 125.837 92 117C92 108.163 84.8366 101 76 101C67.1634 101 60 108.163 60 117C60 125.837 67.1634 133 76 133Z" fill="#EEEEEE"
+    width="32" margin-left="60" margin-right="8"/>
+	<rect x="100" y="110" height="14" rx="3" fill="#EEEEEE" isStretchable="false" lineId="2" width="64" margin-right="24"/>
+	<rect id="rect3" x="188" y="110" width="52" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="2" rel-width="0.80" min-width="52" margin-right="12" shouldRepositionNextElement="true"/>
+	<rect x="252" y="110" height="14" rx="3" fill="#EEEEEE" isStretchable="false" lineId="2" width="52"/>
+</svg>

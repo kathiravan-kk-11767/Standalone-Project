@@ -1,0 +1,448 @@
+<style type="text/css">
+
+
+body {
+    overflow : hidden;
+}
+
+.cover{
+    width: 830px;
+    height: 670px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 50;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translate(40px,283px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(40px,25px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes logoslideup {
+  0% {
+    transform: translate(274px,300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(274px,166px);
+    opacity: 1;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translate(15px,35px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(15px,283px);
+    opacity: 0;
+  }
+}
+
+@keyframes tapanim-anim {
+  0% {
+    transform: translate(490px,139px) scale(1);
+    opacity: 1
+
+  }
+
+  100% {
+    transform: translate(490px,139px) scale(2);
+    opacity: 0;
+  }
+}
+@keyframes threetofour{
+	  0% {
+    transform: translate(570px,406px) rotate(0deg) scale(0.8);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(660px,406px) rotate(0deg) scale(0.8);
+    opacity: 1;
+  }
+}
+
+body{
+	background: #000000;
+}
+
+@keyframes curve {
+  0% {
+    transform: translate(683px,49px);
+  }
+
+  100% {
+    transform: translate(523px,49px);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moduletext {
+  0% {
+    transform: translate(-56px,680px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-48px,630px);
+    opacity: 0.7;
+  }
+}
+.container .image1 {
+  animation: slideup .5s ease-out 1s, fadeout .5s ease-in 3s, fadeout .5s ease-out 3s;
+  -webkit-animation-fill-mode: forwards;
+}
+.mailtext {
+  animation: moduletext .5s ease-out 1s, fadeout .5s ease-in 3s;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .image2 {
+  animation: fadein .5s ease-out 3s, fadeout .5s ease-in 6s, fadeout .5s ease-out 6s;
+  -webkit-animation-fill-mode: forwards;
+}
+.cliqtext {
+  animation: moduletext .5s ease-out 3s, fadeout .5s ease-in 6s;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .image3 {
+  animation: fadein .5s ease-out 6s, fadeout .5s ease-in 9s, fadeout .5s ease-out 9s;
+  -webkit-animation-fill-mode: forwards;
+}
+.calendartext {
+  animation: moduletext .5s ease-out 6s, fadeout .5s ease-in 9s;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .image4 {
+  animation: fadein .5s ease-out 9s, fadeout .5s ease-in 12s, fadeout .5s ease-out 12s;
+  -webkit-animation-fill-mode: forwards;
+}
+.notetext {
+  animation: moduletext .5s ease-out 9s, fadeout .5s ease-in 12s;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .image5 {
+  animation: fadein .5s ease-out 12s/*, fadeout .5s ease-in 15s*/;
+  -webkit-animation-fill-mode: forwards;
+}
+.tasktext {
+  animation: moduletext .5s ease-out 12s/*, fadeout .5s ease-in 15s*/;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .endlogo {
+  animation: logoslideup 1s ease-in-out 15s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.mailtext{
+  
+}
+
+.container .arrowcursor {
+  animation-name: arrowcursor-anim;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  position: absolute;
+   transform: translate(990px,147px);
+   width: 31px;
+}
+
+.container .tapanim {
+	animation: tapanim-anim 0.4s ease-in-out 2.8s, tapanim-anim 0.4s ease-in-out 4.5s, tapanim-anim 0.4s ease-in-out 6s;
+  -webkit-animation-fill-mode: forwards;
+  position: absolute;
+    transform: translate(471px,139px);
+    width: 30px;
+    opacity: 0;
+}
+
+
+
+.container {
+width: 830px;
+    height: 670px;
+    background: #fafafa;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    background: radial-gradient(80.05% 80.05% at 58.91% 19.95%, #F8FBFE 0%, #CFD2D5 100%);
+    top: 0px;
+    right: 0;
+}
+.image1{
+width: 750px;
+    position: absolute;
+    transform: translate(40px,25px);
+    opacity: 0;
+    box-shadow: 0px 12px 49px rgba(0, 0, 0, 0.401634);
+}
+.image2, .image3, .image4, .image5{
+width: 750px;
+    position: absolute;
+    transform: translate(40px,25px);
+    opacity: 0;
+    box-shadow: 0px 12px 49px rgba(0, 0, 0, 0.401634);
+}
+.endlogo {
+  width: 280px;
+  position: absolute;
+  transform: translate(274px,630px);
+}
+
+.bottomcontainer{
+    position: absolute;
+    height: 100%;
+    width: 370px;
+    bottom: 0px;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: left;
+}
+
+.bottomcontainer h2{
+    font-size: 29px;
+    line-height: 39px;
+    padding: 0px;
+    margin: 70px 0px 0px 0px;
+}
+
+.bottomcontainer p{
+
+font-size: 15px;
+line-height: 22px;
+}
+
+p, h2, a{
+  color: #3E3E3E;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+.topcontainer p{
+  text-align: center;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.wrapper{
+	position: relative;
+	width: 1200px;
+	height: 670;
+	background: #fafafa;
+	margin: auto;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+    right: 0;
+}
+
+
+
+
+/* Mail */
+
+
+.moduletext{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 10px 50px;
+    margin: 0px;
+    transform: translate(-56px,770px);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+    color: #000000;
+    opacity: 0.7;
+    width: 100%;
+}
+
+
+
+@keyframes appear {
+  0% {
+        transform: translate(327px, 670px);
+    width: 10px;
+  }
+  100% {
+        transform: translate(327px, 670px);
+    width: 10px;
+  }
+}
+
+@keyframes zerotoone {
+  0% {
+    transform: translate(322px, 680px); width:40px;
+  }
+  100% {
+    transform: translate(343px, 644px); width:10px;
+  }
+}
+
+@keyframes onetotwo {
+  0% {
+    transform: translate(343px, 644px); width:10px;
+  }
+  100% {
+    transform: translate(397px, 599px); width:40px;
+  }
+}
+
+@keyframes twotothree {
+  0% {
+    transform: translate(397px, 599px); width:40px;
+  }
+  100% {
+    transform: translate(482px, 644px); width:10px;
+  }
+}
+
+@keyframes threetofour {
+  0% {
+    transform: translate(489px, 644px); width:10px;
+  }
+  100% {
+    transform: translate(505px, 675px);
+    width: 10px;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    transform: translate(503px, 671px); width:10px;
+  }
+  100% {
+    transform: translate(505px, 675px);
+    width: 10px;
+  }
+}
+
+.wdicon, .pricon, .deskicon, .coicon, .crmicon, .exicon {
+    box-shadow: 0px 0px 6px rgb(255 255 255 / 0.4);
+    border-radius: 50%;
+}
+
+.wdicon{
+  animation: fadein .5s ease-out 1s forwards, twotothree .5s ease-out 3s forwards, threetofour .5s ease-out 6s forwards, disappear .5s ease-out 9s forwards, appear .5s ease-out 12s forwards/*, fadeout .5s ease-out 15s forwards*/;
+     transform: translate(397px, 599px);
+     width:40px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+.pricon{
+  animation: fadein .5s ease-out 1s forwards, onetotwo .5s ease-out 3s forwards, twotothree .5s ease-out 6s forwards, threetofour .5s ease-out 9s forwards, disappear .5s ease-out 12s forwards/*, fadeout .5s ease-out 15s forwards*/;
+transform: translate(343px, 644px); 
+width:10px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+.deskicon{
+  animation: fadein .5s ease-out 1s forwards, zerotoone .5s ease-out 3s forwards, onetotwo .5s ease-out 6s forwards, twotothree .5s ease-out 9s forwards, threetofour .5s ease-out 12s forwards/*,fadeout .5s ease-out 15s forwards*/;
+       transform: translate(337px, 680px);
+    width: 10px;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    opacity: 0;
+}
+
+.coicon{
+   animation: fadein .5s ease-out 1s forwards, threetofour .5s ease-out 3s forwards, disappear .5s ease-out 6s forwards, appear .5s ease-out 9s forwards, zerotoone .5s ease-out 12s forwards/*, fadeout .5s ease-out 15s forwards*/;
+    transform: translate(482px, 644px);
+    width: 10px;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    opacity: 0;
+}
+
+.crmicon{
+   animation: fadein .5s ease-out 1s forwards, disappear .5s ease-out 3s forwards, appear .5s ease-out 6s forwards, zerotoone .5s ease-out 9s forwards, onetotwo .5s ease-out 12s forwards/*, fadeout .5s ease-out 15s forwards*/;
+      transform: translate(482px, 644px);
+    width: 10px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+
+.exicon{
+     animation: fadein .5s ease-out 1s forwards, appear .5s ease-out 3s forwards, zerotoone .5s ease-out 6s forwards, onetotwo .5s ease-out 9s forwards, twotothree .5s ease-out 12s forwards/*, fadeout .5s ease-out 15s forwards*/;
+    transform: translate(247px, 730px);
+    width: 40px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+.bottomcurve{
+    animation: fadein .5s ease-out 1s forwards/*, fadeout .5s ease-out 15s forwards*/;
+    position: absolute;
+    z-index: 1;
+    width: 299px;
+    opacity: 0;
+    height: 75px;
+    transform: translate(269px, 595px);
+}
+
+
+</style>
+
+ <div class="cover"></div>
+
+
+<div class="container ">
+  <img class="wdicon" src="mailicon.png" alt="">
+  <img class="pricon" src="cliqicon.png" alt="">
+  <img class="deskicon" src="calicon.png" alt="">
+  <img class="exicon" src="notesicon.png" alt="">
+  <img class="crmicon" src="taskicon.png" alt="">
+  <img class="coicon" src="mailicon.png" alt="">
+  <img class="bottomcurve" src="smbottombg.png" alt="">
+
+
+  <p class="moduletext mailtext">Mail</p>
+  <p class="moduletext cliqtext">Cliq</p>
+  <p class="moduletext calendartext">Calendar</p>
+  <p class="moduletext notetext">Notes</p>
+  <p class="moduletext tasktext">Tasks</p>
+  <!-- <img class="endlogo" src="logo.png" alt=""> -->
+	<img class="image5" src="My-task2.jpg" alt="">
+   <img class="image4" src="note-threepane.jpg" alt="">
+   <img class="image3" src="calendar-month.jpg" alt="">
+   <img class="image2" src="CliqAsModule.jpg" alt="">
+  <img class="image1" src="mail.jpg" alt="">  
+</div>
+

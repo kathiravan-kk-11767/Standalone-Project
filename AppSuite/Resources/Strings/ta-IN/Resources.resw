@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SC_LockApp.Text" xml:space="preserve">
+    <value>செயலியைப் பூட்டுக</value>
+  </data>
+  <data name="General_Homepage_Loading.Text" xml:space="preserve">
+    <value>எல்லாம் தயாராகிறது...</value>
+  </data>
+  <data name="General_HomePage_AppInitializing.Text" xml:space="preserve">
+    <value>Trident-ஐத் தொடங்குகிறது...</value>
+  </data>
+  <data name="General_HomePage_LoadingTakesFewMoments.Text" xml:space="preserve">
+    <value>கிட்டத்தட்ட முடிந்துவிட்டது! இதற்கு சில நொடிகள் மட்டுமே ஆகும்.</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Desc.Text" xml:space="preserve">
+    <value>சேமிக்கப்படாத மாற்றங்கள் எல்லாம் போய்விடும்.</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_ConfirmButton.Text" xml:space="preserve">
+    <value>நிராகரிக்கவும்</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Title.Text" xml:space="preserve">
+    <value>{0}-ஐ நிராகரிக்கவா?</value>
+  </data>
+  <data name="Streams_LoadMore.Text" xml:space="preserve">
+    <value>மேலும் காட்டு	</value>
+  </data>
+  <data name="AttachmentSizeExceedInMB_Alert_Tip.Text" xml:space="preserve">
+    <value>இணைக்கப்பட்ட எல்லா கோப்புகளின் அளவு {0} MB-ஐ விட அதிகமாக இருக்கக்கூடாது</value>
+  </data>
+  <data name="SC_OpenNewItem.Text" xml:space="preserve">
+    <value>புதிய மின்னஞ்சல், நிகழ்வு அல்லது குறிப்பு</value>
+  </data>
+  <data name="General_Label_SettingUpTrident.Text" xml:space="preserve">
+    <value>Trident-ஐ அமைக்கிறது...</value>
+  </data>
+  <data name="General_Attribution.Text" xml:space="preserve">
+    <value>பண்புக்கூறு</value>
+  </data>
+  <data name="General_PrivacyPolicy.Text" xml:space="preserve">
+    <value>தனியுரிமை கொள்கை</value>
+  </data>
+  <data name="General_TermsOfService.Text" xml:space="preserve">
+    <value>சேவை விதிமுறைகள்</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_ConfirmationButton.Text" xml:space="preserve">
+    <value>அமைக்கவும்</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Description.Text" xml:space="preserve">
+    <value>Trident ஐப் பயன்படுத்துவதற்கு, உங்களுக்கு Zoho Mail கணக்கு தேவை. தொடங்குவதற்கு நீங்கள் Zoho Mail வலைத்தளத்துக்கு செல்லலாம்.</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_DisclaimerNote.Text" xml:space="preserve">
+    <value>Zoho Mail, Zoho Workplace, மற்றும் Zoho One இன் கட்டணம் செலுத்திய பயனர்களுக்கு மட்டுமே Trident கிடைக்கிறது.</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Title.Text" xml:space="preserve">
+    <value>Zoho Mail கணக்கை அமைக்கவும்</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_RAMSize_Label.Text" xml:space="preserve">
+    <value>RAM அளவு (பைட்களில்)</value>
+  </data>
+  <data name="Streams_PrivateReply.Text" xml:space="preserve">
+    <value>தனிப்பட்ட முறையில் பதிலளி</value>
+  </data>
+  <data name="Streams_AttachmentUploading_ToolTip.Text" xml:space="preserve">
+    <value>இணைப்பைப் பதிவேற்றுகிறது...</value>
+  </data>
+  <data name="Streams_PostComment.Text" xml:space="preserve">
+    <value>கருத்தைப் பதிவிடவும்</value>
+  </data>
+  <data name="Notifications_YetToBeSupported.Text" xml:space="preserve">
+    <value>இந்த அறிவிக்கை இன்னும் ஆதரிக்கப்படவில்லை. {0} வலையில் பார்ப்பதற்கு இங்கே கிளிக் செய்க.</value>
+  </data>
+  <data name="SignOut_Loading.Text" xml:space="preserve">
+    <value>நீங்கள் வெளியேறும் வரை காத்திருக்கவும்</value>
+  </data>
+  <data name="General_NoResultsFound.Text" xml:space="preserve">
+    <value>முடிவுகள் எதுவும் காணப்படவில்லை</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppName_Label.Text" xml:space="preserve">
+    <value>செயலி பெயர்</value>
+  </data>
+  <data name="Cliq_ServiceAction_NewChat_MenuFlyoutItem.Text" xml:space="preserve">
+    <value>புதிய உரையாடல்</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppVersion_Label.Text" xml:space="preserve">
+    <value>செயலி பதிப்பு</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceFamily_Label.Text" xml:space="preserve">
+    <value>சாதன குடும்பம்</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceManufacturer_Label.Text" xml:space="preserve">
+    <value>சாதன உற்பத்தியாளர்</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceModel_Label.Text" xml:space="preserve">
+    <value>சாதன மாதிரி</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_OSVersion_Label.Text" xml:space="preserve">
+    <value>OS பதிப்பு</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_SystemArchitecture_Label.Text" xml:space="preserve">
+    <value>கணினி கட்டமைப்பு</value>
+  </data>
+  <data name="SignIn_Failed_UserMessage.Text" xml:space="preserve">
+    <value>உள்நுழைவு தோல்வியடைந்தது. பிறகு மீண்டும் முயல்க</value>
+  </data>
+  <data name="SignIn_FailedMessageDialog_CloseButton.Text" xml:space="preserve">
+    <value>மூடுக</value>
+  </data>
+  <data name="SignIn_RefreshTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>புதுப்பிப்பு டோக்கன் வரம்பு எட்டப்பட்டது.</value>
+  </data>
+  <data name="SignIn_AccessTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>அணுகல் டோக்கன் வரம்பு எட்டப்பட்டது.</value>
+  </data>
+  <data name="UserSwitch_Accounts.Text" xml:space="preserve">
+    <value>பயனர் கணக்குகள்</value>
+  </data>
+  <data name="DND_NotSupportedOffline_UserMessage.Text" xml:space="preserve">
+    <value>DND ஆஃப்லைனில் ஆதரிக்கப்படவில்லை</value>
+  </data>
+  <data name="General_About.Text" xml:space="preserve">
+    <value>பற்றி</value>
+  </data>
+  <data name="Rootshell_Flyout_CheckForUpdates.Text" xml:space="preserve">
+    <value>புதுப்பிப்புகளைச் சரிபார்க்கவும்</value>
+  </data>
+  <data name="Rootshell_Flyout_Feedback.Text" xml:space="preserve">
+    <value>பின்னூட்டம்</value>
+  </data>
+  <data name="Rootshell_Flyout_GlobalSearch.Text" xml:space="preserve">
+    <value>முழுமைக்குமான தேடல்</value>
+  </data>
+  <data name="Rootshell_Flyout_GoTo.Text" xml:space="preserve">
+    <value>செல்லவும்</value>
+  </data>
+  <data name="Rootshell_Flyout_Help.Text" xml:space="preserve">
+    <value>உதவி</value>
+  </data>
+  <data name="Rootshell_Flyout_KeyboardShortcuts.Text" xml:space="preserve">
+    <value>விசைப்பலகை குறுக்குவழிகள்</value>
+  </data>
+  <data name="Rootshell_Flyout_NextModule.Text" xml:space="preserve">
+    <value>அடுத்த தொகுதி</value>
+  </data>
+  <data name="Rootshell_Flyout_PrevModule.Text" xml:space="preserve">
+    <value>முந்தைய தொகுதி</value>
+  </data>
+  <data name="Rootshell_Flyout_ReleaseNotes.Text" xml:space="preserve">
+    <value>வெளியீட்டு குறிப்புகள்</value>
+  </data>
+  <data name="Rootshell_Flyout_Settings.Text" xml:space="preserve">
+    <value>அமைப்புகள்</value>
+  </data>
+  <data name="Rootshell_NoPrewiewDescription.Text" xml:space="preserve">
+    <value>செயலி சாளரத்தின் அளவை (உயரம்/அகலம்) அதிகரிக்கவும்.</value>
+  </data>
+  <data name="Rootshell_OfflineButton.Text" xml:space="preserve">
+    <value>ஆஃப்லைன்</value>
+  </data>
+  <data name="Rootshell_Tooltip_Search.Text" xml:space="preserve">
+    <value>தேடுக</value>
+  </data>
+  <data name="Rootshell_Flyout_Calls.Text" xml:space="preserve">
+    <value>அழைப்புகள்</value>
+  </data>
+  <data name="Rootshell_Flyout_Notifications.Text" xml:space="preserve">
+    <value>அறிவிப்புகள்</value>
+  </data>
+  <data name="Rootshell_Flyout_Widgets.Text" xml:space="preserve">
+    <value>விட்ஜெட்டுகள்</value>
+  </data>
+  <data name="SA_Label_Feedback.Text" xml:space="preserve">
+    <value>பின்னூட்டம்</value>
+  </data>
+  <data name="ToolTip_Notifications.Text" xml:space="preserve">
+    <value>அறிவிப்புகள்</value>
+  </data>
+  <data name="ToolTip_Widgets.Text" xml:space="preserve">
+    <value>விட்ஜெட்டுகள்</value>
+  </data>
+  <data name="RevisableAttachments_Header_Attachments.Text" xml:space="preserve">
+    <value>இணைப்புகள்</value>
+  </data>
+  <data name="Genral_ServiceName_Calendar.Text" xml:space="preserve">
+    <value>நாட்காட்டி</value>
+  </data>
+  <data name="Genral_ServiceName_Cliq.Text" xml:space="preserve">
+    <value>Cliq</value>
+  </data>
+  <data name="Genral_ServiceName_Contacts.Text" xml:space="preserve">
+    <value>தொடர்புகள்</value>
+  </data>
+  <data name="Genral_ServiceName_Mail.Text" xml:space="preserve">
+    <value>மெயில்</value>
+  </data>
+  <data name="Genral_ServiceName_Notes.Text" xml:space="preserve">
+    <value>குறிப்புகள்</value>
+  </data>
+  <data name="Genral_ServiceName_Tasks.Text" xml:space="preserve">
+    <value>பணிகள்</value>
+  </data>
+  <data name="AppTitle.Text" xml:space="preserve">
+    <value>Trident பீட்டா</value>
+  </data>
+  <data name="AttachmentViewer_Attachment.Text" xml:space="preserve">
+    <value>இணைப்பு</value>
+  </data>
+  <data name="AttachmentViewer_Attachments.Text" xml:space="preserve">
+    <value>இணைப்புகள்</value>
+  </data>
+  <data name="Cancel_Text.Text" xml:space="preserve">
+    <value>ரத்துசெய்க</value>
+  </data>
+  <data name="ChooseServiceProvider_Text.Text" xml:space="preserve">
+    <value>சேவை வழங்குநரைத் தேர்ந்தெடுக்கவும்</value>
+  </data>
+  <data name="DeleteConfirmation_Text.Text" xml:space="preserve">
+    <value>நீங்கள் கணக்கை அகற்ற விரும்புவது உறுதிதானா?</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchCompleted.Text" xml:space="preserve">
+    <value>ஆரம்ப பெறுதல் முடிந்தது</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchError.Text" xml:space="preserve">
+    <value>ஆரம்ப பெறுதல் பிழை</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchInProgress.Text" xml:space="preserve">
+    <value>ஆரம்ப பெறுதல் நடந்து கொண்டிருக்கிறது...</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchRequested.Text" xml:space="preserve">
+    <value>ஆரம்ப பெறுதல் கோரப்பட்டது</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchSuspended.Text" xml:space="preserve">
+    <value>ஆரம்ப பெறுதல் இடைநிறுத்தப்பட்டது</value>
+  </data>
+  <data name="MailSyncStatus_NotSynced.Text" xml:space="preserve">
+    <value>ஒத்திசைக்கப்படவில்லை</value>
+  </data>
+  <data name="MailSyncStatus_SelectedForSyncing.Text" xml:space="preserve">
+    <value>ஒத்திசைக்க தேர்ந்தெடுக்கப்பட்டது</value>
+  </data>
+  <data name="MailSyncStatus_Synced.Text" xml:space="preserve">
+    <value>ஒத்திசைக்கப்பட்டது</value>
+  </data>
+  <data name="MailSyncStatus_SyncError.Text" xml:space="preserve">
+    <value>ஒத்திசைவு தோல்வி அடைந்தது</value>
+  </data>
+  <data name="MailSyncStatus_SyncInProgress.Text" xml:space="preserve">
+    <value>ஒத்திசைக்கிறது...</value>
+  </data>
+  <data name="MailSyncStatus_SyncRequested.Text" xml:space="preserve">
+    <value>ஒத்திசைவு கோரப்பட்டது</value>
+  </data>
+  <data name="MailSyncStatus_SyncSuspended.Text" xml:space="preserve">
+    <value>ஒத்திசைவு இடைநிறுத்தப்பட்டது</value>
+  </data>
+  <data name="Ok_Text.Text" xml:space="preserve">
+    <value>சரி</value>
+  </data>
+  <data name="RootShell_Loading.Text" xml:space="preserve">
+    <value>பதிவேறுகிறது, காத்திருக்கவும்...</value>
+  </data>
+  <data name="Service_CRM.Text" xml:space="preserve">
+    <value>Zoho CRM</value>
+  </data>
+  <data name="Service_Expense.Text" xml:space="preserve">
+    <value>Zoho Expense</value>
+  </data>
+  <data name="Service_Invoice.Text" xml:space="preserve">
+    <value>இன்வாய்ஸ்</value>
+  </data>
+  <data name="Service_Connect.Text" xml:space="preserve">
+    <value>இடுகையை இணைக்கவும்</value>
+  </data>
+  <data name="Service_Projects.Text" xml:space="preserve">
+    <value>திட்டங்கள்</value>
+  </data>
+  <data name="Service_Workdrive.Text" xml:space="preserve">
+    <value>வொர்க்டிரைவ்</value>
+  </data>
+  <data name="Service_Mail.Text" xml:space="preserve">
+    <value>மெயில்</value>
+  </data>
+  <data name="SignIn_LoginButton.Content" xml:space="preserve">
+    <value>உங்கள் கணக்கில் உள்நுழையவும்</value>
+  </data>
+  <data name="TAC_AgreeButton.Content" xml:space="preserve">
+    <value>ஒப்புக்கொள்கிறேன்</value>
+  </data>
+  <data name="TAC_CancelButton.Content" xml:space="preserve">
+    <value>ரத்துசெய்க</value>
+  </data>
+  <data name="TermsAndConditions.Text" xml:space="preserve">
+    <value>விதிமுறைகள் மற்றும் நிபந்தனைகள்</value>
+  </data>
+  <data name="General_AppDisplayName.Text" xml:space="preserve">
+    <value>Trident</value>
+  </data>
+  <data name="TAC_Description.Text" xml:space="preserve">
+    <value>மென்பொருளைத் தொடர்ந்து பயன்படுத்த, மென்பொருள் உரிம ஒப்பந்தத்தின் விதிமுறைகளை நீங்கள் ஏற்க வேண்டும்.</value>
+  </data>
+  <data name="Source_Chat.Text" xml:space="preserve">
+    <value>உரையாடல்</value>
+  </data>
+  <data name="Source_Connect.Text" xml:space="preserve">
+    <value>இணைக்கவும்</value>
+  </data>
+  <data name="Source_Contacts.Text" xml:space="preserve">
+    <value>தொடர்புகள்</value>
+  </data>
+  <data name="Source_Inline.Text" xml:space="preserve">
+    <value>Inline</value>
+  </data>
+  <data name="Source_Mail.Text" xml:space="preserve">
+    <value>மெயில்</value>
+  </data>
+  <data name="Source_Notes.Text" xml:space="preserve">
+    <value>குறிப்புகள்</value>
+  </data>
+  <data name="Source_ProfilePic.Text" xml:space="preserve">
+    <value>முகப்பு படம்</value>
+  </data>
+  <data name="Source_Stream.Text" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="Source_Unknown.Text" xml:space="preserve">
+    <value>தெரியாதவை</value>
+  </data>
+  <data name="Source_Workdrive.Text" xml:space="preserve">
+    <value>வொர்க்டிரைவ்</value>
+  </data>
+  <data name="UserMessage_NoInternet.Text" xml:space="preserve">
+    <value>நெட்வொர்க் இல்லை. இணையத்துடன் இணைத்து மீண்டும் முயல்க.</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkDesc.Text" xml:space="preserve">
+    <value>உள்ளமைக்கப்பட்ட Cliq செயலியைப் பயன்படுத்தி தொலைநிலையில் உங்கள் குழுவுடன் ஒன்றினைந்து வேலைசெய்யவும். ஆடியோ அல்லது வீடியோ செய்திகளை அனுப்பவும், திரைப் பகிர்வை இயக்குவதன் மூலம் கூட்டிணைவு பணியை எளிதாக்கவும் மற்றும் கான்ஃபரன்ஸ் அழைப்பில் அனைவரும் {0} இல் இருந்து - பல பயனர்களுடன் ஈடுபாடு கொள்ளவும்.</value>
+  </data>
+  <data name="Onboarding_TourMenuBarDesc.Text" xml:space="preserve">
+    <value>உங்கள் கணினியிள் உள்ள பிற செயலிகளில் பணிபுரியும் போது, தரவை விரைவாக அணுகவும், உடனடி செயல்களைச் செய்யவும் {0} சிஸ்டம் ட்ரே செயலியை பயன்படுத்தவும். நீங்கள் ஆடியோ அல்லது வீடியோ அழைப்புகளில் ஈடுபட்டு இருக்கும்போது இது உங்கள் கட்டுப்பாட்டு மையமாகவும் இரட்டிப்பு பணி செய்கிறது.</value>
+  </data>
+  <data name="Onboarding_TourMenuBarTitle.Text" xml:space="preserve">
+    <value>சிஸ்டம் ட்ரே செயலி</value>
+  </data>
+  <data name="Onboarding_TourOfflineDesc.Text" xml:space="preserve">
+    <value>உங்கள் நெட்வொர்க் இணைப்பில் இடையூறு ஏற்பட்டாலும் ஆஃப்லைன் அணுகலுடன் உங்கள் மின்னஞ்சல்களில் தடையின்றி வேலை செய்யுங்கள். உலாவல், உருவாக்கம் மற்றும் மின்னஞ்சல்களைத் தேடுதல் போன்ற பல செயல்பாடுகள் ஆஃப்லைன் பயன்முறையில் தொடர்ந்து செயல்படும்.</value>
+  </data>
+  <data name="Onboarding_TourOfflineTitle.Text" xml:space="preserve">
+    <value>ஆஃப்லைன் அணுகல்</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkTitle.Text" xml:space="preserve">
+    <value>தொலைநிலை வேலை தயார்</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantDesc.Text" xml:space="preserve">
+    <value>பணிகளையும் கட்டளைகளையும் விரைவாகச் செயல்படுத்த ஸ்மார்ட் உதவியாளர் உங்களை அனுமதிக்கிறது. எடுத்துக்காட்டாக, அழைப்பை மேற்கொள்ள அல்லது மீட்டிங்கைத் திட்டமிட "ஜானை அழையுங்கள்" அல்லது "நாளை பிற்பகல் 3 மணிக்கு லூசியை சந்திக்கவும்" என தட்டச்சு செய்யவும்.</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantTitle.Text" xml:space="preserve">
+    <value>ஸ்மார்ட் உதவியாளர்</value>
+  </data>
+  <data name="Onboarding_TourSmartMailDesc.Text" xml:space="preserve">
+    <value>உங்கள் இன்பாக்ஸ் உள்ளே இருந்து சூழலுக்கேற்ப செயலி தரவைப் பார்ப்பதன் மூலம் பிற Zoho செயலிகளில் இருந்து வரும் உங்கள் மின்னஞ்சல் அறிவிப்புகளின் மீது விரைவாகச் செயல்படவும்.</value>
+  </data>
+  <data name="Onboarding_TourSmartMailTitle.Text" xml:space="preserve">
+    <value>ஸ்மார்ட் மெயில்</value>
+  </data>
+  <data name="Onboarding_TourWidgetDesc.Text" xml:space="preserve">
+    <value>விட்ஜெட்டுகள் மூலம் பல செயலிகளில் இருந்து தரவை அணுகி வேலை செய்வதன் மூலம் மிகவும் திறமையாக பல்வேறு வேலைகளை செய்யவும்.  Cliq இல் புதிய உள்வரும் செய்திகளைக் கண்காணிக்கவும், காலண்டரைப் பயன்படுத்தி உங்கள் திட்ட அட்டவணையைக் கண்காணிக்கவும் அல்லது விட்ஜெட்களின் ஒரு கேலரியைத் தேர்ந்தெடுப்பதன் மூலம் முக்கியமான விவரங்களை குறிப்புகளில் எழுதவும்.</value>
+  </data>
+  <data name="Onboarding_TourWidgetTitle.Text" xml:space="preserve">
+    <value>விட்ஜெட்டுகள்</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceDesc.Text" xml:space="preserve">
+    <value>{0} ஆனது உங்கள் அனைத்து உற்பத்தித்திறன், தகவல் தொடர்பு மற்றும் வணிகத் தேவைகளுக்கான ஒரு விரிவான தீர்வாகும். இது மின்னஞ்சல், உடனடி செய்தி அனுப்புதல், கான்பரன்ஸ் அழைப்புகள், காலண்டர் மேலாண்மை, குறிப்பு எடுப்பது மற்றும் பணி மேலாண்மை அனைத்தையும் ஒரே பணியிட மேடையில் தொகுக்கிறது.</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceTitle.Text" xml:space="preserve">
+    <value>ஆல் இன் ஒன் பணியிட துணைவன்</value>
+  </data>
+  <data name="SignIn_Page1_Desc.Text" xml:space="preserve">
+    <value>{0} ஆனது உங்களின் அனைத்து பணியிட உற்பத்தித்திறன், தகவல் தொடர்பு மற்றும் வணிகத் தேவைகளுக்கான விரிவான தளமாகும்.</value>
+  </data>
+  <data name="SignIn_Page1_Title.Text" xml:space="preserve">
+    <value>உங்கள் ஆல் இன் ஒன் பணியிட துணைவன்</value>
+  </data>
+  <data name="SignIn_Page4_Desc.Text" xml:space="preserve">
+    <value>தொழில்துறை பாதுகாப்பு மற்றும் தனியுரிமை தரங்களுக்கு ஏற்ப Zoho கண்டிப்பான கடைப் பிடிப்பதால் உங்கள் தரவு பாதுகாப்பானது மற்றும் பத்திரமானது என்பதை அறிந்து, யோசனைகள் மற்றும் தகவலை நம்பிக்கையுடன் பகிர்ந்து கொள்ளுங்கள்.</value>
+  </data>
+  <data name="SignIn_Page4_Title.Text" xml:space="preserve">
+    <value>இணையற்ற தனியுரிமை மற்றும் பாதுகாப்பு</value>
+  </data>
+  <data name="SignIn_Page5_Desc.Text" xml:space="preserve">
+    <value>நீங்கள் ஆஃப்லைனில் இருந்தாலும், உங்கள் இன்பாக்ஸில் உலாவவும், மின்னஞ்சல்களை வரைவு செய்யவும் மற்றும் தகவலைத் தேடவும்.</value>
+  </data>
+  <data name="SignIn_Page5_Title.Text" xml:space="preserve">
+    <value>ஆஃப்லைனில் வேலை செய்யுங்கள்</value>
+  </data>
+  <data name="SignIn_Page3_Desc.Text" xml:space="preserve">
+    <value>உங்கள் எல்லா மின்னஞ்சல் கணக்குகளையும் (Zoho, Gmail, Outlook, Yahoo, iCloud போன்றவற்றிலிருந்து) ஒரே இடத்திலிருந்து நிர்வகிக்கவும்.</value>
+  </data>
+  <data name="SignIn_Page3_Title.Text" xml:space="preserve">
+    <value>பல அஞ்சல் பெட்டிகளை நிர்வகிக்கவும்</value>
+  </data>
+  <data name="SignIn_Page2_Desc.Text" xml:space="preserve">
+    <value>ஆடியோ மற்றும் வீடியோ கான்பரன்சிங் திறன்களுடன் கூடிய எங்கள் உள்ளமைக்கப்பட்ட உடனடி செய்தியிடல் சேவையான Cliq பயன்படுத்தி உங்கள் சகாக்களுடன் உடனிணைந்து பணியாற்றுங்கள்.</value>
+  </data>
+  <data name="SignIn_Page2_Title.Text" xml:space="preserve">
+    <value>தொலைநிலை வேலை தயார்</value>
+  </data>
+  <data name="Onboarding_Default.Text" xml:space="preserve">
+    <value>தவிர்க்கவும்</value>
+  </data>
+  <data name="Onboarding_Personalize.Content" xml:space="preserve">
+    <value>இப்போது தனிப்பயனாக்குக</value>
+  </data>
+  <data name="Onboarding_Welcome.Text" xml:space="preserve">
+    <value>நல்வரவு,</value>
+  </data>
+  <data name="Onboarding_WelcomeDesc.Text" xml:space="preserve">
+    <value>உங்களை சேர்த்துக்கொள்வதில் நாங்கள் மகிழ்ச்சியடைகிறோம்! {0} ஆனது பல தனிப்பயனாக்க விருப்பங்களுடன் ஆற்றல் மிக்க அம்சங்களை ஒருங்கிணைத்து, நீங்கள் தொடர்ந்து செயல்திறன் மிக்கவராக இருக்க உதவுகிறது.</value>
+  </data>
+  <data name="Onboarding_WelcomePersonalize.Text" xml:space="preserve">
+    <value>உங்கள் பணியிடத்தை இப்போது தனிப்பயனாக்குங்கள்.</value>
+  </data>
+  <data name="Onboarding_AccentColor.Text" xml:space="preserve">
+    <value>இணையாகும் நிறத்தைத் தேர்ந்தெடுக்கவும்</value>
+  </data>
+  <data name="Onboarding_AllSetDesc.Text" xml:space="preserve">
+    <value>செயலி மூலம் நீங்கள் செய்யக்கூடிய பிற அற்புதமான விஷயங்கள்.</value>
+  </data>
+  <data name="Onboarding_AllSetTitle.Text" xml:space="preserve">
+    <value>நீங்கள் எல்லாம் அமைத்து விட்டீர்கள்</value>
+  </data>
+  <data name="Onboarding_Colored.Content" xml:space="preserve">
+    <value>நிறம் கொண்டது</value>
+  </data>
+  <data name="Onboarding_Continue.Content" xml:space="preserve">
+    <value>தொடர்க</value>
+  </data>
+  <data name="Onboarding_DarkTheme.Text" xml:space="preserve">
+    <value>இருள்</value>
+  </data>
+  <data name="Onboarding_LightTheme.Text" xml:space="preserve">
+    <value>ஒளி</value>
+  </data>
+  <data name="Onboarding_MaybeLater.Text" xml:space="preserve">
+    <value>ஒருவேளை பின்னர்</value>
+  </data>
+  <data name="Onboarding_ModuleDesc.Text" xml:space="preserve">
+    <value>அஞ்சல், காலண்டர், குறிப்புகள் மற்றும் பிற தொகுதி ஐகான்களை எங்கு வைக்க விரும்புகிறீர்கள்?</value>
+  </data>
+  <data name="Onboarding_ModuleLeft.Content" xml:space="preserve">
+    <value>இடது</value>
+  </data>
+  <data name="Onboarding_ModuleTitle.Text" xml:space="preserve">
+    <value>தொகுதிகள் சின்னங்கள் நிலை</value>
+  </data>
+  <data name="Onboarding_ModuleTop.Content" xml:space="preserve">
+    <value>மேல்</value>
+  </data>
+  <data name="Onboarding_Native.Content" xml:space="preserve">
+    <value>அடிப்படை</value>
+  </data>
+  <data name="Onboarding_OtherModules3.Text" xml:space="preserve">
+    <value>விரைவான சுற்றுலா மூலம் மேலும் பல.</value>
+  </data>
+  <data name="Onboarding_OtherModules1.Text" xml:space="preserve">
+    <value>இது போன்ற செயலி அம்சங்களைப் பற்றி அறிக</value>
+  </data>
+  <data name="Onboarding_OtherModules2.Text" xml:space="preserve">
+    <value>ஆஃப்லைன் பயன்முறை, விட்ஜெட்டுகள், ஸ்மார்ட் அசிஸ்டண்ட், ஸ்மார்ட் மெயில்கள்</value>
+  </data>
+  <data name="Onboarding_Style.Text" xml:space="preserve">
+    <value>பாணியை தேர்வு செய்யவும்</value>
+  </data>
+  <data name="Onboarding_SystemTheme.Text" xml:space="preserve">
+    <value>அமைப்பு</value>
+  </data>
+  <data name="Onboarding_TakeQuickTour.Content" xml:space="preserve">
+    <value>ஒரு சுற்றுலா மேற்கொள்ளுங்கள்</value>
+  </data>
+  <data name="Onboarding_ThemeDesc.Text" xml:space="preserve">
+    <value>செயலி அமைப்புகளில் இதை நீங்கள் பின்னர் மாற்றலாம்</value>
+  </data>
+  <data name="Onboarding_ThemeTitle.Text" xml:space="preserve">
+    <value>உங்கள் பணியிடத்தைத் தனிப்பயனாக்குங்கள்</value>
+  </data>
+  <data name="Onboarding_ThemMode.Text" xml:space="preserve">
+    <value>தீம் பயன்முறை</value>
+  </data>
+  <data name="Onboarding_White.Content" xml:space="preserve">
+    <value>எளிமையான</value>
+  </data>
+  <data name="SignIn_LoginWebview.Content" xml:space="preserve">
+    <value>வலைக் காட்சி மூலம் உள்நுழையவும்</value>
+  </data>
+  <data name="SignIn_NetworkUnavailable.Text" xml:space="preserve">
+    <value>நெட்வொர்க் இல்லை. இணையத்துடன் இணைக்கவும்.</value>
+  </data>
+  <data name="SignIn_SettingUpMail.Text" xml:space="preserve">
+    <value> {0} ஐ அமைத்தல்...</value>
+  </data>
+  <data name="SignIn_SetUpMail.Text" xml:space="preserve">
+    <value>அஞ்சலை அமைக்கவும்</value>
+  </data>
+  <data name="SignIn_SetUpMailDescription.Text" xml:space="preserve">
+    <value>செயலியைப் பயன்படுத்த, Zoho Mail இணையதளத்திற்குச் சென்று Zoho மின்னஞ்சல் கணக்கை அமைக்க வேண்டும்.</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountButton.Content" xml:space="preserve">
+    <value>அஞ்சல் கணக்கை அமைக்கவும்</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountCancelButton.Content" xml:space="preserve">
+    <value>ரத்துசெய்க</value>
+  </data>
+  <data name="EnhanceScope.Text" xml:space="preserve">
+    <value>செயலியைத் தொடர்ந்து பயன்படுத்த, "மீண்டும் முயல்க" என்பதைக் கிளிக் செய்து உங்கள் கடவுச்சொல்லை உள்ளிடவும்</value>
+  </data>
+  <data name="TryEnhanceScopeAgain_Button.Content" xml:space="preserve">
+    <value>மீண்டும் முயல்க</value>
+  </data>
+  <data name="SignIn_AlmostReady.Text" xml:space="preserve">
+    <value>கிட்டத்தட்ட தயார்...</value>
+  </data>
+  <data name="Onboarding_Replay.Text" xml:space="preserve">
+    <value>மறுபடி இயக்கவும்</value>
+  </data>
+  <data name="ResetOnboarding.Text" xml:space="preserve">
+    <value>ஆன்போர்டிங்கை மீட்டமைக்கவும்</value>
+  </data>
+  <data name="Shell_ApiTracker.Text" xml:space="preserve">
+   <value>ஏபிஐ டிராக்கர்</value>
+  </data>
+  <data name="SC_GlobalSearch.Text" xml:space="preserve">
+    <value>முழுமைக்குமான தேடல் சாளரத்தைத் திறக்கவும்</value>
+  </data>
+  <data name="SC_ModuleSearch.Text" xml:space="preserve">
+    <value>ஒரு தொகுதியில் தேடலை இயக்கவும்</value>
+  </data>
+  <data name="SC_OpenCallHistory.Text" xml:space="preserve">
+    <value>அழைப்பு வரலாற்றைத் திறக்கவும்</value>
+  </data>
+  <data name="SC_OpenNotifications.Text" xml:space="preserve">
+    <value>அறிவிப்புகளைத் திறக்கவும்</value>
+  </data>
+  <data name="SC_SmartCompose.Text" xml:space="preserve">
+    <value>ஸ்மார்ட் அசிஸ்டண்ட்டைத் தொடங்கவும்</value>
+  </data>
+  <data name="SC_SmartComposeCollapse.Text" xml:space="preserve">
+    <value>ஸ்மார்ட் அசிஸ்டண்ட்டை மூடுக</value>
+  </data>
+  <data name="SC_ToggleDND.Text" xml:space="preserve">
+    <value>DND ஐ இயக்குக/முடக்குக</value>
+  </data>
+  <data name="SC_ToggleWidgetRHS.Text" xml:space="preserve">
+    <value>வலது பலகத்தைக் காட்டவும்/மறைக்கவும்</value>
+  </data>
+  <data name="SC_Delete.Text" xml:space="preserve">
+    <value>நீக்குக</value>
+  </data>
+  <data name="SC_GoToCalendar.Text" xml:space="preserve">
+    <value>நாட்காட்டிக்குச் செல்க</value>
+  </data>
+  <data name="SC_GoToCliq.Text" xml:space="preserve">
+    <value>Cliq -க்குச் செல்லவும்</value>
+  </data>
+  <data name="SC_GoToContacts.Text" xml:space="preserve">
+    <value>தொடர்புகளுக்குச் செல்லவும்</value>
+  </data>
+  <data name="SC_GoToMail.Text" xml:space="preserve">
+    <value>மெயிலுக்கு செல்லவும்</value>
+  </data>
+  <data name="SC_GoToNextModule.Text" xml:space="preserve">
+    <value>அடுத்த தொகுதிக்குச் செல்லவும்</value>
+  </data>
+  <data name="SC_GoToNotes.Text" xml:space="preserve">
+    <value>குறிப்புகளுக்குச் செல்லவும்</value>
+  </data>
+  <data name="SC_GoToPreviousModule.Text" xml:space="preserve">
+    <value>முந்தைய தொகுதிக்குச் செல்லவும்</value>
+  </data>
+  <data name="SC_GoToTasks.Text" xml:space="preserve">
+    <value>பணிகளுக்குச் செல்லவும்</value>
+  </data>
+  <data name="SC_OpenSettings.Text" xml:space="preserve">
+    <value>அமைப்புகளைத் திறக்கவும்</value>
+  </data>
+  <data name="SC_SwitchView.Text" xml:space="preserve">
+    <value>காட்சிகளை நிலைமாற்றவும்-செங்குத்து பிளவு, கிடைமட்ட பிளவு, பிளவு இல்லை</value>
+  </data>
+  <data name="Onboarding_TakeMeToApp.Content" xml:space="preserve">
+    <value>என்னை செயலிக்கு அழைத்துச் செல்லுங்கள்</value>
+  </data>
+  <data name="SC_GoToFeedback.Text" xml:space="preserve">
+    <value>பின்னூட்டத்தைத் திறக்கவும்</value>
+  </data>
+  <data name="DND_DND.Text" xml:space="preserve">
+    <value>தொந்தரவு செய்யாதீர்</value>
+  </data>
+  <data name="DND_DNDEnabled.Text" xml:space="preserve">
+    <value>DND இயக்கப்படும் போது:</value>
+  </data>
+  <data name="DND_MuteChats.Text" xml:space="preserve">
+    <value>எச்சரிக்கை ஒலிகள் ஒலி முடக்கப்படும்</value>
+  </data>
+  <data name="DND_NotificationsPaused.Text" xml:space="preserve">
+    <value>அனைத்து அறிவிப்புகளும் இடைநிறுத்தப்படும்</value>
+  </data>
+  <data name="UserSwitch_Users.Text" xml:space="preserve">
+    <value>பயனர்கள்</value>
+  </data>
+  <data name="UserSwitch_CheckIn.Text" xml:space="preserve">
+    <value>செக்-இன்</value>
+  </data>
+  <data name="UserSwitch_CheckOut.Text" xml:space="preserve">
+    <value>செக்-அவுட்</value>
+  </data>
+  <data name="DND_AlwaysOn.Text" xml:space="preserve">
+    <value>எப்போதும் ஆனில்</value>
+  </data>
+  <data name="DND_OneHour.Text" xml:space="preserve">
+    <value>1 மணி நேரத்துக்கு</value>
+  </data>
+  <data name="DND_UntilEvng.Text" xml:space="preserve">
+    <value>இன்று மாலை வரை</value>
+  </data>
+  <data name="DND_UntilTmrw.Text" xml:space="preserve">
+    <value>நாளை வரை</value>
+  </data>
+  <data name="DND_ChatStatusToBusy.Text" xml:space="preserve">
+    <value>Cliq நிலை "தொந்தரவு செய்யாதே" என மாற்றப்படும்</value>
+  </data>
+  <data name="UserSwitch_Off.Text" xml:space="preserve">
+    <value>ஆஃப் செய்க</value>
+  </data>
+  <data name="UserSwitch_On.Text" xml:space="preserve">
+    <value>மீது</value>
+  </data>
+  <data name="UserSwitch_Text.Text" xml:space="preserve">
+    <value>பயனர் சுவிட்ச்</value>
+  </data>
+  <data name="Release_Notes.Text" xml:space="preserve">
+    <value>வெளியீட்டு குறிப்புகள்</value>
+  </data>
+  <data name="SC_OpenNew.Text" xml:space="preserve">
+    <value>புதிய மின்னஞ்சல், குறிப்பு, பணி, நிகழ்வு, தொடர்பு</value>
+  </data>
+  <data name="SC_OpenUserSwitch.Text" xml:space="preserve">
+    <value>பயனர் சுவிட்சைத் திறக்கவும்</value>
+  </data>
+  <data name="SC_ToggleLHS.Text" xml:space="preserve">
+    <value>இடது பலகத்தை நிலைமாற்றுக</value>
+  </data>
+  <data name="DND_TurnOff.Text" xml:space="preserve">
+    <value>DND ஐ முடக்குக</value>
+  </data>
+  <data name="Service_ServiceDisabled.Text" xml:space="preserve">
+    <value>ஒரு சேவையாக முடக்கப்பட்டது</value>
+  </data>
+  <data name="ExtendedSplashScreenLoading.Text" xml:space="preserve">
+    <value>ஏற்றுகிறது...</value>
+  </data>
+  <data name="DND_EveningMsg.Text" xml:space="preserve">
+    <value>இன்று மாலை 7:00 மணி வரை</value>
+  </data>
+  <data name="DND_MorningMsg.Text" xml:space="preserve">
+    <value>நாளை காலை 7:00 மணி வரை</value>
+  </data>
+  <data name="DND_OneHourMsg.Text" xml:space="preserve">
+    <value> {0} வரையில் </value>
+  </data>
+  <data name="UserSwitch_Cancel.Content" xml:space="preserve">
+    <value>ரத்துசெய்க</value>
+  </data>
+  <data name="UserSwitch_Switch.Content" xml:space="preserve">
+    <value>நிலை மாற்றுதல் மற்றும் மறுபடி தொடங்குதல்</value>
+  </data>
+  <data name="UserSwitch_SwitchUser.Text" xml:space="preserve">
+    <value>பயனரை நிலை மாற்றுக</value>
+  </data>
+  <data name="UserSwitch_SwitchUserDisclaimer.Text" xml:space="preserve">
+    <value>முதன்மை பயனரை வேறொன்றுக்கு நிலை மாற்றுவது, செயலியை மறுபடி தொடங்க செய்யும். உறுதியாக நீங்கள் வெளியேற விரும்புகிறீர்களா?</value>
+  </data>
+  <data name="DeleteConfirmation_Cancel.Content" xml:space="preserve">
+    <value>இல்லை, நான் வைத்துக் கொள்கிறேன்</value>
+  </data>
+  <data name="DeleteConfirmation_Delete.Content" xml:space="preserve">
+    <value>கருத்தை நீக்குக</value>
+  </data>
+  <data name="DeleteConfirmation_DeleteText.Text" xml:space="preserve">
+    <value>இந்த கருத்தை நீக்கவும்</value>
+  </data>
+  <data name="DeleteConfirmation_Disclaimer.Text" xml:space="preserve">
+    <value>நீங்கள் இந்த கருத்தை நீக்க உள்ளீர்கள். நிச்சயமாக நீங்கள் இந்த நடவடிக்கையை முடிக்க விரும்புகிறீர்களா?</value>
+  </data>
+  <data name="SA_FeebackIdea.Text" xml:space="preserve">
+    <value>இதோ ஒரு யோசனை - ஒரு அம்சத்தைப் பரிந்துரைக்கவும்</value>
+  </data>
+  <data name="SA_FeedbackAngry.Text" xml:space="preserve">
+    <value>செயலியுடன் வேலை செய்ய முடியவில்லை. விரைவில் என்னை தொடர்பு கொள்ளவும்! நான் குறை கண்டறிதல்கள் மற்றும் பதிவுகளை சேர்த்துள்ளேன்</value>
+  </data>
+  <data name="SA_FeedbackBoquet.Text" xml:space="preserve">
+    <value>செயலியை விரும்புகிறேன்! ஒரு வாழ்த்துப் பூங்கொத்து அனுப்பவும்</value>
+  </data>
+  <data name="SA_FeedbackBug.Text" xml:space="preserve">
+    <value>பிழையைப் புகாரளிக்கவும் - நான் கண்டறிதல்கள் மற்றும் பதிவுகளைச் சேர்த்துள்ளேன்</value>
+  </data>
+  <data name="SA_FeedbackDesc.Text" xml:space="preserve">
+    <value>செயலி பற்றிய உங்கள் கருத்தைப் பகிரவும்</value>
+  </data>
+  <data name="SA_FeedbackError.Text" xml:space="preserve">
+    <value>உங்கள் பின்னூட்டத்தை அனுப்பும் போது ஒரு பிழை ஏற்பட்டது</value>
+  </data>
+  <data name="SA_FeedbackSending.Text" xml:space="preserve">
+    <value>உங்கள் பின்னூட்டத்தை அனுப்பவும்</value>
+  </data>
+  <data name="SA_FeedbackThankYou.Text" xml:space="preserve">
+    <value>உங்கள் கருத்துக்கு நன்றி</value>
+  </data>
+  <data name="SA_Placeholder.Text" xml:space="preserve">
+    <value>உங்கள் உள்ளீட்டுக்காக காத்திருக்கிறது.</value>
+  </data>
+  <data name="SA_AllFilter.Text" xml:space="preserve">
+    <value>அனைத்தும்</value>
+  </data>
+  <data name="SA_ChannelFilter.Text" xml:space="preserve">
+    <value>சேனல்கள்</value>
+  </data>
+  <data name="SA_GroupFilter.Text" xml:space="preserve">
+    <value>குழுக்கள்</value>
+  </data>
+  <data name="SA_PersonalFilter.Text" xml:space="preserve">
+    <value>தனிப்பட்ட</value>
+  </data>
+  <data name="Mail_SharedSuccessfully.Text" xml:space="preserve">
+    <value>அஞ்சல் வெற்றிகரமாகப் பகிரப்பட்டது</value>
+  </data>
+  <data name="ClearedLogs_Success.Text" xml:space="preserve">
+    <value>செயலி பதிவு கோப்புகள் அழிக்கப்பட்டன</value>
+  </data>
+  <data name="ServiceAction_NewContact.Text" xml:space="preserve">
+    <value>புதிய தொடர்பு</value>
+  </data>
+  <data name="ServiceAction_NewEvent.Text" xml:space="preserve">
+    <value>புதிய நிகழ்வு</value>
+  </data>
+  <data name="ServiceAction_NewMail.Text" xml:space="preserve">
+    <value>புதிய அஞ்சல்</value>
+  </data>
+  <data name="ServiceAction_NewNote.Text" xml:space="preserve">
+    <value>புதிய குறிப்பு</value>
+  </data>
+  <data name="ServiceAction_NewTask.Text" xml:space="preserve">
+    <value>புதிய பணி</value>
+  </data>
+  <data name="App_HideFolders.Text" xml:space="preserve">
+    <value>கோப்புறை பலகத்தை மறைக்கவும்</value>
+  </data>
+  <data name="App_More.Text" xml:space="preserve">
+    <value>மேலும்</value>
+  </data>
+  <data name="App_ShowFolders.Text" xml:space="preserve">
+    <value>கோப்புறை பலகத்தைக் காட்டுக</value>
+  </data>
+  <data name="More_Text.Text" xml:space="preserve">
+    <value>மேலும்</value>
+  </data>
+  <data name="Onboarding_Back.Text" xml:space="preserve">
+    <value>பின்செல்க</value>
+  </data>
+  <data name="Onboarding_Skip.Content" xml:space="preserve">
+    <value>தவிர்க்கவும்</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColLeft.Text" xml:space="preserve">
+    <value>இடதுபுறத்தில் நெடுவரிசையைச் செருகவும்</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColRight.Text" xml:space="preserve">
+    <value>வலதுபுறத்தில் நெடுவரிசையைச் செருகவும்</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowAbove.Text" xml:space="preserve">
+    <value>மேலே வரிசைகளைச் செருகவும்</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowBelow.Text" xml:space="preserve">
+    <value>கீழே வரிசைகளைச் செருகவும்</value>
+  </data>
+  <data name="Compose_ContextMenu_Copy.Text" xml:space="preserve">
+    <value>நகலெடுக்கவும்</value>
+  </data>
+  <data name="General_CopyLink.Text" xml:space="preserve">
+    <value>இணைப்பை நகலெடுக்கவும்</value>
+  </data>
+  <data name="Compose_ContextMenu_Cut.Text" xml:space="preserve">
+    <value>வெட்டுக</value>
+  </data>
+  <data name="Compose_ContextMenu_DelCol.Text" xml:space="preserve">
+    <value>நெடுவரிசையை நீக்குக</value>
+  </data>
+  <data name="Compose_ContextMenu_Delete.Text" xml:space="preserve">
+    <value>நீக்குக</value>
+  </data>
+  <data name="Compose_ContextMenu_DelRow.Text" xml:space="preserve">
+    <value>வரிசையை நீக்குக</value>
+  </data>
+  <data name="Compose_ContextMenu_DelTable.Text" xml:space="preserve">
+    <value>அட்டவணையை நீக்குக</value>
+  </data>
+  <data name="Compose_ContextMenu_EditLink.Text" xml:space="preserve">
+    <value>இணைப்பைத் திருத்துக</value>
+  </data>
+  <data name="Compose_ContextMenu_Link.Text" xml:space="preserve">
+    <value>இணைப்புகள்</value>
+  </data>
+  <data name="Compose_ContextMenu_OpenLink.Text" xml:space="preserve">
+    <value>இணைப்பைத் திற</value>
+  </data>
+  <data name="Compose_ContextMenu_Paste.Text" xml:space="preserve">
+    <value>ஒட்டவும்</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteSource.Text" xml:space="preserve">
+    <value>மூல வடிவமைப்பி ஒட்டுக</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteText.Text" xml:space="preserve">
+    <value>உரையை மட்டும் ஒட்டுக</value>
+  </data>
+  <data name="Compose_ContextMenu_Redo.Text" xml:space="preserve">
+    <value>மீண்டும் செய்க</value>
+  </data>
+  <data name="Compose_ContextMenu_RemoveLink.Text" xml:space="preserve">
+    <value>இணைப்பை அகற்றுக</value>
+  </data>
+  <data name="Compose_ContextMenu_SelectAll.Text" xml:space="preserve">
+    <value>அனைத்தையும் தேர்வு செய்க</value>
+  </data>
+  <data name="Compose_ContextMenu_TableOptions.Text" xml:space="preserve">
+    <value>அட்டவணை விருப்பங்கள்</value>
+  </data>
+  <data name="Compose_ContextMenu_Undo.Text" xml:space="preserve">
+    <value>செயல்தவிர்க்கவும்</value>
+  </data>
+  <data name="About_AllRightsReserved.Text" xml:space="preserve">
+    <value>அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை</value>
+  </data>
+  <data name="About_Zohocorp.Text" xml:space="preserve">
+    <value>© 2025, Zoho Corporation Pvt. Ltd.</value>
+  </data>
+  <data name="About_Version.Text" xml:space="preserve">
+    <value>பதிப்பு</value>
+  </data>
+  <data name="Notifications_Close.Text" xml:space="preserve">
+    <value>மூடுக</value>
+  </data>
+  <data name="Notifications_Popout.Text" xml:space="preserve">
+    <value>பாப் அவுட்</value>
+  </data>
+  <data name="App_FAQs.Text" xml:space="preserve">
+    <value>அடிக்கடி கேட்கப்படும் கேள்விகள்</value>
+  </data>
+  <data name="App_OfflineIndicatior.Text" xml:space="preserve">
+    <value>நெட்வொர்க் இணைப்பு கிடைக்கவில்லை</value>
+  </data>
+  <data name="Streams_Invite.Content" xml:space="preserve">
+    <value>அழைக்கவும்</value>
+  </data>
+  <data name="General_Download_Downloaded_ToastDesc.Text" xml:space="preserve">
+    <value> {0} பதிவிறக்கம் செய்யப்பட்டது</value>
+  </data>
+  <data name="General_Download_OpenAttachment_ToastAction.Text" xml:space="preserve">
+    <value>திறக்கவும்</value>
+  </data>
+  <data name="General_Download_ViewInExplorer_ToastAction.Text" xml:space="preserve">
+    <value>எக்ஸ்ப்ளோரரில் பார்க்கவும்</value>
+  </data>
+  <data name="Tag_Name.Text" xml:space="preserve">
+    <value>குறிச்சொல் பெயர்</value>
+  </data>
+  <data name="Tag_NameHolderText.PlaceholderText" xml:space="preserve">
+    <value>குறிச்சொல் பெயர்</value>
+  </data>
+  <data name="Tag_Color.Text" xml:space="preserve">
+    <value>குறிச்சொல் நிறம்</value>
+  </data>
+  <data name="General_Create.Text" xml:space="preserve">
+    <value>உருவாக்குக</value>
+  </data>
+  <data name="General_Save.Text" xml:space="preserve">
+    <value>சேமிக்கவும்</value>
+  </data>
+  <data name="Create_Tag_Title.Text" xml:space="preserve">
+    <value>குறிச்சொல்லை உருவாக்கவும்</value>
+  </data>
+  <data name="Edit_Tag_Title.Text" xml:space="preserve">
+    <value>குறிச்சொல்லைத் திருத்துக</value>
+  </data>
+  <data name="Tag_As.Text" xml:space="preserve">
+    <value>என குறிச்சொல் இடவும்</value>
+  </data>
+  <data name="Search_Tag.PlaceholderText" xml:space="preserve">
+    <value>குறிச்சொற்களைத் தேடுங்கள்</value>
+  </data>
+  <data name="UserSwitch_Timer_HRS.Text" xml:space="preserve">
+    <value>மணி நேரங்கள்</value>
+  </data>
+  <data name="SmartAssistant_High_Priority.Text" xml:space="preserve">
+    <value>உயர்</value>
+  </data>
+  <data name="SmartAssistant_PriorityHeader.Text" xml:space="preserve">
+    <value>முன்னுரிமை</value>
+  </data>
+  <data name="SmartAssistant_Low_Priority.Text" xml:space="preserve">
+    <value>குறைந்த</value>
+  </data>
+  <data name="SmartAssistant_Medium_Priority.Text" xml:space="preserve">
+    <value>நடுத்தரமான</value>
+  </data>
+  <data name="Cliq_UserAvailabilityNotification_ChatButton.Text" xml:space="preserve">
+    <value>உரையாடல்</value>
+  </data>
+  <data name="General_LicenseError_SingleUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>Zoho Mail, Zoho Workplace, மற்றும் Zoho One (Zoho Mail செயல்படுத்தியுள்ளவர்கள்) ஆகியவற்றின் கட்டணம் செலுத்திய மற்றும் மதிப்பீடு செய்யும் பயனர்கள் மட்டுமே Trident ஐ அணுகமுடியும். நீங்கள் அணுக முயலும் ({0}) கணக்கிற்குச் செல்லத்தக்க சந்தா தேவைப்படுகிறது.</value>
+  </data>
+  <data name="General_LicenseError_MultiUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>Zoho Mail, Zoho Workplace, மற்றும் Zoho One (Zoho Mail செயல்படுத்தியுள்ளவர்கள்) ஆகியவற்றின் கட்டணம் செலுத்திய மற்றும் மதிப்பீடு செய்யும் பயனர்கள் மட்டுமே Trident ஐ அணுகமுடியும். நீங்கள் அணுக முயலும் ({0} மற்றும் {1}) கணக்குகளுக்கு செல்லத்தக்க சந்தா தேவைப்படுகிறது.</value>
+  </data>
+  <data name="General_Delete.Text" xml:space="preserve">
+    <value>நீக்குக</value>
+  </data>
+  <data name="Tag_Not_Created.Text" xml:space="preserve">
+    <value>குறிச்சொற்கள் உருவாக்கப்படவில்லை</value>
+  </data>
+  <data name="General_CopiedLink_Info.Text" xml:space="preserve">
+    <value>இணைப்பு கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது</value>
+  </data>
+  <data name="Attachment_WorkDrive_Header.Text" xml:space="preserve">
+    <value>WorkDrive இணைப்புகள்</value>
+  </data>
+  <data name="Tag_EmptyTag_Info.Text" xml:space="preserve">
+    <value>குறிக்குழுக்கள் எதுவும் சேர்க்கப்படவில்லை</value>
+  </data>
+</root>

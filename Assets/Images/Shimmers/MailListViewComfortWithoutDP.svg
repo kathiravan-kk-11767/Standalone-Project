@@ -1,0 +1,13 @@
+<svg width="327" min-width="280" max-width="1400" height="253" viewBox="0 0 327 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect id="rect1" x="21" y="2" width="123" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="0" rel-width="0.38"/>
+	<rect id="rect3" x="21" y="22" width="205" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="0" rel-width="0.63"/>
+	<rect id="rect4" x="21" y="43" width="280" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="0" rel-width="0.86"/>
+
+	<rect id="rect5" x="21" y="90" width="123" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="1" rel-width="0.38"/>
+	<rect id="rect7" x="21" y="110" width="205" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="1" rel-width="0.63"/>
+	<rect id="rect8" x="21" y="131" width="280" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="1" rel-width="0.86"/>
+
+	<rect id="rect9" x="21" y="178" width="123" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="2" rel-width="0.38"/>
+	<rect id="rect11" x="21" y="198" width="205" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="2" rel-width="0.63"/>
+	<rect id="rect12" x="21" y="219" width="280" height="14" rx="3" fill="#EEEEEE" isStretchable="true" lineId="2" rel-width="0.86"/>
+</svg>

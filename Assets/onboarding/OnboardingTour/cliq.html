@@ -1,0 +1,417 @@
+<style type="text/css">
+
+body {
+    overflow : hidden;
+}
+
+.cover{
+    width: 830px;
+    height: 670px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 50;
+}
+@keyframes slideup {
+0% {
+    transform: translate(165px,283px) scale(1);
+    opacity: 0;
+}
+50% {
+    transform: translate(165px,83px) scale(1);
+    opacity: 1;
+}
+80% {
+    transform: translate(165px,83px) scale(1);
+    opacity: 1;
+}
+100% {
+    transform: translate(135px,83px) scale(1.2);
+    opacity: 1;
+}
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes scaledown {
+  0% {
+    width: 276px;
+    transform: translate(8px,10px);
+  }
+  100% {
+    
+    width: 521px;
+  }
+}
+
+@keyframes slideupchat {
+  0% {
+    transform: translate(0px,300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideupanim {
+  0% {
+    transform: translate(0px,300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+@keyframes logoslideup {
+0% {
+    transform: translate(105px,400px);
+    opacity: 0;
+}
+
+ 100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+}
+
+
+
+@keyframes threetofour{
+	  0% {
+    transform: translate(570px,406px) rotate(0deg) scale(0.8);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(660px,406px) rotate(0deg) scale(0.8);
+    opacity: 1;
+  }
+}
+
+body{
+	background: #000000;
+}
+
+@keyframes tapanim-anim {
+  0% {
+    transform: translate(374px,324px) scale(1);
+    opacity: 1
+
+  }
+
+  100% {
+    transform: translate(374px,324px) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes movedown {
+  0% {
+    transform: translate(0px,0px);
+
+  }
+
+  100% {
+    transform: translate(0px,27px);
+  }
+}
+
+.container .image1 {
+  animation: slideup 2s ease-out 1s, fadeout 1s ease-in-out 7.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .launcher {
+  animation: slideupchat 1s ease-out 3s, fadeout 1s ease-in-out 7.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .chatboxsmall {
+  animation: slideupanim 1s ease-in-out 4s, fadeout 1s ease-in-out 7.5s forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+.container .tapanim {
+  animation: tapanim-anim .5s ease-in-out 6s forwards;
+  position: absolute;
+    transform: translate(314px,130px);
+    width: 30px;
+    opacity: 0;
+    z-index: 2;
+}
+.container .callcard1 {
+  animation: slideupanim 1s ease-in-out 6.5s forwards, fadeout .5s ease-in-out 10s forwards;
+  position: absolute;
+    transform: translate(370px,184px);
+    width: 30px;
+    opacity: 0;
+    z-index: 2;
+}
+.container .callcard2 {
+  animation: fadein 1s ease-in-out 8s forwards,  fadeout .5s ease-in-out 11s forwards;
+  position: absolute;
+    transform: translate(370px,184px);
+    width: 30px;
+    opacity: 0;
+    z-index: 2;
+}
+.container .windowframe {
+  animation: slideupanim 1s ease-in-out 11s forwards;
+}
+.container .broadsheet {
+  animation: fadein 1s ease-in-out 11.5s forwards, fadeout 0.3s ease-in-out 15s forwards;
+}
+.container .singlesheet {
+  animation:fadein 1s ease-in-out 14.3s forwards, movedown 0.3s ease-in-out 16s forwards, fadeout 0.3s ease-in-out 16.4s forwards;
+  z-index: 7;
+}
+.container .tabmode {
+  animation: fadein 1s ease-in-out 16s forwards;
+  z-index: 6;
+}
+
+.container {
+    width: 830px;
+    height: 670px;
+    background: #fafafa;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    background: radial-gradient(80.05% 80.05% at 58.91% 19.95%, #F8FBFE 0%, #CFD2D5 100%);
+    top: 0px;
+    right: 0;
+}
+.image1{
+    width: 800px;
+    position: absolute;
+    transform: translate(15px,583px);
+    opacity: 0;
+    box-shadow: 0px 12px 49px rgba(0, 0, 0, 0.401634);
+}
+.image2 {
+    width: 171px;
+    height: 291px;
+    position: absolute;
+    transform: translate(55px,319px);
+    overflow: hidden;
+    z-index: 1;
+}
+.image2 .launcher {
+    width: 171px;
+    position: absolute;
+    transform: translate(0px,300px);
+}
+.image3 {
+    width: 207px;
+    height: 290px;
+    position: absolute;
+    transform: translate(228px,319px);
+    overflow: hidden;
+    z-index: 1;
+}
+.image3 .chatboxsmall {
+    width: 207px;
+    position: absolute;
+    transform: translate(0px,300px);
+}
+.image4 {
+    width: 252px;
+    height: 391px;
+    position: absolute;
+    transform: translate(304px,115px);
+    overflow: hidden;
+    z-index: 3;
+}
+.image4 .callcard1{
+    width: 100%;
+    position: absolute;
+    transform: translate(0px,300px);
+}
+
+
+.image4 .callcard2  {
+    width: 100%;
+    position: absolute;
+    transform: translate(0px,0px);
+}
+.image6{
+width: 840px;
+    height: 675px;
+    position: absolute;
+    transform: translate(-16px,0px);
+    z-index: 5;
+}
+.image6 .windowframe{
+    width: 840px;
+    position: absolute;
+    transform: translate(91px,700px);
+}
+.chatmodes{
+width: 576px;
+    height: 546px;
+    position: absolute;
+    z-index: 5;
+    transform: translate(255px,83px);
+    overflow: hidden;
+}
+
+.image6 .singlesheet, .image6 .broadsheet, .image6 .tabmode {
+  position: absolute;
+  opacity: 0;
+  width: 576;
+    height: 546;
+  transform: translate(0px,0px);
+}
+.image6 .broadsheetchatbg{
+z-index: 5;
+    opacity: 0;
+    transform: translate(8px,10px);
+    width: 255px;
+    height: 557px;
+    position: absolute;
+}
+.image6 .broadsheet1{
+z-index: 6;
+    opacity: 0;
+    transform: translate(8px,10px);
+    width: 276px;
+    height: 557px;
+    position: absolute;
+
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: inset 0px 2px 0px 0px rgb(2 111 255);
+}
+.broadsheet1 img{
+  width: 276px;
+}
+.image6 .broadsheet2{
+z-index: 6;
+    transform: translate(291px,10px);
+    opacity: 0;
+    width: 276px;
+    height: 557px;
+    position: absolute;
+}
+
+.bottomcontainer {
+    position: absolute;
+    height: 100%;
+    width: 370px;
+    bottom: 0px;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: left;
+}
+
+.bottomcontainer h2 {
+    font-size: 29px;
+    line-height: 39px;
+    padding: 0px;
+    margin: 70px 0px 0px 0px;
+}
+
+.bottomcontainer p{
+
+font-size: 15px;
+line-height: 22px;
+}
+
+p, h2, a{
+  color: #3E3E3E;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.wrapper{
+	position: relative;
+width: 1200px;
+    height: 670;
+    background: #fafafa;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.bottomnav {
+    display: inline-block;
+    position: absolute;
+    bottom: 75px;
+    left: 40px;
+}
+
+.bottomnav a, .bottomnav p{
+font-family: SF Pro Text;
+    display: inline-block;
+    margin: 0px 10px;
+    color: #3E3E3E;
+}
+.bottomnav a{
+  text-decoration: none;
+}
+
+
+
+</style>
+
+
+ <!-- <div class="cover"></div> -->
+
+<div class="container ">
+
+  <div class="image6">
+    <div class="chatmodes">
+      <img class="singlesheet" src="singlesheet.png" alt="">
+      <!-- <img class="broadsheet2" src="broadsheet2.png" alt=""> -->
+      <!-- <div class="broadsheet1"><img src="broadsheet1.png" alt=""></div> -->
+      
+    <img class="tabmode" src="tabmode.png" width="576" alt="">
+    <div class="broadsheet"><img src="broadsheet.png" width="576" alt=""></div>
+    </div>
+    <img class="windowframe" src="CliqWindowFrame.png" alt="">
+  </div>
+
+<!--   <div class="image5">
+    <img class="touchbar" src="touchbar.png" alt="">
+  </div> -->
+
+  <img class="tapanim" src="tapanim.png" >
+  <div class="image4">
+    <img class="callcard1" src="callcard1.png" alt="">
+    <img class="callcard2" src="callcard2.png" alt="">
+  </div>
+
+  <div class="image3"><img class="chatboxsmall" src="chatboxsmall.png" alt=""></div>
+  <div class="image2"><img class="launcher" src="chatlauncher.png" alt=""></div>
+   
+  <img class="image1" src="main-module-left.png" alt="">
+ 
+</div>
+
+

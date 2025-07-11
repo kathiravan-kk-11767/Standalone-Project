@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Trident_AppUpgrade_Error.Text" xml:space="preserve">
+    <value>アプリ更新エラー</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Desc.Text" xml:space="preserve">
+    <value>アプリの更新中にエラーが発生しました。アプリのアップデートを完了し、Trident を引き続き使用するには、アプリのデータをリセットしてください。</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note.Text" xml:space="preserve">
+    <value>すべてのカスタマイズはデフォルト設定にリセットされ、このプロセス中に同期されていないローカル データが失われる可能性があります。</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Reset.Text" xml:space="preserve">
+    <value>アプリデータをリセット</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_QuitApp.Text" xml:space="preserve">
+    <value>アプリを終了</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_Head.Text" xml:space="preserve">
+    <value>注記：</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_LearnMore.Text" xml:space="preserve">
+    <value>もっと詳しく知る</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Guide.Text" xml:space="preserve">
+    <value>アプリデータをリセットするには、このヘルプ ガイドの手順に従ってください。</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_OK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="API_ThresholdLimitExceeded.Text" xml:space="preserve">
+    <value>{0} をできません。あとでもう一度試してください。</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Description.Text" xml:space="preserve">
+    <value>お使いのデバイスにTridentのい古いバージョンがまだインストールされています。サインインする前に、古いバージョンをアンインストールすることをお勧めします。</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Title.Text" xml:space="preserve">
+    <value>Tridentの古いバージョンをアンインストール</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_OK_Button.Content" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorType_NoInternetAccess.Text" xml:space="preserve">
+    <value>ネットワークがありません。インターネットに接続してください。</value>
+  </data>
+  <data name="SignIn_AuthtokenLimitExceeded.Text" xml:space="preserve">
+    <value>authtoken制限を超えました</value>
+  </data>
+  <data name="SignIn_NoNetwork.Text" xml:space="preserve">
+    <value>ネットワークがありません。ネットワークに接続してから再試行してください。</value>
+  </data>
+  <data name="PageLoadingError.Text" xml:space="preserve">
+    <value>ページの読み込み中にエラーが発生しました</value>
+  </data>
+  <data name="AppSuite_Offline" xml:space="preserve">
+    <value>オフライン</value>
+  </data>
+  <data name="General_NoNetwork.Text" xml:space="preserve">
+    <value>ネットワークがありません。ネットワークに接続してから再試行してください。</value>
+  </data>
+  <data name="No_Default_User_Available.Text" xml:space="preserve">
+    <value>デフォルトユーザーは利用できません</value>
+  </data>
+  <data name="Invalid_Tag_Name.Text" xml:space="preserve">
+    <value>タグ名に無効な文字が見つかりました</value>
+  </data>
+  <data name="Tag_Name_AlreadyExist.Text" xml:space="preserve">
+    <value>このタグはすでに存在します。別のタグ名を入力してください</value>
+  </data>
+  <data name="Connectivity_Error_Info.Text" xml:space="preserve">
+    <value>ネットワーク接続が失われました。更新をチェックできません。</value>
+  </data>
+  <data name="Error_Info.Text" xml:space="preserve">
+    <value>更新をチェック中にエラーが発生しました。後で再試行してください。</value>
+  </data>
+  <data name="No_Updates_Info.Text" xml:space="preserve">
+    <value>最新の状態です</value>
+  </data>
+  <data name="ErrorType_AuthenticationFailed.Text" xml:space="preserve">
+    <value>認証失敗</value>
+  </data>
+  <data name="ErrorType_FailedServerResponse.Text" xml:space="preserve">
+    <value>サーバーエラー</value>
+  </data>
+  <data name="ErrorType_RequestTimeOut.Text" xml:space="preserve">
+    <value>要求はタイムアウトしました</value>
+  </data>
+  <data name="ErrorType_Unknown.Text" xml:space="preserve">
+    <value>不明なエラーが発生しました</value>
+  </data>
+  <data name="ErrorType_InvalidRequest.Text" xml:space="preserve">
+    <value>無効なリクエスト</value>
+  </data>
+  <data name="ErrorType_SomethingWentWrong.Text" xml:space="preserve">
+    <value>エラーが発生しました。もう一度お試しください。</value>
+  </data>
+  <data name="Streams_AddCommentOffline.Text" xml:space="preserve">
+    <value>コメントの追加はオフラインではサポートされていません</value>
+  </data>
+  <data name="Streams_LockPostOffline.Text" xml:space="preserve">
+    <value>投稿のロック/ロック解除はオフラインではサポートされていません</value>
+  </data>
+  <data name="Stream_AddInviteeOffline.Text" xml:space="preserve">
+    <value>招待者の追加はオフラインではサポートされていません</value>
+  </data>
+  <data name="Stream_LikeOffline.Text" xml:space="preserve">
+    <value>いいねはオフラインではサポートされていません</value>
+  </data>
+  <data name="UserSwitch_ErrorInfo.Text" xml:space="preserve">
+    <value>プライマリユーザーの切り替え中にエラーが発生しました</value>
+  </data>
+  <data name="AppSuite_HomePageStillTakingLongerToLoad.Text" xml:space="preserve">
+    <value>読み込み中です。お待ちください...</value>
+  </data>
+  <data name="AppSuite_HomePageTakesLongerToLoad.Text" xml:space="preserve">
+    <value>これには通常より時間がかかるようです</value>
+  </data>
+  <data name="Mail_UnprocessedMultipleImages.Text" xml:space="preserve">
+    <value>画像の一部を処理できません</value>
+  </data>
+  <data name="Mail_UnprocessedSingleImage.Text" xml:space="preserve">
+    <value>画像を処理できません</value>
+  </data>
+</root>

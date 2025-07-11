@@ -1,0 +1,282 @@
+{
+  "01.Blue": {
+    "Light": {
+      "ZAccentBrush": "#FF0078D4",
+      "ZAccentBrushLight1": "#FFE0EEF9",
+      "ZAccentBrushLight2": "#FFCCE4F6",
+      "ZAccentBrushLight3": "#FFB8DAF3",
+      "ZAccentBrushLight4": "#FFABCDE8",
+      "ZAccentBrushLight5": "#FF8FC4EC",
+      "ZAccentBrushDark1": "#FF0270C5",
+      "ZAccentBrushDark2": "#FF0469B6",
+      "ZAccentBrushDark3": "#FF0661A7",
+      "ZAccentBrushDark4": "#FF085A98",
+      "ZAccentBrushDark5": "#FF0A528A"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FF1A87E3",
+      "ZAccentBrushLight1": "#FF1A3042",
+      "ZAccentBrushLight2": "#FF1A3953",
+      "ZAccentBrushLight3": "#FF1A4263",
+      "ZAccentBrushLight4": "#FF284760",
+      "ZAccentBrushLight5": "#FF1A5282",
+      "ZAccentBrushDark1": "#FF3F9AE7",
+      "ZAccentBrushDark2": "#FF51A4EA",
+      "ZAccentBrushDark3": "#FF63ADEC",
+      "ZAccentBrushDark4": "#FF76B7EE",
+      "ZAccentBrushDark5": "#FF88C1F0"
+    }
+  },
+  "02.DarkBlue": {
+    "Light": {
+      "ZAccentBrush": "#FF1F5BC9",
+      "ZAccentBrushLight1": "#FFE4EBF8",
+      "ZAccentBrushLight2": "#FFD2DEF4",
+      "ZAccentBrushLight3": "#FFC1D1F0",
+      "ZAccentBrushLight4": "#FFB4C6E5",
+      "ZAccentBrushLight5": "#FF9DB7E7",
+      "ZAccentBrushDark1": "#FF1F56BB",
+      "ZAccentBrushDark2": "#FF1E51AD",
+      "ZAccentBrushDark3": "#FF1E4B9F",
+      "ZAccentBrushDark4": "#FF1D4691",
+      "ZAccentBrushDark5": "#FF1D4183"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FF3B72D7",
+      "ZAccentBrushLight1": "#FF212C40",
+      "ZAccentBrushLight2": "#FF24334F",
+      "ZAccentBrushLight3": "#FF263A5E",
+      "ZAccentBrushLight4": "#FF31405D",
+      "ZAccentBrushLight5": "#FF2B477C",
+      "ZAccentBrushDark1": "#FF5A89DD",
+      "ZAccentBrushDark2": "#FF6A94E1",
+      "ZAccentBrushDark3": "#FF7A9FE4",
+      "ZAccentBrushDark4": "#FF89AAE7",
+      "ZAccentBrushDark5": "#FF99B6EA"
+    }
+  },
+  "03.Purple": {
+    "Light": {
+      "ZAccentBrush": "#FF73327A",
+      "ZAccentBrushLight1": "#FFEEE6EF",
+      "ZAccentBrushLight2": "#FFE3D6E4",
+      "ZAccentBrushLight3": "#FFD8C6DA",
+      "ZAccentBrushLight4": "#FFCCB9CE",
+      "ZAccentBrushLight5": "#FFC2A5C5",
+      "ZAccentBrushDark1": "#FF6C3072",
+      "ZAccentBrushDark2": "#FF652E6B",
+      "ZAccentBrushDark3": "#FF5E2C63",
+      "ZAccentBrushDark4": "#FF572A5B",
+      "ZAccentBrushDark5": "#FF4F2854"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FF9F4AA8",
+      "ZAccentBrushLight1": "#FF352437",
+      "ZAccentBrushLight2": "#FF3F2842",
+      "ZAccentBrushLight3": "#FF4A2C4D",
+      "ZAccentBrushLight4": "#FF4D3550",
+      "ZAccentBrushLight5": "#FF5F3363",
+      "ZAccentBrushDark1": "#FFAE67B6",
+      "ZAccentBrushDark2": "#FFB675BD",
+      "ZAccentBrushDark3": "#FFBE84C4",
+      "ZAccentBrushDark4": "#FFC592CB",
+      "ZAccentBrushDark5": "#FFCDA1C2"
+    }
+  },
+  "04.Pink": {
+    "Light": {
+      "ZAccentBrush": "#FFBA4273",
+      "ZAccentBrushLight1": "#FFF6E8EE",
+      "ZAccentBrushLight2": "#FFF1D9E3",
+      "ZAccentBrushLight3": "#FFECCAD8",
+      "ZAccentBrushLight4": "#FFE1BECC",
+      "ZAccentBrushLight5": "#FFE1ACC1",
+      "ZAccentBrushDark1": "#FFAD3F6C",
+      "ZAccentBrushDark2": "#FFA03C65",
+      "ZAccentBrushDark3": "#FF94385E",
+      "ZAccentBrushDark4": "#FF873557",
+      "ZAccentBrushDark5": "#FF7A324F"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FFD34A82",
+      "ZAccentBrushLight1": "#FF3F242F",
+      "ZAccentBrushLight2": "#FF4E2837",
+      "ZAccentBrushLight3": "#FF5D2C40",
+      "ZAccentBrushLight4": "#FF5C3545",
+      "ZAccentBrushLight5": "#FF7A3250",
+      "ZAccentBrushDark1": "#FFDA6796",
+      "ZAccentBrushDark2": "#FFDE75A0",
+      "ZAccentBrushDark3": "#FFE184AA",
+      "ZAccentBrushDark4": "#FFE592B4",
+      "ZAccentBrushDark5": "#FFE8A1BE"
+    }
+  },
+  "05.RoyalBlue": {
+    "Light": {
+      "ZAccentBrush": "#FF4748B4",
+      "ZAccentBrushLight1": "#FFE9E9F6",
+      "ZAccentBrushLight2": "#FFDADAF0",
+      "ZAccentBrushLight3": "#FFCCCCEA",
+      "ZAccentBrushLight4": "#FFC0C0DF",
+      "ZAccentBrushLight5": "#FFAEAFDE",
+      "ZAccentBrushDark1": "#FF4344A8",
+      "ZAccentBrushDark2": "#FF40419B",
+      "ZAccentBrushDark3": "#FF3C3D8F",
+      "ZAccentBrushDark4": "#FF393983",
+      "ZAccentBrushDark5": "#FF353676"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FF6E6FD8",
+      "ZAccentBrushLight1": "#FF2B2B40",
+      "ZAccentBrushLight2": "#FF32324F",
+      "ZAccentBrushLight3": "#FF39395F",
+      "ZAccentBrushLight4": "#FF3F405D",
+      "ZAccentBrushLight5": "#FF45467C",
+      "ZAccentBrushDark1": "#FF8586DE",
+      "ZAccentBrushDark2": "#FF9192E1",
+      "ZAccentBrushDark3": "#FF9C9DE4",
+      "ZAccentBrushDark4": "#FFA8A9E8",
+      "ZAccentBrushDark5": "#FFB4B4EB"
+    }
+  },
+  "06.Teal": {
+    "Light": {
+      "ZAccentBrush": "#FF008299",
+      "ZAccentBrushLight1": "#FFE0F0F2",
+      "ZAccentBrushLight2": "#FFCCE6EB",
+      "ZAccentBrushLight3": "#FFB8DCE3",
+      "ZAccentBrushLight4": "#FFABD0D7",
+      "ZAccentBrushLight5": "#FF8FC8D2",
+      "ZAccentBrushDark1": "#FF027A8F",
+      "ZAccentBrushDark2": "#FF047185",
+      "ZAccentBrushDark3": "#FF06697B",
+      "ZAccentBrushDark4": "#FF086170",
+      "ZAccentBrushDark5": "#FF0A5866"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FF488FA5",
+      "ZAccentBrushLight1": "#FF233236",
+      "ZAccentBrushLight2": "#FF273B41",
+      "ZAccentBrushLight3": "#FF2B454C",
+      "ZAccentBrushLight4": "#FF35494F",
+      "ZAccentBrushLight5": "#FF315662",
+      "ZAccentBrushDark1": "#FF65A1B3",
+      "ZAccentBrushDark2": "#FF74AABB",
+      "ZAccentBrushDark3": "#FF83B3C2",
+      "ZAccentBrushDark4": "#FF91BCC9",
+      "ZAccentBrushDark5": "#FFA0C5D0"
+    }
+  },
+  "07.Green": {
+    "Light": {
+      "ZAccentBrush": "#FF2C8442",
+      "ZAccentBrushLight1": "#FFE5F0E8",
+      "ZAccentBrushLight2": "#FFD5E6D9",
+      "ZAccentBrushLight3": "#FFC4DDCA",
+      "ZAccentBrushLight4": "#FFB8D1BE",
+      "ZAccentBrushLight5": "#FFA2C9AC",
+      "ZAccentBrushDark1": "#FF2B7C3F",
+      "ZAccentBrushDark2": "#FF29733C",
+      "ZAccentBrushDark3": "#FF286B38",
+      "ZAccentBrushDark4": "#FF266235",
+      "ZAccentBrushDark5": "#FF255A32"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FF519254",
+      "ZAccentBrushLight1": "#FF253226",
+      "ZAccentBrushLight2": "#FF2A3C2B",
+      "ZAccentBrushLight3": "#FF2E462F",
+      "ZAccentBrushLight4": "#FF384A38",
+      "ZAccentBrushLight5": "#FF365838",
+      "ZAccentBrushDark1": "#FF6DA36F",
+      "ZAccentBrushDark2": "#FF7BAC7D",
+      "ZAccentBrushDark3": "#FF89B58B",
+      "ZAccentBrushDark4": "#FF97BE98",
+      "ZAccentBrushDark5": "#FFA5C6A6"
+    }
+  },
+  "08.Orange": {
+    "Light": {
+      "ZAccentBrush": "#FFB27211",
+      "ZAccentBrushLight1": "#FFF5EEE2",
+      "ZAccentBrushLight2": "#FFF0E3CF",
+      "ZAccentBrushLight3": "#FFEAD8BD",
+      "ZAccentBrushLight4": "#FFDFCCB1",
+      "ZAccentBrushLight5": "#FFDDC196",
+      "ZAccentBrushDark1": "#FFA66B12",
+      "ZAccentBrushDark2": "#FF9A6412",
+      "ZAccentBrushDark3": "#FF8E5D13",
+      "ZAccentBrushDark4": "#FF815614",
+      "ZAccentBrushDark5": "#FF754F15"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FFCF891F",
+      "ZAccentBrushLight1": "#FF3E301B",
+      "ZAccentBrushLight2": "#FF4D391C",
+      "ZAccentBrushLight3": "#FF5C421C",
+      "ZAccentBrushLight4": "#FF5B472A",
+      "ZAccentBrushLight5": "#FF78531C",
+      "ZAccentBrushDark1": "#FFD79C43",
+      "ZAccentBrushDark2": "#FFDBA555",
+      "ZAccentBrushDark3": "#FFDEAF67",
+      "ZAccentBrushDark4": "#FFE2B879",
+      "ZAccentBrushDark5": "#FFE6C28B"
+    }
+  },
+  "09.Red": {
+    "Light": {
+      "ZAccentBrush": "#FFA4262C",
+      "ZAccentBrushLight1": "#FFF4E5E5",
+      "ZAccentBrushLight2": "#FFEDD4D5",
+      "ZAccentBrushLight3": "#FFE6C3C4",
+      "ZAccentBrushLight4": "#FFDBB6B8",
+      "ZAccentBrushLight5": "#FFD7A0A2",
+      "ZAccentBrushDark1": "#FF99252B",
+      "ZAccentBrushDark2": "#FF8E2429",
+      "ZAccentBrushDark3": "#FF832328",
+      "ZAccentBrushDark4": "#FF782226",
+      "ZAccentBrushDark5": "#FF6D2125"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FFCF373C",
+      "ZAccentBrushLight1": "#FF3E2021",
+      "ZAccentBrushLight2": "#FF4D2224",
+      "ZAccentBrushLight3": "#FF5C2527",
+      "ZAccentBrushLight4": "#FF5B3031",
+      "ZAccentBrushLight5": "#FF78292B",
+      "ZAccentBrushDark1": "#FFD7575B",
+      "ZAccentBrushDark2": "#FFDB676B",
+      "ZAccentBrushDark3": "#FFDE777A",
+      "ZAccentBrushDark4": "#FFE2878A",
+      "ZAccentBrushDark5": "#FFE6979A"
+    }
+  },
+  "10.Grey": {
+    "Light": {
+      "ZAccentBrush": "#FF334954",
+      "ZAccentBrushLight1": "#FFE6E9EA",
+      "ZAccentBrushLight2": "#FFD6DBDD",
+      "ZAccentBrushLight3": "#FFC6CCD0",
+      "ZAccentBrushLight4": "#FFBAC0C4",
+      "ZAccentBrushLight5": "#FFA5AFB4",
+      "ZAccentBrushDark1": "#FF31454F",
+      "ZAccentBrushDark2": "#FF2F414B",
+      "ZAccentBrushDark3": "#FF2D3E46",
+      "ZAccentBrushDark4": "#FF2B3A41",
+      "ZAccentBrushDark5": "#FF29363D"
+    },
+    "Dark": {
+      "ZAccentBrush": "#FF446F85",
+      "ZAccentBrushLight1": "#FF232B30",
+      "ZAccentBrushLight2": "#FF263238",
+      "ZAccentBrushLight3": "#FF293941",
+      "ZAccentBrushLight4": "#FF344046",
+      "ZAccentBrushLight5": "#FF2F4651",
+      "ZAccentBrushDark1": "#FF628699",
+      "ZAccentBrushDark2": "#FF7192A2",
+      "ZAccentBrushDark3": "#FF809DAC",
+      "ZAccentBrushDark4": "#FF8FA9B6",
+      "ZAccentBrushDark5": "#FF9EB4C0"
+    }
+  }
+}

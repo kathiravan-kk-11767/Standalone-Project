@@ -1,0 +1,1082 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="General_Label_SettingUpTrident.Text" xml:space="preserve">
+    <value>Setting up Trident...</value>
+  </data>
+  <data name="General_InvalidSession.Text" xml:space="preserve">
+    <value>Your session is invalid. Please login to continue.</value>
+  </data>
+  <data name="General_Attribution.Text" xml:space="preserve">
+    <value>Attribution</value>
+  </data>
+  <data name="General_PrivacyPolicy.Text" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="General_TermsOfService.Text" xml:space="preserve">
+    <value>Terms of Service</value>
+  </data>
+  <data name="AppTitle.Text" xml:space="preserve">
+    <value>Trident</value>
+  </data>
+  <data name="AttachmentViewer_Attachment.Text" xml:space="preserve">
+    <value> Attachment</value>
+  </data>
+  <data name="AttachmentViewer_Attachments.Text" xml:space="preserve">
+    <value> Attachments</value>
+  </data>
+  <data name="Cancel_Text.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChooseServiceProvider_Text.Text" xml:space="preserve">
+    <value>Choose Service Provider</value>
+  </data>
+  <data name="DeleteConfirmation_Text.Text" xml:space="preserve">
+    <value>Are you sure you want to remove the account?</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchCompleted.Text" xml:space="preserve">
+    <value>Initial fetch completed</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchError.Text" xml:space="preserve">
+    <value>Initial fetch error</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchInProgress.Text" xml:space="preserve">
+    <value>Initial fetch in progress...</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchRequested.Text" xml:space="preserve">
+    <value>Initial fetch requested</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchSuspended.Text" xml:space="preserve">
+    <value>Initial fetch suspended</value>
+  </data>
+  <data name="Service_Desk.Text" xml:space="preserve">
+     <value>Desk</value>
+   </data>
+  <data name="MailSyncStatus_NotSynced.Text" xml:space="preserve">
+    <value>Not Synced</value>
+  </data>
+  <data name="MailSyncStatus_SelectedForSyncing.Text" xml:space="preserve">
+    <value>Selected for Syncing</value>
+  </data>
+  <data name="MailSyncStatus_Synced.Text" xml:space="preserve">
+    <value>Synced</value>
+  </data>
+  <data name="MailSyncStatus_SyncError.Text" xml:space="preserve">
+    <value>Sync failed</value>
+  </data>
+  <data name="MailSyncStatus_SyncInProgress.Text" xml:space="preserve">
+    <value>Syncing...</value>
+  </data>
+  <data name="MailSyncStatus_SyncRequested.Text" xml:space="preserve">
+    <value>Sync requested</value>
+  </data>
+  <data name="MailSyncStatus_SyncSuspended.Text" xml:space="preserve">
+    <value>Sync suspended</value>
+  </data>
+  <data name="Ok_Text.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="RootShell_Loading.Text" xml:space="preserve">
+    <value>Loading, please wait...</value>
+    <comment>Text to be diaplayed on Root shell while loading the requested page</comment>
+  </data>
+  <data name="Service_CRM.Text" xml:space="preserve">
+    <value>Zoho CRM</value>
+  </data>
+  <data name="Service_Expense.Text" xml:space="preserve">
+    <value>Zoho Expense</value>
+  </data>
+  <data name="Service_Invoice.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Service_Connect.Text" xml:space="preserve">
+    <value>Connect Post</value>
+  </data>
+  <data name="Service_Projects.Text" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="Service_Workdrive.Text" xml:space="preserve">
+    <value>WorkDrive</value>
+  </data>
+  <data name="Service_Mail.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="SignIn_LoginButton.Content" xml:space="preserve">
+    <value>Sign in to Your Account</value>
+    <comment>Login button text</comment>
+  </data>
+  <data name="TAC_AgreeButton.Content" xml:space="preserve">
+    <value>Agree</value>
+    <comment>Agree button text</comment>
+  </data>
+  <data name="TAC_CancelButton.Content" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Cancel button text</comment>
+  </data>
+  <data name="TermsAndConditions.Text" xml:space="preserve">
+    <value>Terms and Conditions</value>
+  </data>
+  <data name="General_AppDisplayName.Text" xml:space="preserve">
+    <value>Trident</value>
+  </data>
+  <data name="TAC_Description.Text" xml:space="preserve">
+    <value>To continue using the software, you must agree to the terms of the software license agreement.</value>
+  </data>
+  <data name="Source_Chat.Text" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="Source_Connect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="Source_Contacts.Text" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="Source_Inline.Text" xml:space="preserve">
+    <value>Inline</value>
+  </data>
+  <data name="Source_Mail.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Source_Notes.Text" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Source_ProfilePic.Text" xml:space="preserve">
+    <value>Profile Pic</value>
+  </data>
+  <data name="Source_Stream.Text" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="Source_Unknown.Text" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Source_Workdrive.Text" xml:space="preserve">
+    <value>Workdrive</value>
+  </data>
+  <data name="UserMessage_NoInternet.Text" xml:space="preserve">
+    <value>No network. Connect to the internet and try again.</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkDesc.Text" xml:space="preserve">
+    <value>Collaborate with your team remotely using the built-in Cliq app. Send audio or video messages, simplify collaboration by enabling screen sharing, and engage with multiple users over a conference call—all from {0}.</value>
+  </data>
+  <data name="Onboarding_TourMenuBarDesc.Text" xml:space="preserve">
+    <value>Use {0} System Tray app to quickly access data and perform instant actions while you're working on other apps in your system. It also doubles as your control center while you are engaged in audio or video calls.</value>
+  </data>
+  <data name="Onboarding_TourMenuBarTitle.Text" xml:space="preserve">
+    <value>System Tray App</value>
+  </data>
+  <data name="Onboarding_TourOfflineDesc.Text" xml:space="preserve">
+    <value>Work seamlessly on your emails even when there is a disruption in your network connection with offline access. Many functions, such as browsing, composing, and searching for emails, will continue to work in offline mode.</value>
+  </data>
+  <data name="Onboarding_TourOfflineTitle.Text" xml:space="preserve">
+    <value>Offline Access</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkTitle.Text" xml:space="preserve">
+    <value>Remote Work Ready</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantDesc.Text" xml:space="preserve">
+    <value>The Smart Assistant allows you to quickly execute tasks and commands. For example, just type "Call John" or "Meet Lucy at 3 PM tomorrow" to make a call or schedule a meeting.</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantTitle.Text" xml:space="preserve">
+    <value>Smart Assistant</value>
+  </data>
+  <data name="Onboarding_TourSmartMailDesc.Text" xml:space="preserve">
+    <value>Quickly act on your email notifications from other Zoho applications by viewing contextual app data from inside your inbox.</value>
+  </data>
+  <data name="Onboarding_TourSmartMailTitle.Text" xml:space="preserve">
+    <value>Smart Mail</value>
+  </data>
+  <data name="Onboarding_TourWidgetDesc.Text" xml:space="preserve">
+    <value>Multi-task more efficiently by accessing and working with data from multiple apps through Widgets. Keep track of new incoming messages in Cliq, track your schedule using Calendar, or jot down important details in Notes by choosing from a gallery of Widgets.</value>
+  </data>
+  <data name="Onboarding_TourWidgetTitle.Text" xml:space="preserve">
+    <value>Widgets</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceDesc.Text" xml:space="preserve">
+    <value>{0} is a comprehensive solution for all your productivity, communication, and business needs. It bundles email, instant messaging, conference calls, calendar management, note-taking, and task management, all in a single workplace platform.</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceTitle.Text" xml:space="preserve">
+    <value>All-in-One Workplace Companion</value>
+  </data>
+  <data name="SignIn_Page1_Desc.Text" xml:space="preserve">
+    <value>{0} is your comprehensive platform for all your workplace productivity, communication, and business needs.</value>
+  </data>
+  <data name="SignIn_Page1_Title.Text" xml:space="preserve">
+    <value>Your All-in-One Workplace Companion</value>
+  </data>
+  <data name="SignIn_Page4_Desc.Text" xml:space="preserve">
+    <value>Share ideas and information confidently, knowing that your data is safe and secure with Zoho's strict adherence to industry security and privacy standards.</value>
+  </data>
+  <data name="SignIn_Page4_Title.Text" xml:space="preserve">
+    <value>Unparalleled Privacy and Security</value>
+  </data>
+  <data name="SignIn_Page5_Desc.Text" xml:space="preserve">
+    <value>Browse your inbox, draft emails, and search for information, even when you're offline.</value>
+  </data>
+  <data name="SignIn_Page5_Title.Text" xml:space="preserve">
+    <value>Work Offline</value>
+  </data>
+  <data name="SignIn_Page3_Desc.Text" xml:space="preserve">
+    <value>Manage all your email accounts (from Zoho, Gmail, Outlook, Yahoo, iCloud, etc.) from one place.</value>
+  </data>
+  <data name="SignIn_Page3_Title.Text" xml:space="preserve">
+    <value>Manage Multiple Mailboxes</value>
+  </data>
+  <data name="SignIn_Page2_Desc.Text" xml:space="preserve">
+    <value>Collaborate with your colleagues using Cliq, our built-in instant messaging service with audio and video conferencing capabilities.</value>
+  </data>
+  <data name="SignIn_Page2_Title.Text" xml:space="preserve">
+    <value>Remote Work Ready</value>
+  </data>
+  <data name="Onboarding_Default.Text" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="Onboarding_Personalize.Content" xml:space="preserve">
+    <value>Customize Now</value>
+  </data>
+  <data name="Onboarding_Welcome.Text" xml:space="preserve">
+    <value>Welcome,</value>
+  </data>
+  <data name="Onboarding_WelcomeDesc.Text" xml:space="preserve">
+    <value>We're excited to have you on board! {0} combines powerful features with a host of personalization options to help you stay productive.</value>
+  </data>
+  <data name="Onboarding_WelcomePersonalize.Text" xml:space="preserve">
+    <value>Customize your workspace now.</value>
+  </data>
+  <data name="Onboarding_AccentColor.Text" xml:space="preserve">
+    <value>Choose Accent Color</value>
+  </data>
+  <data name="Onboarding_AllSetDesc.Text" xml:space="preserve">
+    <value>Other exciting things that you can do with the app.</value>
+  </data>
+  <data name="Onboarding_AllSetTitle.Text" xml:space="preserve">
+    <value>You're All Set</value>
+  </data>
+  <data name="Onboarding_Colored.Content" xml:space="preserve">
+    <value>Colored</value>
+  </data>
+  <data name="Onboarding_Continue.Content" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="Onboarding_DarkTheme.Text" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Onboarding_LightTheme.Text" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="Onboarding_MaybeLater.Text" xml:space="preserve">
+    <value>Maybe Later</value>
+  </data>
+  <data name="Onboarding_ModuleDesc.Text" xml:space="preserve">
+    <value>Where would you like Mail, Calendar, Notes, and other module icons to be placed?</value>
+  </data>
+  <data name="Onboarding_ModuleLeft.Content" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="Onboarding_ModuleTitle.Text" xml:space="preserve">
+    <value>Modules Icons Position</value>
+  </data>
+  <data name="Onboarding_ModuleTop.Content" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="Onboarding_Native.Content" xml:space="preserve">
+    <value>Native</value>
+  </data>
+  <data name="Onboarding_OtherModules3.Text" xml:space="preserve">
+    <value>and much more by taking a quick tour.</value>
+  </data>
+  <data name="Onboarding_OtherModules1.Text" xml:space="preserve">
+    <value>Learn about app features such as
+
+
+
+
+ </value>
+  </data>
+  <data name="Onboarding_OtherModules2.Text" xml:space="preserve">
+    <value>Offline Mode, Widgets, Smart Assistant, Smart Mails</value>
+  </data>
+  <data name="Onboarding_Style.Text" xml:space="preserve">
+    <value>Choose Style</value>
+  </data>
+  <data name="Onboarding_SystemTheme.Text" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Onboarding_TakeQuickTour.Content" xml:space="preserve">
+    <value>Take a Tour</value>
+  </data>
+  <data name="Onboarding_ThemeDesc.Text" xml:space="preserve">
+    <value>You can change this later from the app settings</value>
+  </data>
+  <data name="Onboarding_ThemeTitle.Text" xml:space="preserve">
+    <value>Customize Your Workspace</value>
+  </data>
+  <data name="Onboarding_ThemMode.Text" xml:space="preserve">
+    <value>Theme Mode</value>
+  </data>
+  <data name="Onboarding_White.Content" xml:space="preserve">
+    <value>Plain</value>
+  </data>
+  <data name="SignIn_LoginWebview.Content" xml:space="preserve">
+    <value>Sign In With Web View</value>
+  </data>
+  <data name="SignIn_NetworkUnavailable.Text" xml:space="preserve">
+    <value>No Network. Please connect to the internet.</value>
+  </data>
+  <data name="SignIn_Failed_UserMessage.Text" xml:space="preserve">
+    <value>Login failed. Please try again later</value>
+  </data>
+  <data name="SignIn_FailedMessageDialog_CloseButton.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SignIn_RefreshTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>Refresh token limit reached.</value>
+  </data>
+  <data name="SignIn_AccessTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>Access token limit reached.</value>
+  </data>
+  <data name="UserSwitch_Accounts.Text" xml:space="preserve">
+    <value>User Accounts</value>
+  </data>
+  <data name="SignIn_SettingUpMail.Text" xml:space="preserve">
+    <value>Setting up {0}...</value>
+  </data>
+  <data name="SignIn_SetUpMail.Text" xml:space="preserve">
+    <value>Set up Mail</value>
+  </data>
+  <data name="SignIn_SetUpMailDescription.Text" xml:space="preserve">
+    <value>To use the app, you must set up a Zoho email account by visiting the Zoho Mail website.</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountButton.Content" xml:space="preserve">
+    <value>Set up Mail Account</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountCancelButton.Content" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EnhanceScope.Text" xml:space="preserve">
+    <value>To continue using the app, please click "Try Again" and enter your password</value>
+  </data>
+  <data name="TryEnhanceScopeAgain_Button.Content" xml:space="preserve">
+    <value>Try Again</value>
+  </data>
+  <data name="SignIn_AlmostReady.Text" xml:space="preserve">
+    <value>Almost ready...</value>
+  </data>
+  <data name="Onboarding_Replay.Text" xml:space="preserve">
+    <value>Replay</value>
+  </data>
+  <data name="SignOut_Loading.Text" xml:space="preserve">
+    <value>Please wait, while you're being logged out</value>
+  </data>
+  <data name="ResetOnboarding.Text" xml:space="preserve">
+    <value>Reset Onboarding</value>
+  </data>
+    <data name="Shell_ApiTracker.Text" xml:space="preserve">
+    <value>API Tracker</value>
+  </data>
+  <data name="SC_GlobalSearch.Text" xml:space="preserve">
+    <value>Open Global Search Window</value>
+  </data>
+  <data name="SC_ModuleSearch.Text" xml:space="preserve">
+    <value>Enable Search in a Module</value>
+  </data>
+  <data name="SC_OpenCallHistory.Text" xml:space="preserve">
+    <value>Open Call History</value>
+  </data>
+  <data name="SC_OpenNotifications.Text" xml:space="preserve">
+    <value>Open Notifications</value>
+  </data>
+  <data name="SC_SmartCompose.Text" xml:space="preserve">
+    <value>Launch Smart Assistant</value>
+  </data>
+  <data name="SC_SmartComposeCollapse.Text" xml:space="preserve">
+    <value>Close Smart Assistant</value>
+  </data>
+  <data name="SC_ToggleDND.Text" xml:space="preserve">
+    <value>Enable/Disable DND</value>
+  </data>
+  <data name="SC_ToggleWidgetRHS.Text" xml:space="preserve">
+    <value>Show/Hide Right Pane</value>
+  </data>
+  <data name="SC_Delete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SC_GoToCalendar.Text" xml:space="preserve">
+    <value>Go to Calendar</value>
+  </data>
+  <data name="SC_GoToCliq.Text" xml:space="preserve">
+    <value>Go to Cliq</value>
+  </data>
+  <data name="SC_GoToContacts.Text" xml:space="preserve">
+    <value>Go to Contacts</value>
+  </data>
+  <data name="SC_GoToMail.Text" xml:space="preserve">
+    <value>Go to Mail</value>
+  </data>
+  <data name="SC_GoToNextModule.Text" xml:space="preserve">
+    <value>Go to Next Module</value>
+  </data>
+  <data name="SC_GoToNotes.Text" xml:space="preserve">
+    <value>Go to Notes</value>
+  </data>
+  <data name="SC_GoToPreviousModule.Text" xml:space="preserve">
+    <value>Go to Previous Module</value>
+  </data>
+  <data name="SC_GoToTasks.Text" xml:space="preserve">
+    <value>Go to Tasks</value>
+  </data>
+  <data name="SC_OpenSettings.Text" xml:space="preserve">
+    <value>Open Settings</value>
+  </data>
+  <data name="Streams_InvitedBy.Text" xml:space="preserve">
+	  <value>Invited by {0}</value>
+  </data>
+  <data name="SC_SwitchView.Text" xml:space="preserve">
+    <value>Switch Views-Vertical Split, Horizontal Split, No Split</value>
+  </data>
+  <data name="SC_LockApp.Text" xml:space="preserve">
+    <value>Lock App</value>
+  </data>
+  <data name="Onboarding_TakeMeToApp.Content" xml:space="preserve">
+    <value>Take me to the app</value>
+  </data>
+  <data name="SC_GoToFeedback.Text" xml:space="preserve">
+    <value>Open Feedback</value>
+  </data>
+  <data name="DND_DND.Text" xml:space="preserve">
+    <value>Do Not Disturb</value>
+  </data>
+  <data name="DND_NotSupportedOffline_UserMessage.Text" xml:space="preserve">
+    <value>DND not supported offline</value>
+  </data>
+  <data name="DND_DNDEnabled.Text" xml:space="preserve">
+    <value>When DND is enabled:</value>
+  </data>
+  <data name="DND_MuteChats.Text" xml:space="preserve">
+    <value>Alert sounds will be muted</value>
+  </data>
+  <data name="DND_NotificationsPaused.Text" xml:space="preserve">
+    <value>All notifications will be paused</value>
+  </data>
+  <data name="UserSwitch_Users.Text" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="UserSwitch_CheckIn.Text" xml:space="preserve">
+    <value>Check-In</value>
+  </data>
+  <data name="UserSwitch_CheckOut.Text" xml:space="preserve">
+    <value>Check-Out</value>
+  </data>
+  <data name="DND_AlwaysOn.Text" xml:space="preserve">
+    <value>Always On</value>
+  </data>
+  <data name="DND_OneHour.Text" xml:space="preserve">
+    <value>For 1 Hour</value>
+  </data>
+  <data name="DND_UntilEvng.Text" xml:space="preserve">
+    <value>Until This Evening</value>
+  </data>
+  <data name="DND_UntilTmrw.Text" xml:space="preserve">
+    <value>Until Tomorrow</value>
+  </data>
+  <data name="DND_ChatStatusToBusy.Text" xml:space="preserve">
+    <value>Cliq status will be changed to "Do Not Disturb"</value>
+  </data>
+  <data name="UserSwitch_Off.Text" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="UserSwitch_On.Text" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="UserSwitch_Text.Text" xml:space="preserve">
+    <value>User switch</value>
+  </data>
+  <data name="Release_Notes.Text" xml:space="preserve">
+    <value>Release Notes</value>
+  </data>
+  <data name="SC_OpenNew.Text" xml:space="preserve">
+    <value>New Email, Note, Task, Event, Contact</value>
+  </data>
+  <data name="SC_OpenNewItem.Text" xml:space="preserve">
+    <value>New Email, Event, or Note</value>
+  </data>
+  <data name="SC_OpenUserSwitch.Text" xml:space="preserve">
+    <value>Open User Switch</value>
+  </data>
+  <data name="SC_ToggleLHS.Text" xml:space="preserve">
+    <value>Toggle Left Pane</value>
+  </data>
+  <data name="DND_TurnOff.Text" xml:space="preserve">
+    <value>Turn Off DND</value>
+  </data>
+  <data name="Service_ServiceDisabled.Text" xml:space="preserve">
+    <value>Disabled as a service</value>
+  </data>
+  <data name="ExtendedSplashScreenLoading.Text" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="DND_EveningMsg.Text" xml:space="preserve">
+    <value>On until today 7:00 PM</value>
+  </data>
+  <data name="DND_MorningMsg.Text" xml:space="preserve">
+    <value>On until tomorrow 7:00 AM</value>
+  </data>
+  <data name="DND_OneHourMsg.Text" xml:space="preserve">
+    <value>On until {0}</value>
+  </data>
+  <data name="UserSwitch_Cancel.Content" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UserSwitch_Switch.Content" xml:space="preserve">
+    <value>Switch and Restart</value>
+  </data>
+  <data name="UserSwitch_SwitchUser.Text" xml:space="preserve">
+    <value>Switch User</value>
+  </data>
+  <data name="UserSwitch_SwitchUserDisclaimer.Text" xml:space="preserve">
+    <value>Switching the primary user to another will restart the app. Are you sure you want to switch?</value>
+  </data>
+  <data name="DeleteConfirmation_Cancel.Content" xml:space="preserve">
+    <value>No, I'll keep it</value>
+  </data>
+  <data name="DeleteConfirmation_Delete.Content" xml:space="preserve">
+    <value>Delete Comment</value>
+  </data>
+  <data name="DeleteConfirmation_DeleteText.Text" xml:space="preserve">
+    <value>Delete this Comment</value>
+  </data>
+  <data name="DeleteConfirmation_Disclaimer.Text" xml:space="preserve">
+    <value>You're about to delete this comment. Are you sure you want to complete this action?</value>
+  </data>
+  <data name="SA_FeebackIdea.Text" xml:space="preserve">
+    <value>Here's an idea - Suggest a feature</value>
+  </data>
+  <data name="SA_FeedbackAngry.Text" xml:space="preserve">
+    <value>Unable to work with the app. Contact me ASAP! I'm including diagnostics and logs</value>
+  </data>
+  <data name="SA_FeedbackBoquet.Text" xml:space="preserve">
+    <value>Love the app! Send a congratulatory bouquet</value>
+  </data>
+  <data name="SA_FeedbackBug.Text" xml:space="preserve">
+    <value>Report a bug - I'm including diagnostics and logs</value>
+  </data>
+  <data name="SA_FeedbackDesc.Text" xml:space="preserve">
+    <value>Share your feedback about the app</value>
+  </data>
+  <data name="SA_FeedbackError.Text" xml:space="preserve">
+    <value>An error occurred while sending your feedback</value>
+  </data>
+  <data name="SA_FeedbackSending.Text" xml:space="preserve">
+    <value>Sending your feedback</value>
+  </data>
+  <data name="SA_FeedbackThankYou.Text" xml:space="preserve">
+    <value>Thank you for your feedback</value>
+  </data>
+  <data name="SA_Placeholder.Text" xml:space="preserve">
+    <value>Waiting for your input...</value>
+  </data>
+  <data name="SA_AllFilter.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="SA_ChannelFilter.Text" xml:space="preserve">
+    <value>Channels</value>
+  </data>
+  <data name="SA_GroupFilter.Text" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="SA_PersonalFilter.Text" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="Mail_SharedSuccessfully.Text" xml:space="preserve">
+    <value>Email shared successfully</value>
+  </data>
+  <data name="ClearedLogs_Success.Text" xml:space="preserve">
+    <value>Cleared app log files</value>
+  </data>
+  <data name="ServiceAction_NewContact.Text" xml:space="preserve">
+    <value>New Contact</value>
+  </data>
+  <data name="ServiceAction_NewEvent.Text" xml:space="preserve">
+    <value>New Event</value>
+  </data>
+  <data name="ServiceAction_NewMail.Text" xml:space="preserve">
+    <value>New Mail</value>
+  </data>
+  <data name="ServiceAction_NewNote.Text" xml:space="preserve">
+    <value>New Note</value>
+  </data>
+  <data name="ServiceAction_NewTask.Text" xml:space="preserve">
+    <value>New Task</value>
+  </data>
+  <data name="ServiceAction_NewSpace.Text" xml:space="preserve">
+    <value>New Page</value>
+  </data>
+  <data name="App_HideFolders.Text" xml:space="preserve">
+    <value>Hide folder pane</value>
+  </data>
+  <data name="App_More.Text" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="App_ShowFolders.Text" xml:space="preserve">
+    <value>Show folder pane</value>
+  </data>
+  <data name="More_Text.Text" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Onboarding_Back.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Onboarding_Skip.Content" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColLeft.Text" xml:space="preserve">
+    <value>Insert Column Left</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColRight.Text" xml:space="preserve">
+    <value>Insert Column Right</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowAbove.Text" xml:space="preserve">
+    <value>Insert Rows Above</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowBelow.Text" xml:space="preserve">
+    <value>Insert Rows Below</value>
+  </data>
+  <data name="Compose_ContextMenu_Copy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="General_CopyLink.Text" xml:space="preserve">
+    <value>Copy Link</value>
+  </data>
+  <data name="Compose_ContextMenu_Cut.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Compose_ContextMenu_DelCol.Text" xml:space="preserve">
+    <value>Delete Column</value>
+  </data>
+  <data name="Compose_ContextMenu_Delete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Compose_ContextMenu_DelRow.Text" xml:space="preserve">
+    <value>Delete Row</value>
+  </data>
+  <data name="Compose_ContextMenu_DelTable.Text" xml:space="preserve">
+    <value>Delete Table</value>
+  </data>
+  <data name="Compose_ContextMenu_EditLink.Text" xml:space="preserve">
+    <value>Edit Link</value>
+  </data>
+  <data name="Compose_ContextMenu_Link.Text" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Compose_ContextMenu_OpenLink.Text" xml:space="preserve">
+    <value>Open Link</value>
+  </data>
+  <data name="Compose_ContextMenu_Paste.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteSource.Text" xml:space="preserve">
+    <value>Paste Source Formatting</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteText.Text" xml:space="preserve">
+    <value>Paste Text Only</value>
+  </data>
+  <data name="Compose_ContextMenu_Redo.Text" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="Compose_ContextMenu_RemoveLink.Text" xml:space="preserve">
+    <value>Remove Link</value>
+  </data>
+  <data name="Compose_ContextMenu_SelectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Compose_ContextMenu_TableOptions.Text" xml:space="preserve">
+    <value>Table Options</value>
+  </data>
+  <data name="Compose_ContextMenu_Undo.Text" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="About_AllRightsReserved.Text" xml:space="preserve">
+    <value>All Rights Reserved</value>
+  </data>
+  <data name="About_Zohocorp.Text" xml:space="preserve">
+    <value>© 2025, Zoho Corporation Pvt. Ltd.</value>
+  </data>
+  <data name="About_Version.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Notifications_YetToBeSupported.Text" xml:space="preserve">
+    <value>This notification is yet to be supported. Click here to view on {0} web.</value>
+  </data>
+  <data name="Notifications_Close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Notifications_Popout.Text" xml:space="preserve">
+    <value>Popout</value>
+  </data>
+  <data name="App_FAQs.Text" xml:space="preserve">
+    <value>FAQs</value>
+  </data>
+  <data name="App_OfflineIndicatior.Text" xml:space="preserve">
+    <value>Network connection unavailable</value>
+  </data>
+  <data name="General_About.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Rootshell_Flyout_CheckForUpdates.Text" xml:space="preserve">
+    <value>Check for Updates</value>
+  </data>
+  <data name="Rootshell_Flyout_Feedback.Text" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="Rootshell_Flyout_GlobalSearch.Text" xml:space="preserve">
+    <value>Global Search</value>
+  </data>
+  <data name="Rootshell_Flyout_GoTo.Text" xml:space="preserve">
+    <value>Go To</value>
+  </data>
+  <data name="Rootshell_Flyout_Help.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Rootshell_Flyout_KeyboardShortcuts.Text" xml:space="preserve">
+    <value>Keyboard Shortcuts</value>
+  </data>
+  <data name="Rootshell_Flyout_NextModule.Text" xml:space="preserve">
+    <value>Next Module</value>
+  </data>
+  <data name="Rootshell_Flyout_PrevModule.Text" xml:space="preserve">
+    <value>Prev Module</value>
+  </data>
+  <data name="Rootshell_Flyout_ReleaseNotes.Text" xml:space="preserve">
+    <value>Release Notes</value>
+  </data>
+  <data name="Rootshell_Flyout_Settings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Rootshell_NoPrewiewDescription.Text" xml:space="preserve">
+    <value>Please, increase the size (height/width) of the app window.</value>
+  </data>
+  <data name="Rootshell_OfflineButton.Text" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="Rootshell_Tooltip_Search.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Rootshell_Flyout_Calls.Text" xml:space="preserve">
+    <value>Calls</value>
+  </data>
+  <data name="Rootshell_Flyout_Notifications.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="Rootshell_Flyout_Widgets.Text" xml:space="preserve">
+    <value>Widgets</value>
+  </data>
+  <data name="SA_Label_Feedback.Text" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="ToolTip_Notifications.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="ToolTip_Widgets.Text" xml:space="preserve">
+    <value>Widgets</value>
+  </data>
+  <data name="RevisableAttachments_Header_Attachments.Text" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="Genral_ServiceName_Calendar.Text" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="Genral_ServiceName_Cliq.Text" xml:space="preserve">
+    <value>Cliq</value>
+  </data>
+  <data name="Genral_ServiceName_Contacts.Text" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="Genral_ServiceName_Mail.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Genral_ServiceName_Notes.Text" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Genral_ServiceName_Tasks.Text" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="Streams_Invite.Content" xml:space="preserve">
+    <value>Invite</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppVersion_Label.Text" xml:space="preserve">
+    <value>App Version</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceFamily_Label.Text" xml:space="preserve">
+    <value>Device Family</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceManufacturer_Label.Text" xml:space="preserve">
+    <value>Device Manufacturer</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceModel_Label.Text" xml:space="preserve">
+    <value>Device Model</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_OSVersion_Label.Text" xml:space="preserve">
+    <value>OS Version</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_SystemArchitecture_Label.Text" xml:space="preserve">
+    <value>System Architecture</value>
+  </data>
+  <data name="AppSuite_DeleteEncryptionFiles_Label.Text" xml:space="preserve">
+    <value>Cleaning up temporary files...</value>
+  </data>
+  <data name="AppSuite_RevertEncryption_Label.Text" xml:space="preserve">
+    <value>Reverting...</value>
+  </data>
+  <data name="AppSuite_RevertEncryptionFailed_Label.Text" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="Cliq_ServiceAction_NewChat_MenuFlyoutItem.Text" xml:space="preserve">
+    <value>New Chat</value>
+  </data>
+  <data name="General_NoResultsFound.Text" xml:space="preserve">
+    <value>No results found</value>
+  </data>
+  <data name="General_Download_Downloaded_ToastDesc.Text" xml:space="preserve">
+    <value>Downloaded {0}</value>
+    <comment>{0} - filename</comment>
+  </data>
+  <data name="General_Download_OpenAttachment_ToastAction.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="General_Download_ViewInExplorer_ToastAction.Text" xml:space="preserve">
+    <value>View in explorer</value>
+  </data>
+  <data name="Streams_PrivateReply.Text" xml:space="preserve">
+    <value>Reply Privately</value>
+  </data>
+  <data name="Streams_AttachmentUploading_ToolTip.Text" xml:space="preserve">
+    <value>Uploading attachment...</value>
+  </data>
+  <data name="Streams_PostComment.Text" xml:space="preserve">
+    <value>Post Comment</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_ConfirmationButton.Text" xml:space="preserve">
+    <value>Set Up</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Description.Text" xml:space="preserve">
+    <value>To use Trident, you need a Zoho Mail account. You can visit the Zoho Mail website to get started.</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_DisclaimerNote.Text" xml:space="preserve">
+    <value>Trident is only available for the paid users of Zoho Mail, Zoho Workplace, and Zoho One.</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Title.Text" xml:space="preserve">
+    <value>Set Up a Zoho Mail Account</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_RAMSize_Label.Text" xml:space="preserve">
+    <value>RAM Size (in bytes)</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppName_Label.Text" xml:space="preserve">
+    <value>App Name</value>
+  </data>
+  <data name="Tag_Name.Text" xml:space="preserve">
+    <value>Tag Name</value>
+  </data>
+  <data name="Tag_NameHolderText.PlaceholderText" xml:space="preserve">
+    <value>Tag Name</value>
+  </data>
+  <data name="Tag_Color.Text" xml:space="preserve">
+    <value>Tag Color</value>
+  </data>
+  <data name="General_Create.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="General_Save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Create_Tag_Title.Text" xml:space="preserve">
+    <value>Create Tag</value>
+  </data>
+  <data name="Edit_Tag_Title.Text" xml:space="preserve">
+    <value>Edit Tag</value>
+  </data>
+  <data name="Tag_As.Text" xml:space="preserve">
+    <value>Tag As</value>
+  </data>
+  <data name="Search_Tag.PlaceholderText" xml:space="preserve">
+    <value>Search Tags</value>
+  </data>
+  <data name="UserSwitch_Timer_HRS.Text" xml:space="preserve">
+    <value>Hrs</value>
+  </data>
+  <data name="AttachmentSizeExceedInMB_Alert_Tip.Text" xml:space="preserve">
+    <value>Total size of all attached files can't exceed {0} MB</value>
+  </data>
+  <data name="SmartAssistant_High_Priority.Text" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="SmartAssistant_PriorityHeader.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="SmartAssistant_Low_Priority.Text" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="SmartAssistant_Medium_Priority.Text" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="Cliq_UserAvailabilityNotification_ChatButton.Text" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Desc.Text" xml:space="preserve">
+    <value>All unsaved changes will be lost.</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_ConfirmButton.Text" xml:space="preserve">
+    <value>Discard</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Title.Text" xml:space="preserve">
+    <value>Discard {0}?</value>
+    <comment>Discard {Module Action}?</comment>
+  </data>
+  <data name="Streams_LoadMore.Text" xml:space="preserve">
+    <value>Load more</value>
+  </data>
+  <data name="General_LicenseError_MultiUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>Only the paid and evaluating users of Zoho Mail, Zoho Workplace, and Zoho One (with Zoho Mail activated) have access to Trident. The accounts ({0} and {1}) you're trying to access need a valid subscription.</value>
+  </data>
+  <data name="General_LicenseError_SingleUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>Only the paid and evaluating users of Zoho Mail, Zoho Workplace, and Zoho One (with Zoho Mail activated) have access to Trident. The account ({0}) you're trying to access needs a valid subscription.</value>
+  </data>
+  <data name="General_Homepage_Loading.Text" xml:space="preserve">
+    <value>Getting everything ready...</value>
+  </data>
+  <data name="General_HomePage_AppInitializing.Text" xml:space="preserve">
+    <value>Initializing Trident...</value>
+  </data>
+  <data name="General_HomePage_LoadingTakesFewMoments.Text" xml:space="preserve">
+    <value>Almost there! This will only take a few moments...</value>
+  </data>
+  <data name="Tag_Not_Created.Text" xml:space="preserve">
+    <value>No Tags Created</value>
+  </data>
+  <data name="General_CopiedLink_Info.Text" xml:space="preserve">
+    <value>Link copied to clipboard</value>
+  </data>
+  <data name="General_Delete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Attachment_WorkDrive_Header.Text" xml:space="preserve">
+    <value>WorkDrive Attachments</value>
+  </data>
+  <data name="Tag_EmptyTag_Info.Text" xml:space="preserve">
+    <value>No Tags Added</value>
+  </data>
+</root>

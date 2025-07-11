@@ -1,0 +1,654 @@
+<style type="text/css">
+
+body {
+    overflow : hidden;
+}
+
+.cover{
+    width: 830px;
+    height: 670px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 50;
+}
+@keyframes slideup {
+  0% {
+    transform: translate(15px,283px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(15px,60px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideinup {
+  0% {
+    transform: translate(0px,100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideone {
+  0% {
+    height: 25px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+@keyframes showone {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 25px;
+  }
+}
+
+@keyframes showtwo {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 289px;
+  }
+}
+@keyframes hidetwo {
+  0% {
+    height: 289px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+@keyframes showflone {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 289px;
+  }
+}
+@keyframes hideflone {
+  0% {
+    height: 289px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+@keyframes showfltwo {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 157px;
+  }
+}
+@keyframes hidefltwo {
+  0% {
+    height: 157px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+@keyframes showflfive {
+  0% {
+    height: 157px;
+  }
+
+  100% {
+    height: 344px;
+  }
+}
+@keyframes hideflfive {
+  0% {
+    height: 344px;
+  }
+
+  100% {
+    height: 157px;
+  }
+}
+@keyframes showflsix {
+  0% {
+    height: 157px;
+  }
+
+  100% {
+    height: 245px;
+  }
+}
+@keyframes textgroupmove {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -250px;
+  }
+}
+@keyframes showhide {
+  0% {
+    height: 44px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes width30 {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 30px;
+  }
+}
+
+@keyframes width70 {
+  0% {
+    width: 30px;
+  }
+
+  100% {
+    width: 70px;
+  }
+}
+@keyframes width200 {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+@keyframes width330 {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 330px;
+  }
+}
+
+@keyframes cursorleft30 {
+  0% {
+    transform: translate(13px, 24px);
+  }
+
+  100% {
+    transform: translate(48px, 24px);
+  }
+}
+@keyframes cursorleft80 {
+  0% {
+    transform: translate(48px, 24px);
+  }
+
+  100% {
+    transform: translate(80px, 24px);
+  }
+}
+
+@keyframes tapanim-anim {
+  0% {
+    transform: translate(504px,370px) scale(1);  
+    opacity: 1
+
+  }
+
+  100% {
+    transform: translate(504px,370px) scale(3);
+    opacity: 0;
+  }
+}
+body{
+	background: #000000;
+}
+
+.image1{
+    width: 800px;
+    position: absolute;
+    transform: translate(15px,583px);
+    box-shadow: 0px 12px 49px rgba(0, 0, 0, 0.401634);
+}
+
+.container .image1 {
+  animation: slideup 1s ease-in-out 0s, fadeout 1s ease-in-out 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.shortcutkey{
+}
+.key1{
+  animation: slideinup 0.4s ease-in-out 1s forwards, fadeout 0.4s ease-in-out 2s forwards;
+}
+.key2{
+  animation: slideinup 0.4s ease-in-out 1.3s forwards, fadeout 0.4s ease-in-out 2s forwards;
+}
+.sabar{
+    animation: fadein 0.5s ease-in-out 2s forwards;
+}
+.hidetext1{
+   animation: fadein 0.2s ease-in-out 3.5s forwards, left30 0.5s ease-in-out 3.5s forwards, fadeout .5s ease-in-out 29s forwards;
+}
+.blinkcursor{
+  animation: cursorleft30 0.5s ease-in-out 3.4s forwards, cursorleft80 0.5s ease-in-out 4.3s forwards, fadeout .5s ease-in-out 6s forwards;
+}
+.text1{
+   animation: width30 0.5s ease-in-out 3.5s forwards, width70 0.2s ease-in-out 4.5s forwards, fadeout .5s ease-in-out 6s forwards;
+}
+.text2{
+   animation: width30 0.5s ease-in-out 3.5s forwards, width70 0.2s ease-in-out 4.5s forwards, width200 .5s ease-in-out 6s forwards, fadein .5s ease-in-out 6s forwards, fadeout .5s ease-in-out 11.5s forwards;
+  position: absolute;
+}
+.sa-2{
+  animation: fadein 0.4s ease-in-out 4.9s forwards, fadeout .5s ease-in-out 8s forwards;
+}
+.sa-1{
+  animation: hideone 0.2s ease-out 4.7s forwards, fadeout 0.2s ease-in-out 4.9s forwards,  showone .5s ease-in-out 6.4s forwards, fadein .5s ease-in-out 6s forwards, fadeout .5s ease-in-out 12.1s forwards, hideone 0.2s ease-out 12.3s forwards, showone .5s ease-in-out 29s forwards, fadein .5s ease-in-out 29s forwards;
+  height: 25px;
+  position: absolute;
+}
+
+.container .tapanim {
+  animation: tapanim-anim 0.6s ease-in-out 6s forwards, tapanim-anim 0.6s ease-in-out 7.5s forwards;
+  position: absolute;
+  transform: translate(314px,220px);
+  width: 30px;
+  opacity: 0;
+  z-index: 2;
+}
+.container .callcard1 {
+  animation: slideinup 1s ease-in-out 7.5s forwards, fadeout .5s ease-in-out 9.5s forwards;
+  position: absolute;
+    transform: translate(370px,184px);
+    width: 30px;
+    opacity: 0;
+    z-index: 2;
+}
+.container .callcard2 {
+  animation: fadein 1s ease-in-out 9s forwards,  fadeout .5s ease-in-out 11s forwards;
+  position: absolute;
+    transform: translate(370px,184px);
+    width: 30px;
+    opacity: 0;
+    z-index: 2;
+}
+.sa-fltext1{
+  animation: width200 1s ease-in-out 12s forwards, fadein 0.6s ease-in-out 11.5s forwards, fadeout 0.6s ease-in-out 13.5s forwards;
+}
+.sa-fltext1-1{
+  animation:  width200 1s ease-in-out 13.5s forwards, fadein 0.6s ease-in-out 13.5s forwards;
+}
+.sa-flimg1{
+  animation: fadein 0.4s ease-in-out 12.9s forwards, fadeout .5s ease-in-out 14s forwards;
+  position: relative;
+}
+.sa-flimg2{
+  animation: fadein 0.4s ease-in-out 14.8s forwards;
+  opacity: 0;
+  height: 157px;
+  position: absolute;
+}
+.sa-fltext2{
+  animation: width200 1s ease-in-out 15.5s forwards, fadein 0.6s ease-in-out 15.5s forwards, fadeout 0.6s ease-in-out 17s forwards;
+  left: 140px;
+}
+.sa-fltext2-1{
+  animation:  width200 1s ease-in-out 17s forwards, fadein 0.6s ease-in-out 17s forwards, fadeout .5s ease-in-out 29s forwards;
+  left: 140px;
+}
+.sa-flimg3{
+  animation: fadein 0.4s ease-in-out 16s forwards;
+  opacity: 0;
+  height: 289px;
+  position: absolute;
+}
+
+.sa-flimg4{
+  animation: fadein 0.4s ease-in-out 18s forwards;
+  opacity: 0;
+  height: 157px;
+  position: absolute;
+}
+
+.sa-fltext3{
+  animation: width200 1.5s ease-in-out 19s forwards, fadein 0.6s ease-in-out 19s forwards, fadeout .5s ease-in-out 29s forwards;
+  left: 264px;
+  position: absolute;
+}
+.sa-fltext4{
+  animation: width200 1s ease-in-out 21s forwards, fadein 0.6s ease-in-out 20s forwards, fadeout 0.6s ease-in-out 22.5s forwards;
+  left: 390px;
+  position: absolute;
+}
+.sa-fltext5{
+  animation: width200 .5s ease-in-out 22.5s forwards, fadein 0.6s ease-in-out 22.5s forwards, fadeout .5s ease-in-out 29s forwards;
+  left: 375px;
+  position: absolute;
+  top: -3px;
+}
+.sa-fltext6{
+  animation: width330 2s ease-in-out 24.5s forwards, fadein 0.6s ease-in-out 24.5s forwards, fadeout .5s ease-in-out 29s forwards;
+  left: 517px;
+  position: absolute;
+}
+.sa-flimg5{
+  animation: fadein 0.4s ease-in-out 21s forwards, fadeout 0.6s ease-in-out 22.5s forwards;
+  opacity: 0;
+  height: 344px;
+  position: absolute;
+}
+
+.textgroup {
+  animation: textgroupmove 2s ease-in-out 24.5s forwards;
+    position: absolute;
+    height: 1px;
+    background: #ffffff;
+    width: 100px;
+    left: 0px;
+}
+.sa-flimg6{
+  animation: fadein 0.4s ease-in-out 23s forwards;
+  opacity: 0;
+  height: 245px;
+  position: absolute;
+}
+.suggestions{
+  overflow: hidden;
+  animation: showtwo 0.4s ease-out 4.7s forwards,  hidetwo .5s ease-in-out 6.4s forwards, showfltwo 0.4s ease-out 12.5s forwards, showflsix 0.4s ease-out 26.5s forwards, hidetwo .5s ease-in-out 28.7s forwards;
+  position: relative;
+}
+
+
+
+
+/*Base*/
+
+.wrapper{
+  position: relative;
+    width: 1200px;
+    height: 670;
+    background: #fafafa;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    width: 830px;
+    height: 670px;
+    background: #fafafa;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    background: radial-gradient(80.05% 80.05% at 58.91% 19.95%, #F8FBFE 0%, #CFD2D5 100%);
+    top: 0px;
+    right: 0;
+}
+.bottomcontainer {
+    position: absolute;
+    height: 100%;
+    width: 370px;
+    bottom: 0px;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: left;
+}
+.bottomcontainer h2 {
+    font-size: 29px;
+    line-height: 39px;
+    padding: 0px;
+    margin: 70px 0px 0px 0px;
+}
+
+.bottomcontainer p{
+
+font-size: 15px;
+line-height: 22px;
+}
+p, h2, a{
+  color: #3E3E3E;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+.topcontainer p{
+  text-align: center;
+  font-size: 29px;
+  font-weight: bold;
+}
+.bottomnav {
+    display: inline-block;
+    position: absolute;
+    bottom: 75px;
+    left: 40px;
+}
+.bottomnav a, .bottomnav p{
+font-family: SF Pro Text;
+    display: inline-block;
+    margin: 0px 10px;
+    color: #3E3E3E;
+}
+.bottomnav a{
+  text-decoration: none;
+}
+
+/*_______*/
+
+
+
+
+.sabar{
+position: absolute;
+width: 676px;
+min-height: 95px;
+background: #FFFFFF;
+box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.5);
+border-radius: 0px;
+top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.sabar p{
+    height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding: 25px;
+}
+.shortcutkey{
+  height: 110px;
+    width: 290px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.key1, .key2{
+  padding: 10px;
+  opacity: 0;
+}
+.blinkcursor{
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    transform: translate(13px, 24px);
+    z-index: 1;
+}
+.hidetext1{
+  height: 30px;
+  position: absolute;
+  width: 330px;
+  background: #ffffff;
+  transform: translate(25px, 26px);
+  opacity: 0;
+}
+.text1 {
+    position: absolute;
+    transform: translate(25px, 26px);
+    opacity: 1;
+    width: 0px;
+    overflow:hidden;
+}
+.text2{
+    position: absolute;
+    transform: translate(25px, 26px);
+    opacity: 0;
+}
+.sa-fltext1, .sa-fltext1-1 {
+    position: absolute;
+    transform: translate(25px, 26px);
+    opacity: 0;
+    width: 0px;
+    overflow: hidden;
+}
+.sa-fltext2, .sa-fltext2-1 {
+    position: absolute;
+    transform: translate(25px, 26px);
+    opacity: 0;
+    width: 0px;
+    overflow: hidden;
+}
+.sa-fltext3, .sa-fltext4, .sa-fltext5, .sa-fltext6 {
+    position: absolute;
+    transform: translate(15px, 26px);
+    opacity: 0;
+    width: 0px;
+    overflow: hidden;
+}
+.sa-2, .sa-flimg1{
+  opacity: 0;
+  height: 289px;
+  position: absolute;
+}
+.image4 {
+    width: 252px;
+    height: 391px;
+    position: absolute;
+    transform: translate(304px,4px);
+    overflow: hidden;
+    z-index: 3;
+}
+.image4 .callcard1{
+    width: 100%;
+    position: absolute;
+    transform: translate(0px,300px);
+}
+
+.image4 .callcard2  {
+    width: 100%;
+    position: absolute;
+    transform: translate(0px,0px);
+}
+
+
+
+</style>
+
+ <div class="cover"></div>
+
+
+<div class="container ">
+
+<img class="tapanim" src="enter.png" >
+        <div class="image4">
+    <img class="callcard1" src="sa-callcard1.png" alt="">
+    <img class="callcard2" src="sa-callcard2.png" alt="">
+  </div>
+   
+  <img class="image1" src="mail.jpg" alt="">
+  <div class="shortcutkey">
+  <img class="key1" src="key1.png" height="101" alt="">
+    <img class="key2" src="key2.png" height="101" alt="">
+    </div>
+
+
+
+  <div class="sabar">
+
+    <div class="blinkcursor"><img src="blinkcursor.gif" width="20" alt=""></div>
+    <div class="hidetext1"></div>
+
+    <div class="text1"><img src="text1.png" height="19" alt=""></div>
+    <div class="text2"><img src="text2.png" height="19" alt=""></div>
+
+    <div class="textgroup">
+     <div class="sa-fltext1"><img src="sa-fltext1.png" height="19" alt=""></div>
+     <div class="sa-fltext1-1"><img src="sa-fltext1-1.png" height="19" alt=""></div>
+
+      <div class="sa-fltext2"><img src="sa-fltext2.png" height="19" alt=""></div>
+     <div class="sa-fltext2-1"><img src="sa-fltext2-1.png" height="19" alt=""></div>
+
+     <div class="sa-fltext3"><img src="sa-fltext3.png" height="19" alt=""></div>
+     <div class="sa-fltext4"><img src="sa-fltext4.png" height="19" alt=""></div>
+     <div class="sa-fltext5"><img src="sa-fltext5.png" height="24" alt=""></div>
+     <div class="sa-fltext6"><img src="sa-fltext6.png" height="19" alt=""></div>
+</div>
+    <p>Waiting for your input...</p>
+    <img class="sa-1" src="sa-1.png" width="676" alt="">
+    <div class="suggestions">
+    
+    <img class="sa-2" src="sa-2.png" width="676" alt="">
+
+    <img class="sa-flimg1" src="sa-flimg1.png" width="676" alt="">
+    <img class="sa-flimg2" src="sa-flimg2.png" width="676" alt="">
+
+    <img class="sa-flimg3" src="sa-flimg3.png" width="676" alt="">
+    <img class="sa-flimg4" src="sa-flimg4.png" width="676" alt="">
+
+    <img class="sa-flimg5" src="sa-flimg5.png" width="676" alt="">
+    <img class="sa-flimg6" src="sa-flimg6.png" width="676" alt="">
+  </div>
+  </div>
+  
+  
+</div>

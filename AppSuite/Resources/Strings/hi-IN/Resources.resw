@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SC_LockApp.Text" xml:space="preserve">
+    <value>ऐप को लॉक करें</value>
+  </data>
+  <data name="General_Homepage_Loading.Text" xml:space="preserve">
+    <value>सब कुछ तैयार हो रहा है...</value>
+  </data>
+  <data name="General_HomePage_AppInitializing.Text" xml:space="preserve">
+    <value>Trident चालू  हो रहा है...</value>
+  </data>
+  <data name="General_HomePage_LoadingTakesFewMoments.Text" xml:space="preserve">
+    <value>लगभग पूरा हो चुका है! इसमें कुछ ही पल लगेंगे।</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Desc.Text" xml:space="preserve">
+    <value>सहेजें न गए सभी परिवर्तन गुम हो जाएँगे।</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_ConfirmButton.Text" xml:space="preserve">
+    <value>खारिज करें</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Title.Text" xml:space="preserve">
+    <value>{0} खारिज करें?</value>
+  </data>
+  <data name="Streams_LoadMore.Text" xml:space="preserve">
+    <value>और लोड करें	</value>
+  </data>
+  <data name="AttachmentSizeExceedInMB_Alert_Tip.Text" xml:space="preserve">
+    <value>सभी संलग्न फ़ाइलों का कुल आकार {0} MB से अधिक नहीं हो सकता</value>
+  </data>
+  <data name="SC_OpenNewItem.Text" xml:space="preserve">
+    <value>नया ईमेल, इवेंट, या नोट</value>
+  </data>
+  <data name="General_Label_SettingUpTrident.Text" xml:space="preserve">
+    <value>Trident की सेटिंग कर रहा है...</value>
+  </data>
+  <data name="General_Attribution.Text" xml:space="preserve">
+    <value>विशेषताएँ</value>
+  </data>
+  <data name="General_PrivacyPolicy.Text" xml:space="preserve">
+    <value>गोपनीयता नीति</value>
+  </data>
+  <data name="General_TermsOfService.Text" xml:space="preserve">
+    <value>सेवा की शर्तें</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_ConfirmationButton.Text" xml:space="preserve">
+    <value>सेटअप करें</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Description.Text" xml:space="preserve">
+    <value>Trident का उपयोग करने के लिए, आपके पास Zoho Mail खाता होना चाहिए. शुरू करने के लिए आप Zoho Mail वेबसाइट पर जा सकते हैं.</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_DisclaimerNote.Text" xml:space="preserve">
+    <value>Trident केवल Zoho Mail, Zoho Workplace और Zoho One के भुगतान किए गए उपयोगकर्ताओं के लिए उपलब्ध है.</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Title.Text" xml:space="preserve">
+    <value>Zoho मेल खाते का सेट अप करें</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_RAMSize_Label.Text" xml:space="preserve">
+    <value>RAM आकार (बाइट में)</value>
+  </data>
+  <data name="Streams_PrivateReply.Text" xml:space="preserve">
+    <value>निजी तौर पर जवाब दें</value>
+  </data>
+  <data name="Streams_AttachmentUploading_ToolTip.Text" xml:space="preserve">
+    <value>संलग्नक अपलोड हो रहा है...</value>
+  </data>
+  <data name="Streams_PostComment.Text" xml:space="preserve">
+    <value>टिप्पणी पोस्ट करें</value>
+  </data>
+  <data name="Notifications_YetToBeSupported.Text" xml:space="preserve">
+    <value>इस अधिसूचना को अभी भी समर्थित किया जाना है. {0} वेब पर देखने के लिए यहाँ क्लिक करें.</value>
+  </data>
+  <data name="SignOut_Loading.Text" xml:space="preserve">
+    <value>जब तक आप लॉग आउट हो रहे हैं, कृपया प्रतीक्षा करें</value>
+  </data>
+  <data name="General_NoResultsFound.Text" xml:space="preserve">
+    <value>कोई परिणाम नहीं मिले</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppName_Label.Text" xml:space="preserve">
+    <value>ऐप का नाम</value>
+  </data>
+  <data name="Cliq_ServiceAction_NewChat_MenuFlyoutItem.Text" xml:space="preserve">
+    <value>नई चैट</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppVersion_Label.Text" xml:space="preserve">
+    <value>ऐप संस्करण</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceFamily_Label.Text" xml:space="preserve">
+    <value>डिवाइस फ़ैमिली</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceManufacturer_Label.Text" xml:space="preserve">
+    <value>डिवाइस मैनुफ़ैक्चर</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceModel_Label.Text" xml:space="preserve">
+    <value>डिवाइस मॉडल</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_OSVersion_Label.Text" xml:space="preserve">
+    <value>OS संस्करण</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_SystemArchitecture_Label.Text" xml:space="preserve">
+    <value>सिस्टम ऑर्किटेक्चर</value>
+  </data>
+  <data name="SignIn_Failed_UserMessage.Text" xml:space="preserve">
+    <value>लॉग इन विफल. कृपया बाद में फिर से कोशिश करें</value>
+  </data>
+  <data name="SignIn_FailedMessageDialog_CloseButton.Text" xml:space="preserve">
+    <value>बंद करें</value>
+  </data>
+  <data name="SignIn_RefreshTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>रीफ़्रेश टोकन की सीमा पार हो गई.</value>
+  </data>
+  <data name="SignIn_AccessTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>एक्सेस टोकन की सीमा पार हो गई.</value>
+  </data>
+  <data name="UserSwitch_Accounts.Text" xml:space="preserve">
+    <value>उपयोगकर्ता के खाते</value>
+  </data>
+  <data name="DND_NotSupportedOffline_UserMessage.Text" xml:space="preserve">
+    <value>DND ऑफ़लाइन समर्थित नहीं है</value>
+  </data>
+  <data name="General_About.Text" xml:space="preserve">
+    <value>इसके बारे में</value>
+  </data>
+  <data name="Rootshell_Flyout_CheckForUpdates.Text" xml:space="preserve">
+    <value>अपडेट के लिए जाँचें</value>
+  </data>
+  <data name="Rootshell_Flyout_Feedback.Text" xml:space="preserve">
+    <value>प्रतिक्रिया दें</value>
+  </data>
+  <data name="Rootshell_Flyout_GlobalSearch.Text" xml:space="preserve">
+    <value>वैश्विक खोज</value>
+  </data>
+  <data name="Rootshell_Flyout_GoTo.Text" xml:space="preserve">
+    <value>इस पर जाएँ</value>
+  </data>
+  <data name="Rootshell_Flyout_Help.Text" xml:space="preserve">
+    <value>मदद</value>
+  </data>
+  <data name="Rootshell_Flyout_KeyboardShortcuts.Text" xml:space="preserve">
+    <value>कीबोर्ड शॉर्टकट्स</value>
+  </data>
+  <data name="Rootshell_Flyout_NextModule.Text" xml:space="preserve">
+    <value>अगला मॉड्यूल</value>
+  </data>
+  <data name="Rootshell_Flyout_PrevModule.Text" xml:space="preserve">
+    <value>पिछला मॉड्यूल</value>
+  </data>
+  <data name="Rootshell_Flyout_ReleaseNotes.Text" xml:space="preserve">
+    <value>रीलीज़ नोट्स</value>
+  </data>
+  <data name="Rootshell_Flyout_Settings.Text" xml:space="preserve">
+    <value>सेटिंग</value>
+  </data>
+  <data name="Rootshell_NoPrewiewDescription.Text" xml:space="preserve">
+    <value>प्लीज़, ऐप विंडो का आकार (उँचाई/चौड़ाई) बढ़ाएँ.</value>
+  </data>
+  <data name="Rootshell_OfflineButton.Text" xml:space="preserve">
+    <value>ऑफ़लाइन</value>
+  </data>
+  <data name="Rootshell_Tooltip_Search.Text" xml:space="preserve">
+    <value>खोजें</value>
+  </data>
+  <data name="Rootshell_Flyout_Calls.Text" xml:space="preserve">
+    <value>कॉल</value>
+  </data>
+  <data name="Rootshell_Flyout_Notifications.Text" xml:space="preserve">
+    <value>अधिसूचनाएँ</value>
+  </data>
+  <data name="Rootshell_Flyout_Widgets.Text" xml:space="preserve">
+    <value>विजेट</value>
+  </data>
+  <data name="SA_Label_Feedback.Text" xml:space="preserve">
+    <value>प्रतिक्रिया दें</value>
+  </data>
+  <data name="ToolTip_Notifications.Text" xml:space="preserve">
+    <value>अधिसूचनाएँ</value>
+  </data>
+  <data name="ToolTip_Widgets.Text" xml:space="preserve">
+    <value>विजेट</value>
+  </data>
+  <data name="RevisableAttachments_Header_Attachments.Text" xml:space="preserve">
+    <value>संलग्नक</value>
+  </data>
+  <data name="Genral_ServiceName_Calendar.Text" xml:space="preserve">
+    <value>कैलेंडर</value>
+  </data>
+  <data name="Genral_ServiceName_Cliq.Text" xml:space="preserve">
+    <value>Cliq</value>
+  </data>
+  <data name="Genral_ServiceName_Contacts.Text" xml:space="preserve">
+    <value>संपर्क</value>
+  </data>
+  <data name="Genral_ServiceName_Mail.Text" xml:space="preserve">
+    <value>मेल</value>
+  </data>
+  <data name="Genral_ServiceName_Notes.Text" xml:space="preserve">
+    <value>नोट्स</value>
+  </data>
+  <data name="Genral_ServiceName_Tasks.Text" xml:space="preserve">
+    <value>कार्य</value>
+  </data>
+  <data name="AppTitle.Text" xml:space="preserve">
+    <value>ट्राइडेंट बीटा</value>
+  </data>
+  <data name="AttachmentViewer_Attachment.Text" xml:space="preserve">
+    <value>संलग्नक</value>
+  </data>
+  <data name="AttachmentViewer_Attachments.Text" xml:space="preserve">
+    <value>संलग्नक</value>
+  </data>
+  <data name="Cancel_Text.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="ChooseServiceProvider_Text.Text" xml:space="preserve">
+    <value>सेवा प्रदाता चुनें</value>
+  </data>
+  <data name="DeleteConfirmation_Text.Text" xml:space="preserve">
+    <value>क्या आप वाकई खाता हटाना चाहते हैं?</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchCompleted.Text" xml:space="preserve">
+    <value>शुरुआती लाना पूरा हुआ</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchError.Text" xml:space="preserve">
+    <value>शुरुआती लाने में त्रुटि</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchInProgress.Text" xml:space="preserve">
+    <value>शुरुआती लाने का कार्य प्रगति पर है...</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchRequested.Text" xml:space="preserve">
+    <value>शुरुआती लाने के कार्य का अनुरोध किया गया</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchSuspended.Text" xml:space="preserve">
+    <value>शुरुआती लाने का कार्य निलंबित किया गया</value>
+  </data>
+  <data name="MailSyncStatus_NotSynced.Text" xml:space="preserve">
+    <value>सिंक नहीं किया गया</value>
+  </data>
+  <data name="MailSyncStatus_SelectedForSyncing.Text" xml:space="preserve">
+    <value>सिंक करने के लिए चुना गया</value>
+  </data>
+  <data name="MailSyncStatus_Synced.Text" xml:space="preserve">
+    <value>सिंक किया गया</value>
+  </data>
+  <data name="MailSyncStatus_SyncError.Text" xml:space="preserve">
+    <value>सिंक विफल रहा</value>
+  </data>
+  <data name="MailSyncStatus_SyncInProgress.Text" xml:space="preserve">
+    <value>सिंक हो रहा है...</value>
+  </data>
+  <data name="MailSyncStatus_SyncRequested.Text" xml:space="preserve">
+    <value>सिंक का अनुरोध किया गया</value>
+  </data>
+  <data name="MailSyncStatus_SyncSuspended.Text" xml:space="preserve">
+    <value>सिंक निलंबित</value>
+  </data>
+  <data name="Ok_Text.Text" xml:space="preserve">
+    <value>ठीक है</value>
+  </data>
+  <data name="RootShell_Loading.Text" xml:space="preserve">
+    <value>लोड हो रहा है, कृपया प्रतीक्षा करें...</value>
+  </data>
+  <data name="Service_CRM.Text" xml:space="preserve">
+    <value>Zoho CRM</value>
+  </data>
+  <data name="Service_Expense.Text" xml:space="preserve">
+    <value>Zoho Expense</value>
+  </data>
+  <data name="Service_Invoice.Text" xml:space="preserve">
+    <value>इनवॉइस</value>
+  </data>
+  <data name="Service_Connect.Text" xml:space="preserve">
+    <value>कनेक्ट पोस्ट</value>
+  </data>
+  <data name="Service_Projects.Text" xml:space="preserve">
+    <value>प्रोजेक्ट</value>
+  </data>
+  <data name="Service_Workdrive.Text" xml:space="preserve">
+    <value>Workdrive</value>
+  </data>
+  <data name="Service_Mail.Text" xml:space="preserve">
+    <value>मेल</value>
+  </data>
+  <data name="SignIn_LoginButton.Content" xml:space="preserve">
+    <value>अपने खाते में साइन इन करें</value>
+  </data>
+  <data name="TAC_AgreeButton.Content" xml:space="preserve">
+    <value>सहमत है</value>
+  </data>
+  <data name="TAC_CancelButton.Content" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="TermsAndConditions.Text" xml:space="preserve">
+    <value>सेवा और शर्तें</value>
+  </data>
+  <data name="General_AppDisplayName.Text" xml:space="preserve">
+    <value>Trident</value>
+  </data>
+  <data name="TAC_Description.Text" xml:space="preserve">
+    <value>सॉफ़्टवेयर का इस्तेमाल करने के लिए, आपको सॉफ़्टवेयर लाइसेंस समझौते की शर्तों से सहमत होना होगा.</value>
+  </data>
+  <data name="Source_Chat.Text" xml:space="preserve">
+    <value>चैट</value>
+  </data>
+  <data name="Source_Connect.Text" xml:space="preserve">
+    <value>कनेक्ट करें</value>
+  </data>
+  <data name="Source_Contacts.Text" xml:space="preserve">
+    <value>संपर्क</value>
+  </data>
+  <data name="Source_Inline.Text" xml:space="preserve">
+    <value>इनलाइन</value>
+  </data>
+  <data name="Source_Mail.Text" xml:space="preserve">
+    <value>मेल</value>
+  </data>
+  <data name="Source_Notes.Text" xml:space="preserve">
+    <value>नोट्स</value>
+  </data>
+  <data name="Source_ProfilePic.Text" xml:space="preserve">
+    <value>प्रोफ़ाइल पिक</value>
+  </data>
+  <data name="Source_Stream.Text" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="Source_Unknown.Text" xml:space="preserve">
+    <value>अज्ञात</value>
+  </data>
+  <data name="Source_Workdrive.Text" xml:space="preserve">
+    <value>Workdrive</value>
+  </data>
+  <data name="UserMessage_NoInternet.Text" xml:space="preserve">
+    <value>कोई नेटवर्क नहीं है। इंटरनेट से कनेक्ट करें और फिर से कोशिश करें.</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkDesc.Text" xml:space="preserve">
+    <value>बिल्ट-इन Cliq ऐप का उपयोग करके दूरस्थ रूप से अपनी टीम के साथ सहयोग करें. ऑडियो या वीडियो संदेश भेजें, स्क्रीन साझाकरण को सक्षम करके सहभागिता को आसान बनाएँ, और कॉन्फ़्रेंस कॉल पर कई उपयोगकर्ताओं के साथ जुड़ें—ये सब कुछ {0}.से करें.</value>
+  </data>
+  <data name="Onboarding_TourMenuBarDesc.Text" xml:space="preserve">
+    <value>जब आप अपने सिस्टम में अन्य ऐप पर काम कर रहे हों तो डेटा को तुरंत एक्सेस करने और त्वरित कार्रवाई करने के लिए {0} System Tray ऐप का इस्तेमाल करें. जब आप ऑडियो या वीडियो कॉल में व्यस्त रहते हैं तो यह आपके नियंत्रण केंद्र के रूप में भी दोगुना हो जाता है.</value>
+  </data>
+  <data name="Onboarding_TourMenuBarTitle.Text" xml:space="preserve">
+    <value>System Tray ऐप</value>
+  </data>
+  <data name="Onboarding_TourOfflineDesc.Text" xml:space="preserve">
+    <value>ऑफ़लाइन पहुँच के साथ आपके नेटवर्क कनेक्शन में व्यवधान होने पर भी अपने ईमेल पर सहजता से कार्य करें. कई कार्य, जैसे ब्राउज़ करना, लिखना और ईमेल खोजना, ऑफ़लाइन मोड में काम करना जारी रखेंगे.</value>
+  </data>
+  <data name="Onboarding_TourOfflineTitle.Text" xml:space="preserve">
+    <value>ऑफ़लाइन एक्सेस</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkTitle.Text" xml:space="preserve">
+    <value>दूरस्थ कार्य तैयार</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantDesc.Text" xml:space="preserve">
+    <value>स्मार्ट असिस्टेंट आपको कार्यों और कमांड को तुरंत निष्पादित करने देता है. उदाहरण के लिए, कॉल करने या मीटिंग शेड्यूल करने के लिए बस "जॉन को कॉल करें" या "कल दोपहर 3 बजे लुसी से मिलें" टाइप करें.</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantTitle.Text" xml:space="preserve">
+    <value>स्मार्ट असिस्टेंट</value>
+  </data>
+  <data name="Onboarding_TourSmartMailDesc.Text" xml:space="preserve">
+    <value>अपने इनबॉक्स के अंदर प्रासंगिक ऐप डेटा देखकर अन्य Zoho एप्लिकेशन से अपनी ईमेल अधिसूचनाओं पर त्वरित रूप से कार्य करें.</value>
+  </data>
+  <data name="Onboarding_TourSmartMailTitle.Text" xml:space="preserve">
+    <value>Smart Mail</value>
+  </data>
+  <data name="Onboarding_TourWidgetDesc.Text" xml:space="preserve">
+    <value>विजेट्स के ज़रिए कई ऐप्स से डेटा तक पहुँच और उसके साथ काम करके अधिक कुशलता से बहु-कार्य. Cliq में आने वाले नए संदेशों का ट्रैक रखें, कैलेंडर का इस्तेमाल करके अपने शेड्यूल को ट्रैक करें, या विजेट की गैलरी से चुनकर नोट्स में महत्वपूर्ण विवरण लिखें.</value>
+  </data>
+  <data name="Onboarding_TourWidgetTitle.Text" xml:space="preserve">
+    <value>विजेट</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceDesc.Text" xml:space="preserve">
+    <value>{0} आपकी सभी उत्पादकता, संचार और व्यावसायिक ज़रूरतों के लिए एक व्यापक समाधान है. यह ईमेल, त्वरित संदेश, कॉन्फ़्रेंस कॉल, कैलेंडर प्रबंधन, नोट-टेकिंग और कार्य प्रबंधन, सभी को एक ही कार्यस्थल प्लेटफ़ॉर्म में बंडल करता है.</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceTitle.Text" xml:space="preserve">
+    <value>सारी सुविधा एक में, वाला कार्यस्थल साथी</value>
+  </data>
+  <data name="SignIn_Page1_Desc.Text" xml:space="preserve">
+    <value>{0} आपके सभी कार्यस्थल उत्पादकता, संचार और व्यावसायिक ज़रूरतों के लिए आपका व्यापक प्लेटफ़ॉर्म है.</value>
+  </data>
+  <data name="SignIn_Page1_Title.Text" xml:space="preserve">
+    <value>आपका ऑल-इन-वन कार्यस्थल साथी</value>
+  </data>
+  <data name="SignIn_Page4_Desc.Text" xml:space="preserve">
+    <value>विचारों और अधिसूचनाओं को आत्मविश्वास से साझा करें, यह जानते हुए कि आपका डेटा Zoho के उद्योग सुरक्षा और गोपनीयता मानकों के सख्त पालन के साथ सुरक्षित है.</value>
+  </data>
+  <data name="SignIn_Page4_Title.Text" xml:space="preserve">
+    <value>अद्वितीय गोपनीयता और सुरक्षा</value>
+  </data>
+  <data name="SignIn_Page5_Desc.Text" xml:space="preserve">
+    <value>अपना इनबॉक्स ब्राउज़ करें, ईमेल ड्राफ़्ट करें, और जानकारी खोजें, भले ही आप ऑफ़लाइन हों.</value>
+  </data>
+  <data name="SignIn_Page5_Title.Text" xml:space="preserve">
+    <value>ऑफ़लाइन काम करें</value>
+  </data>
+  <data name="SignIn_Page3_Desc.Text" xml:space="preserve">
+    <value>अपने सभी ईमेल खातों (Zoho, Gmail, Outlook, Yahoo, iCloud, आदि से) को एक ही स्थान से प्रबंधित करें.</value>
+  </data>
+  <data name="SignIn_Page3_Title.Text" xml:space="preserve">
+    <value>कई मेलबॉक्स प्रबंधित करें</value>
+  </data>
+  <data name="SignIn_Page2_Desc.Text" xml:space="preserve">
+    <value>ऑडियो और वीडियो कॉन्फ्रेंसिंग क्षमताओं के साथ हमारी अंतर्निहित त्वरित संदेश सेवा, क्लिक का इस्तेमाल करके अपने सहयोगियों के साथ सहयोग करें.</value>
+  </data>
+  <data name="SignIn_Page2_Title.Text" xml:space="preserve">
+    <value>दूरस्थ कार्य तैयार</value>
+  </data>
+  <data name="Onboarding_Default.Text" xml:space="preserve">
+    <value>छोड़ें</value>
+  </data>
+  <data name="Onboarding_Personalize.Content" xml:space="preserve">
+    <value>अभी अनुकूलित करें</value>
+  </data>
+  <data name="Onboarding_Welcome.Text" xml:space="preserve">
+    <value>स्वागत,</value>
+  </data>
+  <data name="Onboarding_WelcomeDesc.Text" xml:space="preserve">
+    <value>हम आपको बोर्ड पर पाकर उत्साहित हैं! {0} आपको उत्पादक बने रहने में मदद करने के लिए कई वैयक्तिकरण विकल्पों के साथ प्रभावशाली सुविधाओं को जोड़ता है.</value>
+  </data>
+  <data name="Onboarding_WelcomePersonalize.Text" xml:space="preserve">
+    <value>अपने कार्यक्षेत्र को अभी अनुकूलित करें.</value>
+  </data>
+  <data name="Onboarding_AccentColor.Text" xml:space="preserve">
+    <value>एक्सेंट रंग चुनें</value>
+  </data>
+  <data name="Onboarding_AllSetDesc.Text" xml:space="preserve">
+    <value>वे अन्य रोमांचक चीज़ें जो आप ऐप के साथ कर सकते हैं.</value>
+  </data>
+  <data name="Onboarding_AllSetTitle.Text" xml:space="preserve">
+    <value>आप पूरी तरह तैयार हैं</value>
+  </data>
+  <data name="Onboarding_Colored.Content" xml:space="preserve">
+    <value>रंग किया गया</value>
+  </data>
+  <data name="Onboarding_Continue.Content" xml:space="preserve">
+    <value>जारी रखें</value>
+  </data>
+  <data name="Onboarding_DarkTheme.Text" xml:space="preserve">
+    <value>गहरा</value>
+  </data>
+  <data name="Onboarding_LightTheme.Text" xml:space="preserve">
+    <value>हल्का</value>
+  </data>
+  <data name="Onboarding_MaybeLater.Text" xml:space="preserve">
+    <value>शायद बाद में</value>
+  </data>
+  <data name="Onboarding_ModuleDesc.Text" xml:space="preserve">
+    <value>आप मेल, कैलेंडर, नोट्स और अन्य मॉड्यूल आइकन को कहाँ रखना चाहेंगे?</value>
+  </data>
+  <data name="Onboarding_ModuleLeft.Content" xml:space="preserve">
+    <value>बायां</value>
+  </data>
+  <data name="Onboarding_ModuleTitle.Text" xml:space="preserve">
+    <value>मॉड्यूल के आइकन की स्थिति</value>
+  </data>
+  <data name="Onboarding_ModuleTop.Content" xml:space="preserve">
+    <value>शीर्ष</value>
+  </data>
+  <data name="Onboarding_Native.Content" xml:space="preserve">
+    <value>मूल निवासी</value>
+  </data>
+  <data name="Onboarding_OtherModules3.Text" xml:space="preserve">
+    <value>एक त्वरित नज़र पर और भी बहुत कुछ.</value>
+  </data>
+  <data name="Onboarding_OtherModules1.Text" xml:space="preserve">
+    <value>ऐप सुविधाओं के बारे में जानें जैसे</value>
+  </data>
+  <data name="Onboarding_OtherModules2.Text" xml:space="preserve">
+    <value>ऑफ़लाइन मोड, विजेट, स्मार्ट असिस्टेंट, स्मार्ट मेल</value>
+  </data>
+  <data name="Onboarding_Style.Text" xml:space="preserve">
+    <value>स्टाइल चुनें</value>
+  </data>
+  <data name="Onboarding_SystemTheme.Text" xml:space="preserve">
+    <value>सिस्टम</value>
+  </data>
+  <data name="Onboarding_TakeQuickTour.Content" xml:space="preserve">
+    <value>एक नज़र देखें</value>
+  </data>
+  <data name="Onboarding_ThemeDesc.Text" xml:space="preserve">
+    <value>आप इसे बाद में ऐप सेटिंग से बदल सकते हैं</value>
+  </data>
+  <data name="Onboarding_ThemeTitle.Text" xml:space="preserve">
+    <value>अपने कार्यक्षेत्र को अनुकूलित करें</value>
+  </data>
+  <data name="Onboarding_ThemMode.Text" xml:space="preserve">
+    <value>थीम मोड</value>
+  </data>
+  <data name="Onboarding_White.Content" xml:space="preserve">
+    <value>प्लेन</value>
+  </data>
+  <data name="SignIn_LoginWebview.Content" xml:space="preserve">
+    <value>वेब व्यू के साथ साइन इन करें</value>
+  </data>
+  <data name="SignIn_NetworkUnavailable.Text" xml:space="preserve">
+    <value>कोई नेटवर्क नहीं. कृपया इंटरनेट से कनेक्ट करें.</value>
+  </data>
+  <data name="SignIn_SettingUpMail.Text" xml:space="preserve">
+    <value>{0} सेट अप हो रहा है...</value>
+  </data>
+  <data name="SignIn_SetUpMail.Text" xml:space="preserve">
+    <value>मेल सेट अप करें</value>
+  </data>
+  <data name="SignIn_SetUpMailDescription.Text" xml:space="preserve">
+    <value>ऐप का इस्तेमाल करने के लिए आपको Zoho email वेबसाइट विज़िट करके Zoho email खाते का सेट अप करना चाहिए.</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountButton.Content" xml:space="preserve">
+    <value>मेल खाते का सेट अप करें</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountCancelButton.Content" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="EnhanceScope.Text" xml:space="preserve">
+    <value>ऐप का उपयोग जारी रखने के लिए, कृपया "फिर से कोशिश करें" पर क्लिक करें और अपना पासवर्ड दर्ज करें</value>
+  </data>
+  <data name="TryEnhanceScopeAgain_Button.Content" xml:space="preserve">
+    <value>फिर से कोशिश करें</value>
+  </data>
+  <data name="SignIn_AlmostReady.Text" xml:space="preserve">
+    <value>लगभग तैयार है...</value>
+  </data>
+  <data name="Onboarding_Replay.Text" xml:space="preserve">
+    <value>फिर से प्ले करें</value>
+  </data>
+  <data name="ResetOnboarding.Text" xml:space="preserve">
+    <value>ऑनबोर्डिंग रीसेट करें</value>
+  </data>
+  <data name="Shell_ApiTracker.Text" xml:space="preserve">
+    <value>एपीआई ट्रैकर</value>
+  </data>
+  <data name="SC_GlobalSearch.Text" xml:space="preserve">
+    <value>वैश्विक खोज विंडो खोलें</value>
+  </data>
+  <data name="SC_ModuleSearch.Text" xml:space="preserve">
+    <value>मॉड्यूल में खोज सक्षम करें</value>
+  </data>
+  <data name="SC_OpenCallHistory.Text" xml:space="preserve">
+    <value>कॉल इतिहास खोलें</value>
+  </data>
+  <data name="SC_OpenNotifications.Text" xml:space="preserve">
+    <value>अधिसूचनाएँ खोलें</value>
+  </data>
+  <data name="SC_SmartCompose.Text" xml:space="preserve">
+    <value>स्मार्ट असिस्टेंट लॉन्च करें</value>
+  </data>
+  <data name="SC_SmartComposeCollapse.Text" xml:space="preserve">
+    <value>स्मार्ट असिस्टेंट को बंद करें</value>
+  </data>
+  <data name="SC_ToggleDND.Text" xml:space="preserve">
+    <value>DND को सक्षम/अक्षम करें</value>
+  </data>
+  <data name="SC_ToggleWidgetRHS.Text" xml:space="preserve">
+    <value>दाईं फलक दिखाएँ/छिपाएँ</value>
+  </data>
+  <data name="SC_Delete.Text" xml:space="preserve">
+    <value>हटाएँ</value>
+  </data>
+  <data name="SC_GoToCalendar.Text" xml:space="preserve">
+    <value>कैलेंडर पर जाएँ</value>
+  </data>
+  <data name="SC_GoToCliq.Text" xml:space="preserve">
+    <value>Cliq पर जाएँ</value>
+  </data>
+  <data name="SC_GoToContacts.Text" xml:space="preserve">
+    <value>संपर्क पर जाएँ</value>
+  </data>
+  <data name="SC_GoToMail.Text" xml:space="preserve">
+    <value>मेल पर जाएँ</value>
+  </data>
+  <data name="SC_GoToNextModule.Text" xml:space="preserve">
+    <value>अगले मॉड्यूल पर जाएँ</value>
+  </data>
+  <data name="SC_GoToNotes.Text" xml:space="preserve">
+    <value>नोट्स पर जाएँ</value>
+  </data>
+  <data name="SC_GoToPreviousModule.Text" xml:space="preserve">
+    <value>पिछले मॉड्यूल पर जाएँ</value>
+  </data>
+  <data name="SC_GoToTasks.Text" xml:space="preserve">
+    <value>कार्य पर जाएँ</value>
+  </data>
+  <data name="SC_OpenSettings.Text" xml:space="preserve">
+    <value>सेटिंग खोलें</value>
+  </data>
+  <data name="SC_SwitchView.Text" xml:space="preserve">
+    <value>स्विच व्यू-वर्टिकल स्प्लिट, हॉरिजॉन्टल स्प्लिट, नो स्प्लिट</value>
+  </data>
+  <data name="Onboarding_TakeMeToApp.Content" xml:space="preserve">
+    <value>मुझे ऐप पर ले जाएँ</value>
+  </data>
+  <data name="SC_GoToFeedback.Text" xml:space="preserve">
+    <value>प्रतिक्रिया खोलें</value>
+  </data>
+  <data name="DND_DND.Text" xml:space="preserve">
+    <value>परेशान न करें</value>
+  </data>
+  <data name="DND_DNDEnabled.Text" xml:space="preserve">
+    <value>DND के सक्रिय होने परः</value>
+  </data>
+  <data name="DND_MuteChats.Text" xml:space="preserve">
+    <value>अलर्ट साउंड म्यूट किया जाएगा</value>
+  </data>
+  <data name="DND_NotificationsPaused.Text" xml:space="preserve">
+    <value>सभी अधिसूचनाएँ रोक दी जाएगी</value>
+  </data>
+  <data name="UserSwitch_Users.Text" xml:space="preserve">
+    <value>उपयोगकर्ता</value>
+  </data>
+  <data name="UserSwitch_CheckIn.Text" xml:space="preserve">
+    <value>चेक-इन</value>
+  </data>
+  <data name="UserSwitch_CheckOut.Text" xml:space="preserve">
+    <value>चेक-आउट</value>
+  </data>
+  <data name="DND_AlwaysOn.Text" xml:space="preserve">
+    <value>हमेशा चालू रखें</value>
+  </data>
+  <data name="DND_OneHour.Text" xml:space="preserve">
+    <value>1 घंटे के लिए</value>
+  </data>
+  <data name="DND_UntilEvng.Text" xml:space="preserve">
+    <value>इस शाम तक</value>
+  </data>
+  <data name="DND_UntilTmrw.Text" xml:space="preserve">
+    <value>कल तक</value>
+  </data>
+  <data name="DND_ChatStatusToBusy.Text" xml:space="preserve">
+    <value>क्लिक की स्थिति "डू नॉट डिस्टर्ब" में बदल जाएगी</value>
+  </data>
+  <data name="UserSwitch_Off.Text" xml:space="preserve">
+    <value>बंद करें</value>
+  </data>
+  <data name="UserSwitch_On.Text" xml:space="preserve">
+    <value>इस पर</value>
+  </data>
+  <data name="UserSwitch_Text.Text" xml:space="preserve">
+    <value>उपयोगकर्ता स्विच</value>
+  </data>
+  <data name="Release_Notes.Text" xml:space="preserve">
+    <value>रीलीज़ नोट्स</value>
+  </data>
+  <data name="SC_OpenNew.Text" xml:space="preserve">
+    <value>नया ईमेल, नोट, कार्य, ईवेंट, संपर्क</value>
+  </data>
+  <data name="SC_OpenUserSwitch.Text" xml:space="preserve">
+    <value>उपयोगकर्ता स्विच खोलें</value>
+  </data>
+  <data name="SC_ToggleLHS.Text" xml:space="preserve">
+    <value>बाए पैन को टॉगल करें</value>
+  </data>
+  <data name="DND_TurnOff.Text" xml:space="preserve">
+    <value>DND बंद करें</value>
+  </data>
+  <data name="Service_ServiceDisabled.Text" xml:space="preserve">
+    <value>सेवा के रूप में अक्षम किया गया</value>
+  </data>
+  <data name="ExtendedSplashScreenLoading.Text" xml:space="preserve">
+    <value>लोड हो रहा है...</value>
+  </data>
+  <data name="DND_EveningMsg.Text" xml:space="preserve">
+    <value>आज शाम 7:00 बजे तक</value>
+  </data>
+  <data name="DND_MorningMsg.Text" xml:space="preserve">
+    <value>कल सुबह 7:00 बजे तक</value>
+  </data>
+  <data name="DND_OneHourMsg.Text" xml:space="preserve">
+    <value>{0} तक चालू</value>
+  </data>
+  <data name="UserSwitch_Cancel.Content" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="UserSwitch_Switch.Content" xml:space="preserve">
+    <value>स्विच करें और शुरू करें</value>
+  </data>
+  <data name="UserSwitch_SwitchUser.Text" xml:space="preserve">
+    <value>उपयोगकर्ता स्विच करें</value>
+  </data>
+  <data name="UserSwitch_SwitchUserDisclaimer.Text" xml:space="preserve">
+    <value>प्राथमिक उपयोगकर्ता को दूसरे पर स्विच करने से ऐप फिर से चालू हो जाएगा. क्या आप वाकई स्विच करना चाहते हैं?</value>
+  </data>
+  <data name="DeleteConfirmation_Cancel.Content" xml:space="preserve">
+    <value>नहीं, मैं इसे रख लूँगा</value>
+  </data>
+  <data name="DeleteConfirmation_Delete.Content" xml:space="preserve">
+    <value>टिप्पणी हटाएँ</value>
+  </data>
+  <data name="DeleteConfirmation_DeleteText.Text" xml:space="preserve">
+    <value>इस टिप्पणी को हटाएँ</value>
+  </data>
+  <data name="DeleteConfirmation_Disclaimer.Text" xml:space="preserve">
+    <value>आप इस टिप्पणी को हटाने वाले हैं. क्या आप वाकई इस कार्रवाई को पूरा करना चाहते हैं?</value>
+  </data>
+  <data name="SA_FeebackIdea.Text" xml:space="preserve">
+    <value>यहाँ कोई विचार है - कोई सुविधा का सुझाव दें</value>
+  </data>
+  <data name="SA_FeedbackAngry.Text" xml:space="preserve">
+    <value>ऐप के साथ काम नहीं कर पाए. मुझसे जल्द से जल्द संपर्क करें! मैं डायग्नोस्टिक्स और लॉग शामिल कर रहा हूँ</value>
+  </data>
+  <data name="SA_FeedbackBoquet.Text" xml:space="preserve">
+    <value>ऐप पसंद हैं! बधाई का गुलदस्ता भेजें</value>
+  </data>
+  <data name="SA_FeedbackBug.Text" xml:space="preserve">
+    <value>बग की रिपोर्ट करें - मैं डायग्नोस्टिक्स और लॉग शामिल कर रहा हूँ</value>
+  </data>
+  <data name="SA_FeedbackDesc.Text" xml:space="preserve">
+    <value>ऐप के बारे में अपनी प्रतिक्रिया साझा करें</value>
+  </data>
+  <data name="SA_FeedbackError.Text" xml:space="preserve">
+    <value>आपकी प्रतिक्रिया भेजते समय कोई त्रुटि हुई</value>
+  </data>
+  <data name="SA_FeedbackSending.Text" xml:space="preserve">
+    <value>आपकी प्रतिक्रिया भेजा जा रहा है</value>
+  </data>
+  <data name="SA_FeedbackThankYou.Text" xml:space="preserve">
+    <value>आपकी प्रतिक्रिया के लिए आपका धन्यवाद</value>
+  </data>
+  <data name="SA_Placeholder.Text" xml:space="preserve">
+    <value>आपके इनपुट की प्रतीक्षा में...</value>
+  </data>
+  <data name="SA_AllFilter.Text" xml:space="preserve">
+    <value>सभी</value>
+  </data>
+  <data name="SA_ChannelFilter.Text" xml:space="preserve">
+    <value>चैनल</value>
+  </data>
+  <data name="SA_GroupFilter.Text" xml:space="preserve">
+    <value>समूह</value>
+  </data>
+  <data name="SA_PersonalFilter.Text" xml:space="preserve">
+    <value>निजी</value>
+  </data>
+  <data name="Mail_SharedSuccessfully.Text" xml:space="preserve">
+    <value>ईमेल सफलतापूर्वक साझा किया गया</value>
+  </data>
+  <data name="ClearedLogs_Success.Text" xml:space="preserve">
+    <value>ऐप लॉग फ़ाइलें मिटाई गईं</value>
+  </data>
+  <data name="ServiceAction_NewContact.Text" xml:space="preserve">
+    <value>नया संपर्क</value>
+  </data>
+  <data name="ServiceAction_NewEvent.Text" xml:space="preserve">
+    <value>नया ईवेंट</value>
+  </data>
+  <data name="ServiceAction_NewMail.Text" xml:space="preserve">
+    <value>नया मेल</value>
+  </data>
+  <data name="ServiceAction_NewNote.Text" xml:space="preserve">
+    <value>नया नोट</value>
+  </data>
+  <data name="ServiceAction_NewTask.Text" xml:space="preserve">
+    <value>नया कार्य</value>
+  </data>
+  <data name="App_HideFolders.Text" xml:space="preserve">
+    <value>फ़ोल्डर पैन छिपाएँ</value>
+  </data>
+  <data name="App_More.Text" xml:space="preserve">
+    <value>और</value>
+  </data>
+  <data name="App_ShowFolders.Text" xml:space="preserve">
+    <value>फ़ोल्डर पैन दिखाएँ</value>
+  </data>
+  <data name="More_Text.Text" xml:space="preserve">
+    <value>और</value>
+  </data>
+  <data name="Onboarding_Back.Text" xml:space="preserve">
+    <value>वापस जाएँ</value>
+  </data>
+  <data name="Onboarding_Skip.Content" xml:space="preserve">
+    <value>छोड़ें</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColLeft.Text" xml:space="preserve">
+    <value>बायाँ स्तंभ इंसर्ट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColRight.Text" xml:space="preserve">
+    <value>दायां स्तंभ इंसर्ट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowAbove.Text" xml:space="preserve">
+    <value>ऊपर की पंक्तियाँ इंसर्ट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowBelow.Text" xml:space="preserve">
+    <value>नीचे की पंक्तियाँ इंसर्ट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_Copy.Text" xml:space="preserve">
+    <value>कॉपी करें</value>
+  </data>
+  <data name="General_CopyLink.Text" xml:space="preserve">
+    <value>लिंक कॉपी करें</value>
+  </data>
+  <data name="Compose_ContextMenu_Cut.Text" xml:space="preserve">
+    <value>कट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_DelCol.Text" xml:space="preserve">
+    <value>स्तंभ हटाएँ</value>
+  </data>
+  <data name="Compose_ContextMenu_Delete.Text" xml:space="preserve">
+    <value>हटाएँ</value>
+  </data>
+  <data name="Compose_ContextMenu_DelRow.Text" xml:space="preserve">
+    <value>पंक्ति हटाएँ</value>
+  </data>
+  <data name="Compose_ContextMenu_DelTable.Text" xml:space="preserve">
+    <value>टेबल हटाएँ</value>
+  </data>
+  <data name="Compose_ContextMenu_EditLink.Text" xml:space="preserve">
+    <value>लिंक संपादित करें</value>
+  </data>
+  <data name="Compose_ContextMenu_Link.Text" xml:space="preserve">
+    <value>लिंक</value>
+  </data>
+  <data name="Compose_ContextMenu_OpenLink.Text" xml:space="preserve">
+    <value>लिंक खोलें</value>
+  </data>
+  <data name="Compose_ContextMenu_Paste.Text" xml:space="preserve">
+    <value>पेस्ट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteSource.Text" xml:space="preserve">
+    <value>स्रोत फ़ॉर्मेटिंग पेस्ट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteText.Text" xml:space="preserve">
+    <value>केवल पाठ पेस्ट करें</value>
+  </data>
+  <data name="Compose_ContextMenu_Redo.Text" xml:space="preserve">
+    <value>रेडो</value>
+  </data>
+  <data name="Compose_ContextMenu_RemoveLink.Text" xml:space="preserve">
+    <value>लिंक निकालें</value>
+  </data>
+  <data name="Compose_ContextMenu_SelectAll.Text" xml:space="preserve">
+    <value>सभी चुनें</value>
+  </data>
+  <data name="Compose_ContextMenu_TableOptions.Text" xml:space="preserve">
+    <value>टेबल के विकल्प</value>
+  </data>
+  <data name="Compose_ContextMenu_Undo.Text" xml:space="preserve">
+    <value>पूर्ववत् करें</value>
+  </data>
+  <data name="About_AllRightsReserved.Text" xml:space="preserve">
+    <value>सर्वाधिकार सुरक्षित</value>
+  </data>
+  <data name="About_Zohocorp.Text" xml:space="preserve">
+    <value>© 2025, Zoho कॉर्पोरेशन प्रा. लि.</value>
+  </data>
+  <data name="About_Version.Text" xml:space="preserve">
+    <value>संस्करण</value>
+  </data>
+  <data name="Notifications_Close.Text" xml:space="preserve">
+    <value>बंद करें</value>
+  </data>
+  <data name="Notifications_Popout.Text" xml:space="preserve">
+    <value>पॉपआउट करें</value>
+  </data>
+  <data name="App_FAQs.Text" xml:space="preserve">
+    <value>अक्सर पूछे जाने प्रश्न</value>
+  </data>
+  <data name="App_OfflineIndicatior.Text" xml:space="preserve">
+    <value>नेटवर्क कनेक्शन अनुपलब्ध</value>
+  </data>
+  <data name="Streams_Invite.Content" xml:space="preserve">
+    <value>आमंत्रित करें</value>
+  </data>
+  <data name="General_Download_Downloaded_ToastDesc.Text" xml:space="preserve">
+    <value>{0} डाउनलोड किया गया</value>
+  </data>
+  <data name="General_Download_OpenAttachment_ToastAction.Text" xml:space="preserve">
+    <value>खोलें</value>
+  </data>
+  <data name="General_Download_ViewInExplorer_ToastAction.Text" xml:space="preserve">
+    <value>explorer में देखें</value>
+  </data>
+  <data name="Tag_Name.Text" xml:space="preserve">
+    <value>टैग का नाम</value>
+  </data>
+  <data name="Tag_NameHolderText.PlaceholderText" xml:space="preserve">
+    <value>टैग का नाम</value>
+  </data>
+  <data name="Tag_Color.Text" xml:space="preserve">
+    <value>टैग रंग</value>
+  </data>
+  <data name="General_Create.Text" xml:space="preserve">
+    <value>बनाएँ</value>
+  </data>
+  <data name="General_Save.Text" xml:space="preserve">
+    <value>सहेजें</value>
+  </data>
+  <data name="Create_Tag_Title.Text" xml:space="preserve">
+    <value>टैग बनाएँ</value>
+  </data>
+  <data name="Edit_Tag_Title.Text" xml:space="preserve">
+    <value>टैग संपादित करें</value>
+  </data>
+  <data name="Tag_As.Text" xml:space="preserve">
+    <value>इसके रूप में टैग करें</value>
+  </data>
+  <data name="Search_Tag.PlaceholderText" xml:space="preserve">
+    <value>टैग खोजें</value>
+  </data>
+  <data name="UserSwitch_Timer_HRS.Text" xml:space="preserve">
+    <value>घंटे</value>
+  </data>
+  <data name="SmartAssistant_High_Priority.Text" xml:space="preserve">
+    <value>उच्च</value>
+  </data>
+  <data name="SmartAssistant_PriorityHeader.Text" xml:space="preserve">
+    <value>प्राथमिकता</value>
+  </data>
+  <data name="SmartAssistant_Low_Priority.Text" xml:space="preserve">
+    <value>कम</value>
+  </data>
+  <data name="SmartAssistant_Medium_Priority.Text" xml:space="preserve">
+    <value>मध्यम</value>
+  </data>
+  <data name="Cliq_UserAvailabilityNotification_ChatButton.Text" xml:space="preserve">
+    <value>चैट</value>
+  </data>
+  <data name="General_LicenseError_SingleUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>केवल Zoho Mail, Zoho Workplace, और Zoho One (Zoho Mail सक्रिय होने के साथ) के भुगतान करने वाले और मूल्यांकन करने वाले उपयोगकर्ताओं के पास Trident तक पहुँच है. जिस खाते ({0}) तक आप पहुंचने की कोशिश कर रहे हैं उसके लिए वैध सदस्यता की ज़रूरी है.</value>
+  </data>
+  <data name="General_LicenseError_MultiUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>केवल Zoho Mail, Zoho Workplace, और Zoho One (Zoho Mail सक्रिय होने के साथ) के भुगतान करने वाले और मूल्यांकन करने वाले उपयोगकर्ताओं के पास Trident तक पहुँच है. जिन खातों ({0} और {1}) तक आप पहुंचने की कोशिश कर रहे हैं, उनके लिए वैध सदस्यता ज़रूरी है.</value>
+  </data>
+  <data name="General_Delete.Text" xml:space="preserve">
+    <value>हटाएँ</value>
+  </data>
+  <data name="Tag_Not_Created.Text" xml:space="preserve">
+    <value>कोई टैग नहीं बनाया गया</value>
+  </data>
+  <data name="General_CopiedLink_Info.Text" xml:space="preserve">
+    <value>लिंक क्लिपबोर्ड पर कॉपी कर दी गई</value>
+  </data>
+  <data name="Attachment_WorkDrive_Header.Text" xml:space="preserve">
+    <value>WorkDrive अनुलग्नक</value>
+  </data>
+  <data name="Tag_EmptyTag_Info.Text" xml:space="preserve">
+    <value>कोई टैग नहीं जोड़ा गया</value>
+  </data>
+</root>

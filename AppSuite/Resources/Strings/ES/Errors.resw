@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Trident_AppUpgrade_Error.Text" xml:space="preserve">
+    <value>Error al actualizar la aplicación</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Desc.Text" xml:space="preserve">
+    <value>Se produjo un error al actualizar la aplicación. Para completar la actualización de la aplicación y continuar usando Trident, restablezca los datos de la aplicación.</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note.Text" xml:space="preserve">
+    <value>Todas las personalizaciones se restablecerán a sus configuraciones predeterminadas y es posible que se pierdan datos locales no sincronizados durante este proceso.</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Reset.Text" xml:space="preserve">
+    <value>Restablecer datos de la aplicación</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_QuitApp.Text" xml:space="preserve">
+    <value>Salir de la aplicación</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_Head.Text" xml:space="preserve">
+    <value>Nota:</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_LearnMore.Text" xml:space="preserve">
+    <value>Obtener más información</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Guide.Text" xml:space="preserve">
+    <value>Siga los pasos de esta guía de ayuda para restablecer los datos de la aplicación.</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_OK.Text" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="API_ThresholdLimitExceeded.Text" xml:space="preserve">
+    <value>No se puede {0}. Vuelva a intentarlo más tarde.</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Description.Text" xml:space="preserve">
+    <value>La versión antigua de Trident sigue instalada en su dispositivo. Recomendamos desinstalar la versión antigua antes de iniciar sesión.</value>
+  </data>
+  <data name="ErrorType_Unknown.Text" xml:space="preserve">
+    <value>Se produjo un error desconocido</value>
+  </data>
+  <data name="UserSwitch_ErrorInfo.Text" xml:space="preserve">
+    <value>No se pudo cambiar el usuario principal</value>
+  </data>
+  <data name="SignIn_AuthtokenLimitExceeded.Text" xml:space="preserve">
+    <value>Ha superado su límite del token de autenticación</value>
+  </data>
+  <data name="SignIn_NoNetwork.Text" xml:space="preserve">
+    <value>No hay conexión de red. Vuelva a conectarse a Internet e inténtelo de nuevo.</value>
+  </data>
+  <data name="PageLoadingError.Text" xml:space="preserve">
+    <value>Se ha producido un error al cargar esta página</value>
+  </data>
+  <data name="General_NoNetwork.Text" xml:space="preserve">
+    <value>No hay conexión de red. Vuelva a conectarse a Internet e inténtelo de nuevo.</value>
+  </data>
+  <data name="No_Default_User_Available.Text" xml:space="preserve">
+    <value>No hay ningún usuario predeterminado disponible</value>
+  </data>
+  <data name="Invalid_Tag_Name.Text" xml:space="preserve">
+    <value>Se encontraron caracteres no válidos en el nombre de etiqueta</value>
+  </data>
+  <data name="Connectivity_Error_Info.Text" xml:space="preserve">
+    <value>Se ha perdido la conexión de red. No se pueden buscar actualizaciones.</value>
+  </data>
+  <data name="Error_Info.Text" xml:space="preserve">
+    <value>No se pudieron buscar actualizaciones. Repita la operación más tarde.</value>
+  </data>
+  <data name="No_Updates_Info.Text" xml:space="preserve">
+    <value>Está actualizado</value>
+  </data>
+  <data name="ErrorType_AuthenticationFailed.Text" xml:space="preserve">
+    <value>La autenticación ha fallado</value>
+  </data>
+  <data name="ErrorType_NoInternetAccess.Text" xml:space="preserve">
+    <value>Sin acceso a Internet. Vuelva a conectarse a Internet e inténtelo de nuevo.</value>
+  </data>
+  <data name="ErrorType_RequestTimeOut.Text" xml:space="preserve">
+    <value>Se agotó el tiempo de espera de la solicitud</value>
+  </data>
+  <data name="ErrorType_InvalidRequest.Text" xml:space="preserve">
+    <value>Solicitud no válida</value>
+  </data>
+  <data name="Streams_AddCommentOffline.Text" xml:space="preserve">
+    <value>No se pueden agregar comentarios en el modo sin conexión</value>
+  </data>
+  <data name="Streams_LockPostOffline.Text" xml:space="preserve">
+    <value>No se puede bloquear/desbloquear una publicación en el modo sin conexión</value>
+  </data>
+  <data name="Stream_AddInviteeOffline.Text" xml:space="preserve">
+    <value>No se pueden agregar invitados en el modo sin conexión</value>
+  </data>
+  <data name="Stream_LikeOffline.Text" xml:space="preserve">
+    <value>No se pueden publicar reacciones “Me gusta” en el modo sin conexión.</value>
+  </data>
+  <data name="AppSuite_HomePageTakesLongerToLoad.Text" xml:space="preserve">
+    <value>El proceso está tardando más tiempo de lo habitual</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Description.Text" xml:space="preserve">
+    <value>La versión antigua de Trident sigue instalada en su dispositivo. Recomendamos desinstalar la versión antigua antes de iniciar sesión.</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Title.Text" xml:space="preserve">
+    <value>Desinstalar la versión antigua de Trident</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_OK_Button.Content" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="AppSuite_Offline" xml:space="preserve">
+    <value>Sin conexión</value>
+    <comment>If no network found then this will be shown in App status bar</comment>
+  </data>
+  <data name="ErrorType_SomethingWentWrong.Text" xml:space="preserve">
+    <value>Se produjo un error, repita la operación.</value>
+  </data>
+  <data name="AppSuite_HomePageStillTakingLongerToLoad.Text" xml:space="preserve">
+    <value>Se está cargando, espere...</value>
+  </data>
+  <data name="Mail_UnprocessedMultipleImages.Text" xml:space="preserve">
+    <value>No se pueden procesar algunas de las imágenes.</value>
+  </data>
+  <data name="Mail_UnprocessedSingleImage.Text" xml:space="preserve">
+    <value>No se puede procesar la imagen</value>
+  </data>
+  <data name="AllNotificationsReadStatus_ErrorInfo.Text" xml:space="preserve">
+    <value>Se produjo un error al marcar todas las notificaciones como le\u00eddas</value>
+  </data>
+  <data name="NotificationReadStatus_ErrorInfo.Text" xml:space="preserve">
+    <value>Se produjo un error al marcar la notificaci\u00f3n como le\u00edda</value>
+  </data>
+</root>

@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SC_LockApp.Text" xml:space="preserve">
+    <value>アプリをロック</value>
+  </data>
+  <data name="General_Homepage_Loading.Text" xml:space="preserve">
+    <value>すべての準備を整えています...</value>
+  </data>
+  <data name="General_HomePage_AppInitializing.Text" xml:space="preserve">
+    <value>Tridentを起動しています...</value>
+  </data>
+  <data name="General_HomePage_LoadingTakesFewMoments.Text" xml:space="preserve">
+    <value>もう少しで完了です！これには少しだけ時間がかかります...</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Desc.Text" xml:space="preserve">
+    <value>保存されていない変更内容はすべて失われます。</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_ConfirmButton.Text" xml:space="preserve">
+    <value>破棄</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Title.Text" xml:space="preserve">
+    <value>{0}を破棄しますか？</value>
+  </data>
+  <data name="Streams_LoadMore.Text" xml:space="preserve">
+    <value>もっと取り込む	</value>
+  </data>
+  <data name="AttachmentSizeExceedInMB_Alert_Tip.Text" xml:space="preserve">
+    <value>すべての添付ファイルの合計サイズは {0} MB を超えることはできません</value>
+  </data>
+  <data name="SC_OpenNewItem.Text" xml:space="preserve">
+    <value>新しいメール、イベント、またはメモ</value>
+  </data>
+  <data name="General_Label_SettingUpTrident.Text" xml:space="preserve">
+    <value>Tridentをセットアップしています...</value>
+  </data>
+  <data name="General_Attribution.Text" xml:space="preserve">
+    <value>帰属</value>
+  </data>
+  <data name="General_PrivacyPolicy.Text" xml:space="preserve">
+    <value>個人情報保護方針</value>
+  </data>
+  <data name="General_TermsOfService.Text" xml:space="preserve">
+    <value>サービス規約</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_ConfirmationButton.Text" xml:space="preserve">
+    <value>設定する</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Description.Text" xml:space="preserve">
+    <value>Trident を使用するには、Zoho Mail アカウントが必要です。Zoho Mail Web サイトにアクセスして開始できます。</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_DisclaimerNote.Text" xml:space="preserve">
+    <value>Trident は、Zoho Mail、Zoho Workplace、および Zoho One の有料ユーザーのみが利用できます。</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Title.Text" xml:space="preserve">
+    <value>Zoho Mailアカウントをセットアップする</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_RAMSize_Label.Text" xml:space="preserve">
+    <value>RAMサイズ(バイト単位)</value>
+  </data>
+  <data name="Streams_PrivateReply.Text" xml:space="preserve">
+    <value>プライベートで返信</value>
+  </data>
+  <data name="Streams_AttachmentUploading_ToolTip.Text" xml:space="preserve">
+    <value>添付ファイルのアップロード中...</value>
+  </data>
+  <data name="Streams_PostComment.Text" xml:space="preserve">
+    <value>コメントを投稿</value>
+  </data>
+  <data name="Notifications_YetToBeSupported.Text" xml:space="preserve">
+    <value>この通知はまだサポートされていません。ここをクリックして、{0} Webで表示します。</value>
+  </data>
+  <data name="Genral_ServiceName_Cliq.Text" xml:space="preserve">
+    <value>Cliq</value>
+  </data>
+  <data name="Ok_Text.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Service_CRM.Text" xml:space="preserve">
+    <value>Zoho CRM</value>
+  </data>
+  <data name="Service_Expense.Text" xml:space="preserve">
+    <value>Zoho Expense</value>
+  </data>
+  <data name="Service_Workdrive.Text" xml:space="preserve">
+    <value>WorkDrive</value>
+  </data>
+  <data name="Source_Stream.Text" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="Source_Workdrive.Text" xml:space="preserve">
+    <value>WorkDrive</value>
+  </data>
+  <data name="About_AllRightsReserved.Text" xml:space="preserve">
+    <value>All Rights Reserved</value>
+  </data>
+  <data name="SignOut_Loading.Text" xml:space="preserve">
+    <value>ログアウトしています。お待ちください</value>
+  </data>
+  <data name="General_NoResultsFound.Text" xml:space="preserve">
+    <value>結果が見つかりません</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppName_Label.Text" xml:space="preserve">
+    <value>アプリ名</value>
+  </data>
+  <data name="Cliq_ServiceAction_NewChat_MenuFlyoutItem.Text" xml:space="preserve">
+    <value>新しいチャット</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppVersion_Label.Text" xml:space="preserve">
+    <value>アプリのバージョン</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceFamily_Label.Text" xml:space="preserve">
+    <value>デバイスファミリ</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceManufacturer_Label.Text" xml:space="preserve">
+    <value>デバイスのメーカー</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceModel_Label.Text" xml:space="preserve">
+    <value>デバイスモデル</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_OSVersion_Label.Text" xml:space="preserve">
+    <value>OSバージョン</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_SystemArchitecture_Label.Text" xml:space="preserve">
+    <value>システムアーキテクチャ</value>
+  </data>
+  <data name="SignIn_Failed_UserMessage.Text" xml:space="preserve">
+    <value>ログインが失敗しました。後で再試行してください</value>
+  </data>
+  <data name="SignIn_FailedMessageDialog_CloseButton.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="SignIn_RefreshTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>上限に達したトークンをリフレッシュしてください。</value>
+  </data>
+  <data name="SignIn_AccessTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>上限に達したトークンにアクセスしてください。</value>
+  </data>
+  <data name="UserSwitch_Accounts.Text" xml:space="preserve">
+    <value>ユーザーアカウント</value>
+  </data>
+  <data name="DND_NotSupportedOffline_UserMessage.Text" xml:space="preserve">
+    <value>DNDはオフラインではサポートされていません</value>
+  </data>
+  <data name="General_About.Text" xml:space="preserve">
+    <value>概要</value>
+  </data>
+  <data name="Rootshell_Flyout_CheckForUpdates.Text" xml:space="preserve">
+    <value>アップデートを確認</value>
+  </data>
+  <data name="Rootshell_Flyout_Feedback.Text" xml:space="preserve">
+    <value>フィードバック</value>
+  </data>
+  <data name="Rootshell_Flyout_GlobalSearch.Text" xml:space="preserve">
+    <value>グローバル検索</value>
+  </data>
+  <data name="Rootshell_Flyout_GoTo.Text" xml:space="preserve">
+    <value>移動先</value>
+  </data>
+  <data name="Rootshell_Flyout_Help.Text" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="Rootshell_Flyout_KeyboardShortcuts.Text" xml:space="preserve">
+    <value>キーボードショートカット</value>
+  </data>
+  <data name="Rootshell_Flyout_NextModule.Text" xml:space="preserve">
+    <value>次のモジュール</value>
+  </data>
+  <data name="Rootshell_Flyout_PrevModule.Text" xml:space="preserve">
+    <value>前のモジュール</value>
+  </data>
+  <data name="Rootshell_Flyout_ReleaseNotes.Text" xml:space="preserve">
+    <value>リリースノート</value>
+  </data>
+  <data name="Rootshell_Flyout_Settings.Text" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Rootshell_NoPrewiewDescription.Text" xml:space="preserve">
+    <value>アプリウインドウのサイズ（高さ/幅）を挙げてください。</value>
+  </data>
+  <data name="Rootshell_OfflineButton.Text" xml:space="preserve">
+    <value>オフライン</value>
+  </data>
+  <data name="Rootshell_Tooltip_Search.Text" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Rootshell_Flyout_Calls.Text" xml:space="preserve">
+    <value>通話</value>
+  </data>
+  <data name="Rootshell_Flyout_Notifications.Text" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Rootshell_Flyout_Widgets.Text" xml:space="preserve">
+    <value>ウィジェット</value>
+  </data>
+  <data name="SA_Label_Feedback.Text" xml:space="preserve">
+    <value>フィードバック</value>
+  </data>
+  <data name="ToolTip_Notifications.Text" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="ToolTip_Widgets.Text" xml:space="preserve">
+    <value>ウィジェット</value>
+  </data>
+  <data name="RevisableAttachments_Header_Attachments.Text" xml:space="preserve">
+    <value>添付ファイル</value>
+  </data>
+  <data name="Genral_ServiceName_Calendar.Text" xml:space="preserve">
+    <value>カレンダー</value>
+  </data>
+  <data name="Genral_ServiceName_Contacts.Text" xml:space="preserve">
+    <value>連絡先</value>
+  </data>
+  <data name="Genral_ServiceName_Mail.Text" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="Genral_ServiceName_Notes.Text" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="Genral_ServiceName_Tasks.Text" xml:space="preserve">
+    <value>タスク</value>
+  </data>
+  <data name="AppTitle.Text" xml:space="preserve">
+    <value>Tridentベータ</value>
+  </data>
+  <data name="AttachmentViewer_Attachment.Text" xml:space="preserve">
+    <value>添付</value>
+  </data>
+  <data name="AttachmentViewer_Attachments.Text" xml:space="preserve">
+    <value>添付ファイル</value>
+  </data>
+  <data name="Cancel_Text.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="ChooseServiceProvider_Text.Text" xml:space="preserve">
+    <value>サービスプロバイダーを選択</value>
+  </data>
+  <data name="DeleteConfirmation_Text.Text" xml:space="preserve">
+    <value>アカウントを削除してよろしいですか？</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchCompleted.Text" xml:space="preserve">
+    <value>初回取り込みが完了しました</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchError.Text" xml:space="preserve">
+    <value>初回取り込みエラー</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchInProgress.Text" xml:space="preserve">
+    <value>初回取り込み中です...</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchRequested.Text" xml:space="preserve">
+    <value>初回取り込みが要求されました</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchSuspended.Text" xml:space="preserve">
+    <value>初回取り込みが一時停止しました</value>
+  </data>
+  <data name="MailSyncStatus_NotSynced.Text" xml:space="preserve">
+    <value>同期されていません</value>
+  </data>
+  <data name="MailSyncStatus_SelectedForSyncing.Text" xml:space="preserve">
+    <value>同期用に選択しました</value>
+  </data>
+  <data name="MailSyncStatus_Synced.Text" xml:space="preserve">
+    <value>同期</value>
+  </data>
+  <data name="MailSyncStatus_SyncError.Text" xml:space="preserve">
+    <value>同期が失敗しました</value>
+  </data>
+  <data name="MailSyncStatus_SyncInProgress.Text" xml:space="preserve">
+    <value>同期しています...</value>
+  </data>
+  <data name="MailSyncStatus_SyncRequested.Text" xml:space="preserve">
+    <value>同期が要求されました</value>
+  </data>
+  <data name="MailSyncStatus_SyncSuspended.Text" xml:space="preserve">
+    <value>同期が一時停止しました</value>
+  </data>
+  <data name="RootShell_Loading.Text" xml:space="preserve">
+    <value>読み込み中です。お待ちください...</value>
+  </data>
+  <data name="Service_Invoice.Text" xml:space="preserve">
+    <value>請求書</value>
+  </data>
+  <data name="Service_Connect.Text" xml:space="preserve">
+    <value>接続ポスト</value>
+  </data>
+  <data name="Service_Projects.Text" xml:space="preserve">
+    <value>プロジェクト</value>
+  </data>
+  <data name="Service_Mail.Text" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="SignIn_LoginButton.Content" xml:space="preserve">
+    <value>お使いのアカウントにサインイン</value>
+  </data>
+  <data name="TAC_AgreeButton.Content" xml:space="preserve">
+    <value>同意</value>
+  </data>
+  <data name="TAC_CancelButton.Content" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="TermsAndConditions.Text" xml:space="preserve">
+    <value>利用約款</value>
+  </data>
+  <data name="General_AppDisplayName.Text" xml:space="preserve">
+    <value>Trident</value>
+  </data>
+  <data name="TAC_Description.Text" xml:space="preserve">
+    <value>ソフトウェアの使用を継続するには、ソフトウェアライセンス契約の条件に同意する必要があります。</value>
+  </data>
+  <data name="Source_Chat.Text" xml:space="preserve">
+    <value>チャット</value>
+  </data>
+  <data name="Source_Connect.Text" xml:space="preserve">
+    <value>つながり</value>
+  </data>
+  <data name="Source_Contacts.Text" xml:space="preserve">
+    <value>連絡先</value>
+  </data>
+  <data name="Source_Inline.Text" xml:space="preserve">
+    <value>インライン</value>
+  </data>
+  <data name="Source_Mail.Text" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="Source_Notes.Text" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="Source_ProfilePic.Text" xml:space="preserve">
+    <value>プロフィール写真</value>
+  </data>
+  <data name="Source_Unknown.Text" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="UserMessage_NoInternet.Text" xml:space="preserve">
+    <value>ネットワークがありません。インターネットに接続してから再試行してください。</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkDesc.Text" xml:space="preserve">
+    <value>搭載されたCliqアプリを使って、チームとリモートでコラボレートします。音声またはビデオメッセージを送信、画面共有を有効にしてコラボレーションを簡素化、およびすべて{0}から、電話会議で複数のユーザーと取り組みます。</value>
+  </data>
+  <data name="Onboarding_TourMenuBarDesc.Text" xml:space="preserve">
+    <value>{0}のシステムトレイアプリを使って、データにクイックアクセス、システムの他のアプリで取り組みながら、即時対応します。このアプリは、音声またはビデオ通話中に、コントロールセンターとして二役を担います。</value>
+  </data>
+  <data name="Onboarding_TourMenuBarTitle.Text" xml:space="preserve">
+    <value>システムトレイアプリ</value>
+  </data>
+  <data name="Onboarding_TourOfflineDesc.Text" xml:space="preserve">
+    <value>オフラインアクセスでネットワーク接続に混乱がある場合も、中断されずにメールを処理します。メールの参照、作成、検索等多数の機能は折るファインモードで引き続き作動します。</value>
+  </data>
+  <data name="Onboarding_TourOfflineTitle.Text" xml:space="preserve">
+    <value>オフラインアクセス</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkTitle.Text" xml:space="preserve">
+    <value>リモートワーク準備完了</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantDesc.Text" xml:space="preserve">
+    <value>スマートアシスタントでは、タスクとコマンドを速やかに実行できます。例えば、「ジョンに電話する」や「ルーシーに明日の午後3時に会う」等を入力して、電話したり、会議を予約したりします。</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantTitle.Text" xml:space="preserve">
+    <value>スマートアシスタント</value>
+  </data>
+  <data name="Onboarding_TourSmartMailDesc.Text" xml:space="preserve">
+    <value>Zohoアプリケーションから、受信トレイ内の文脈アプリデータを表示して、メール通知を速やかに対応します。</value>
+  </data>
+  <data name="Onboarding_TourSmartMailTitle.Text" xml:space="preserve">
+    <value>スマートメール</value>
+  </data>
+  <data name="Onboarding_TourWidgetDesc.Text" xml:space="preserve">
+    <value>ウィジェットで複数のアプリからデータにアクセスおよび処理し、複数のタスクを効率よくこなします。ウィジェットのギャラリから選択して、Cliqで新着メッセージを追跡し、カレンダーで予定を追跡、またはメモの重要な詳細事項を書き留めます。</value>
+  </data>
+  <data name="Onboarding_TourWidgetTitle.Text" xml:space="preserve">
+    <value>ウィジェット</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceDesc.Text" xml:space="preserve">
+    <value>{0}は、すべての生産性、通信、およびビジネスニーズ向けの包括的プラットフォームです。メール、インスタントメッセージング、電話会議、カレンダー管理、メモ取り、およびタスク管理をすべて1つのワークプレイスプラットフォームで一括処理します。</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceTitle.Text" xml:space="preserve">
+    <value>オールインワンのワークプレイスコンパニオン</value>
+  </data>
+  <data name="SignIn_Page1_Desc.Text" xml:space="preserve">
+    <value>{0}は、お使いのすべてのワークプレイスの生産性、通信、およびビジネスニーズ向けの包括的プラットフォームです。</value>
+  </data>
+  <data name="SignIn_Page1_Title.Text" xml:space="preserve">
+    <value>オールインワンのワークプレイスコンパニオン</value>
+  </data>
+  <data name="SignIn_Page4_Desc.Text" xml:space="preserve">
+    <value>Zohoが業界のセキュリティとプライバシー基準を厳しく順守することで、お持ちのデータが安全で保護されていることを基盤として、アイデアを情報を機密を保護して共有します。</value>
+  </data>
+  <data name="SignIn_Page4_Title.Text" xml:space="preserve">
+    <value>最重要なプライバシーとセキュルティ</value>
+  </data>
+  <data name="SignIn_Page5_Desc.Text" xml:space="preserve">
+    <value>あなたがオフラインのときも、受信ボックスを参照、メールを下書き、および情報を検索します。</value>
+  </data>
+  <data name="SignIn_Page5_Title.Text" xml:space="preserve">
+    <value>オフラインで仕事</value>
+  </data>
+  <data name="SignIn_Page3_Desc.Text" xml:space="preserve">
+    <value>お使いのメールアカウントすべて(Zoho、Gmail、Outlook、Yahoo、iCloud等から)を1つの場所から管理します。</value>
+  </data>
+  <data name="SignIn_Page3_Title.Text" xml:space="preserve">
+    <value>複数のメールボックスを管理</value>
+  </data>
+  <data name="SignIn_Page2_Desc.Text" xml:space="preserve">
+    <value>当社の搭載型インスタントメッセージングサービスである、音声とビデオ寛喜機能付きのCliqを使って同僚と協調</value>
+  </data>
+  <data name="SignIn_Page2_Title.Text" xml:space="preserve">
+    <value>リモートワーク準備完了</value>
+  </data>
+  <data name="Onboarding_Default.Text" xml:space="preserve">
+    <value>スキップ</value>
+  </data>
+  <data name="Onboarding_Personalize.Content" xml:space="preserve">
+    <value>今すぐカスタマイズ</value>
+  </data>
+  <data name="Onboarding_Welcome.Text" xml:space="preserve">
+    <value>ようこそ、</value>
+  </data>
+  <data name="Onboarding_WelcomeDesc.Text" xml:space="preserve">
+    <value>ご利用ありがとうございます! {0}は、協力な機能と、パーソナライズオプションのホストを組み合わせ、生産力維持をサポートします。</value>
+  </data>
+  <data name="Onboarding_WelcomePersonalize.Text" xml:space="preserve">
+    <value>ワークプレイスを今すぐカスタマイズします。</value>
+  </data>
+  <data name="Onboarding_AccentColor.Text" xml:space="preserve">
+    <value>アクセントカラーを選択</value>
+  </data>
+  <data name="Onboarding_AllSetDesc.Text" xml:space="preserve">
+    <value>他にアプリでできる適切なことは次のとおりです。</value>
+  </data>
+  <data name="Onboarding_AllSetTitle.Text" xml:space="preserve">
+    <value>すべて設定完了です</value>
+  </data>
+  <data name="Onboarding_Colored.Content" xml:space="preserve">
+    <value>色付き</value>
+  </data>
+  <data name="Onboarding_Continue.Content" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="Onboarding_DarkTheme.Text" xml:space="preserve">
+    <value>ダーク</value>
+  </data>
+  <data name="Onboarding_LightTheme.Text" xml:space="preserve">
+    <value>ライト</value>
+  </data>
+  <data name="Onboarding_MaybeLater.Text" xml:space="preserve">
+    <value>おそらく後で</value>
+  </data>
+  <data name="Onboarding_ModuleDesc.Text" xml:space="preserve">
+    <value>メール、カレンダー、メモ、およびその他モジュールアイコンをどこに配置しますか？</value>
+  </data>
+  <data name="Onboarding_ModuleLeft.Content" xml:space="preserve">
+    <value>左</value>
+  </data>
+  <data name="Onboarding_ModuleTitle.Text" xml:space="preserve">
+    <value>モジュールアイコンの位置</value>
+  </data>
+  <data name="Onboarding_ModuleTop.Content" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="Onboarding_Native.Content" xml:space="preserve">
+    <value>ネイティブ</value>
+  </data>
+  <data name="Onboarding_OtherModules3.Text" xml:space="preserve">
+    <value>また、クイックツアーで詳細情報。</value>
+  </data>
+  <data name="Onboarding_OtherModules1.Text" xml:space="preserve">
+    <value>以下のようなアプリ機能について確認します</value>
+  </data>
+  <data name="Onboarding_OtherModules2.Text" xml:space="preserve">
+    <value>オフラインモード、ウィジェット、スマートアシスタント、スマートメール</value>
+  </data>
+  <data name="Onboarding_Style.Text" xml:space="preserve">
+    <value>形式を選択</value>
+  </data>
+  <data name="Onboarding_SystemTheme.Text" xml:space="preserve">
+    <value>システム</value>
+  </data>
+  <data name="Onboarding_TakeQuickTour.Content" xml:space="preserve">
+    <value>ツアーに参加</value>
+  </data>
+  <data name="Onboarding_ThemeDesc.Text" xml:space="preserve">
+    <value>これは、アプリ設定から後で変更できます</value>
+  </data>
+  <data name="Onboarding_ThemeTitle.Text" xml:space="preserve">
+    <value>ワークプレイスをカスタマイズ</value>
+  </data>
+  <data name="Onboarding_ThemMode.Text" xml:space="preserve">
+    <value>テーマモード</value>
+  </data>
+  <data name="Onboarding_White.Content" xml:space="preserve">
+    <value>プレーン</value>
+  </data>
+  <data name="SignIn_LoginWebview.Content" xml:space="preserve">
+    <value>Webビューでサインイン</value>
+  </data>
+  <data name="SignIn_NetworkUnavailable.Text" xml:space="preserve">
+    <value>ネットワークがありません。インターネットに接続してください。</value>
+  </data>
+  <data name="SignIn_SettingUpMail.Text" xml:space="preserve">
+    <value>{0}をセットアップしています...</value>
+  </data>
+  <data name="SignIn_SetUpMail.Text" xml:space="preserve">
+    <value>メールをセットアップ</value>
+  </data>
+  <data name="SignIn_SetUpMailDescription.Text" xml:space="preserve">
+    <value>アプリを使用するには、Zoho MailのWebサイトからZohoのメールアカウントをセットアップする必要があります。</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountButton.Content" xml:space="preserve">
+    <value>メール アカウントをセットアップ</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountCancelButton.Content" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="EnhanceScope.Text" xml:space="preserve">
+    <value>アプリの使用を続行するには、［再試行］をクリックし、パスワードを入力してください</value>
+  </data>
+  <data name="TryEnhanceScopeAgain_Button.Content" xml:space="preserve">
+    <value>再試行してください</value>
+  </data>
+  <data name="SignIn_AlmostReady.Text" xml:space="preserve">
+    <value>ほとんど準備完了...</value>
+  </data>
+  <data name="Onboarding_Replay.Text" xml:space="preserve">
+    <value>再生</value>
+  </data>
+  <data name="ResetOnboarding.Text" xml:space="preserve">
+    <value>オンボーディングをリセット</value>
+  </data>
+  <data name="Shell_ApiTracker.Text" xml:space="preserve">
+    <value>APIトラッカー</value>
+  </data>
+  <data name="SC_GlobalSearch.Text" xml:space="preserve">
+    <value>グローバル検索ウインドウを開く</value>
+  </data>
+  <data name="SC_ModuleSearch.Text" xml:space="preserve">
+    <value>モジュールの検索を有効化</value>
+  </data>
+  <data name="SC_OpenCallHistory.Text" xml:space="preserve">
+    <value>通話履歴を開く</value>
+  </data>
+  <data name="SC_OpenNotifications.Text" xml:space="preserve">
+    <value>通知を開く</value>
+  </data>
+  <data name="SC_SmartCompose.Text" xml:space="preserve">
+    <value>スマートアシスタントを起動</value>
+  </data>
+  <data name="SC_SmartComposeCollapse.Text" xml:space="preserve">
+    <value>スマートアシスタントを閉じる</value>
+  </data>
+  <data name="SC_ToggleDND.Text" xml:space="preserve">
+    <value>DNDを有効化/無効化</value>
+  </data>
+  <data name="SC_ToggleWidgetRHS.Text" xml:space="preserve">
+    <value>右ペインを表示/非表示</value>
+  </data>
+  <data name="SC_Delete.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="SC_GoToCalendar.Text" xml:space="preserve">
+    <value>カレンダーを表示</value>
+  </data>
+  <data name="SC_GoToCliq.Text" xml:space="preserve">
+    <value>Cliqに移動</value>
+  </data>
+  <data name="SC_GoToContacts.Text" xml:space="preserve">
+    <value>連絡先に移動</value>
+  </data>
+  <data name="SC_GoToMail.Text" xml:space="preserve">
+    <value>メールに移動</value>
+  </data>
+  <data name="SC_GoToNextModule.Text" xml:space="preserve">
+    <value>次のモジュールに移動</value>
+  </data>
+  <data name="SC_GoToNotes.Text" xml:space="preserve">
+    <value>メモに移動</value>
+  </data>
+  <data name="SC_GoToPreviousModule.Text" xml:space="preserve">
+    <value>前のモジュールに移動</value>
+  </data>
+  <data name="SC_GoToTasks.Text" xml:space="preserve">
+    <value>タスクに移動</value>
+  </data>
+  <data name="SC_OpenSettings.Text" xml:space="preserve">
+    <value>設定を開く</value>
+  </data>
+  <data name="SC_SwitchView.Text" xml:space="preserve">
+    <value>ビューを切り替える - 垂直分割、水平分割、分割なし</value>
+  </data>
+  <data name="Onboarding_TakeMeToApp.Content" xml:space="preserve">
+    <value>アプリに移動</value>
+  </data>
+  <data name="SC_GoToFeedback.Text" xml:space="preserve">
+    <value>フィードバックを開く</value>
+  </data>
+  <data name="DND_DND.Text" xml:space="preserve">
+    <value>おやすみ</value>
+  </data>
+  <data name="DND_DNDEnabled.Text" xml:space="preserve">
+    <value>DNDが有効な場合:</value>
+  </data>
+  <data name="DND_MuteChats.Text" xml:space="preserve">
+    <value>アラートソースはミュートになります</value>
+  </data>
+  <data name="DND_NotificationsPaused.Text" xml:space="preserve">
+    <value>すべての通知は一時停止されます</value>
+  </data>
+  <data name="UserSwitch_Users.Text" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="UserSwitch_CheckIn.Text" xml:space="preserve">
+    <value>チェックイン</value>
+  </data>
+  <data name="UserSwitch_CheckOut.Text" xml:space="preserve">
+    <value>チェックアウト</value>
+  </data>
+  <data name="DND_AlwaysOn.Text" xml:space="preserve">
+    <value>常時オン</value>
+  </data>
+  <data name="DND_OneHour.Text" xml:space="preserve">
+    <value>1時間</value>
+  </data>
+  <data name="DND_UntilEvng.Text" xml:space="preserve">
+    <value>この夕方まで</value>
+  </data>
+  <data name="DND_UntilTmrw.Text" xml:space="preserve">
+    <value>明日まで</value>
+  </data>
+  <data name="DND_ChatStatusToBusy.Text" xml:space="preserve">
+    <value>Cliqステータスは「おやすみ」に変更されます</value>
+  </data>
+  <data name="UserSwitch_Off.Text" xml:space="preserve">
+    <value>オフ</value>
+  </data>
+  <data name="UserSwitch_On.Text" xml:space="preserve">
+    <value>時</value>
+  </data>
+  <data name="UserSwitch_Text.Text" xml:space="preserve">
+    <value>ユーザースイッチ</value>
+  </data>
+  <data name="Release_Notes.Text" xml:space="preserve">
+    <value>リリースノート</value>
+  </data>
+  <data name="SC_OpenNew.Text" xml:space="preserve">
+    <value>新しいメール、メモ、タスク、イベント、連絡先</value>
+  </data>
+  <data name="SC_OpenUserSwitch.Text" xml:space="preserve">
+    <value>ユーザースイッチを開く</value>
+  </data>
+  <data name="SC_ToggleLHS.Text" xml:space="preserve">
+    <value>左ペインを切り替える</value>
+  </data>
+  <data name="DND_TurnOff.Text" xml:space="preserve">
+    <value>DNDをオフにする</value>
+  </data>
+  <data name="Service_ServiceDisabled.Text" xml:space="preserve">
+    <value>サービスとして無効</value>
+  </data>
+  <data name="ExtendedSplashScreenLoading.Text" xml:space="preserve">
+    <value>読り込んでいます...</value>
+  </data>
+  <data name="DND_EveningMsg.Text" xml:space="preserve">
+    <value>今日午後7:00までオン</value>
+  </data>
+  <data name="DND_MorningMsg.Text" xml:space="preserve">
+    <value>明日午前7:00までオン</value>
+  </data>
+  <data name="DND_OneHourMsg.Text" xml:space="preserve">
+    <value>{0}までオン</value>
+  </data>
+  <data name="UserSwitch_Cancel.Content" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="UserSwitch_Switch.Content" xml:space="preserve">
+    <value>切り替えて再起動</value>
+  </data>
+  <data name="UserSwitch_SwitchUser.Text" xml:space="preserve">
+    <value>ユーザーを切り替える</value>
+  </data>
+  <data name="UserSwitch_SwitchUserDisclaimer.Text" xml:space="preserve">
+    <value>プライマリユーザーを別のユーザーに切り替えると、アプリが再起動します。切り替えてよろしいですか？</value>
+  </data>
+  <data name="DeleteConfirmation_Cancel.Content" xml:space="preserve">
+    <value>いいえ。維持します</value>
+  </data>
+  <data name="DeleteConfirmation_Delete.Content" xml:space="preserve">
+    <value>コメントを削除</value>
+  </data>
+  <data name="DeleteConfirmation_DeleteText.Text" xml:space="preserve">
+    <value>このコメントを削除</value>
+  </data>
+  <data name="DeleteConfirmation_Disclaimer.Text" xml:space="preserve">
+    <value>このコメントを削除しようとしています。この操作を完了してよろしいですか？</value>
+  </data>
+  <data name="SA_FeebackIdea.Text" xml:space="preserve">
+    <value>ここにアイデアがあります - 機能を提出</value>
+  </data>
+  <data name="SA_FeedbackAngry.Text" xml:space="preserve">
+    <value>このアプリで作動できません。早急に私に連絡してください！診断とログを含めています</value>
+  </data>
+  <data name="SA_FeedbackBoquet.Text" xml:space="preserve">
+    <value>アプリは気に入っていただけましたか！祝辞を送信</value>
+  </data>
+  <data name="SA_FeedbackBug.Text" xml:space="preserve">
+    <value>バグを報告 - 診断とログを含めています</value>
+  </data>
+  <data name="SA_FeedbackDesc.Text" xml:space="preserve">
+    <value>アプリについてのフィードバックをお寄せください</value>
+  </data>
+  <data name="SA_FeedbackError.Text" xml:space="preserve">
+    <value>フィードバックを送信中にエラーが発生しました</value>
+  </data>
+  <data name="SA_FeedbackSending.Text" xml:space="preserve">
+    <value>フィードバック送信中</value>
+  </data>
+  <data name="SA_FeedbackThankYou.Text" xml:space="preserve">
+    <value>フィードバックをいただきありがとうございます。</value>
+  </data>
+  <data name="SA_Placeholder.Text" xml:space="preserve">
+    <value>入力待ちです...</value>
+  </data>
+  <data name="SA_AllFilter.Text" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="SA_ChannelFilter.Text" xml:space="preserve">
+    <value>チャンネル</value>
+  </data>
+  <data name="SA_GroupFilter.Text" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="SA_PersonalFilter.Text" xml:space="preserve">
+    <value>個人</value>
+  </data>
+  <data name="Mail_SharedSuccessfully.Text" xml:space="preserve">
+    <value>メールが正常に共有されました</value>
+  </data>
+  <data name="ClearedLogs_Success.Text" xml:space="preserve">
+    <value>アプリログファイルを消去しました</value>
+  </data>
+  <data name="ServiceAction_NewContact.Text" xml:space="preserve">
+    <value>新しい連絡先</value>
+  </data>
+  <data name="ServiceAction_NewEvent.Text" xml:space="preserve">
+    <value>新しいイベント</value>
+  </data>
+  <data name="ServiceAction_NewMail.Text" xml:space="preserve">
+    <value>新しいメール</value>
+  </data>
+  <data name="ServiceAction_NewNote.Text" xml:space="preserve">
+    <value>新しいメモ</value>
+  </data>
+  <data name="ServiceAction_NewTask.Text" xml:space="preserve">
+    <value>新しいタスク</value>
+  </data>
+  <data name="App_HideFolders.Text" xml:space="preserve">
+    <value>フォルダペインを非表示</value>
+  </data>
+  <data name="App_More.Text" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="App_ShowFolders.Text" xml:space="preserve">
+    <value>フォルダペインを表示</value>
+  </data>
+  <data name="More_Text.Text" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="Onboarding_Back.Text" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="Onboarding_Skip.Content" xml:space="preserve">
+    <value>スキップ</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColLeft.Text" xml:space="preserve">
+    <value>左に列を挿入</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColRight.Text" xml:space="preserve">
+    <value>右に列を挿入</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowAbove.Text" xml:space="preserve">
+    <value>上に行を挿入</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowBelow.Text" xml:space="preserve">
+    <value>下に行を挿入</value>
+  </data>
+  <data name="Compose_ContextMenu_Copy.Text" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="General_CopyLink.Text" xml:space="preserve">
+    <value>リンクをコピー</value>
+  </data>
+  <data name="Compose_ContextMenu_Cut.Text" xml:space="preserve">
+    <value>カット</value>
+  </data>
+  <data name="Compose_ContextMenu_DelCol.Text" xml:space="preserve">
+    <value>列を削除</value>
+  </data>
+  <data name="Compose_ContextMenu_Delete.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Compose_ContextMenu_DelRow.Text" xml:space="preserve">
+    <value>行を削除</value>
+  </data>
+  <data name="Compose_ContextMenu_DelTable.Text" xml:space="preserve">
+    <value>表を削除</value>
+  </data>
+  <data name="Compose_ContextMenu_EditLink.Text" xml:space="preserve">
+    <value>リンクを編集</value>
+  </data>
+  <data name="Compose_ContextMenu_Link.Text" xml:space="preserve">
+    <value>リンク</value>
+  </data>
+  <data name="Compose_ContextMenu_OpenLink.Text" xml:space="preserve">
+    <value>リンクを開く</value>
+  </data>
+  <data name="Compose_ContextMenu_Paste.Text" xml:space="preserve">
+    <value>貼り付け</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteSource.Text" xml:space="preserve">
+    <value>ソース形式設定を貼り付ける</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteText.Text" xml:space="preserve">
+    <value>テキストのみを貼り付ける</value>
+  </data>
+  <data name="Compose_ContextMenu_Redo.Text" xml:space="preserve">
+    <value>やり直し</value>
+  </data>
+  <data name="Compose_ContextMenu_RemoveLink.Text" xml:space="preserve">
+    <value>リンクを削除</value>
+  </data>
+  <data name="Compose_ContextMenu_SelectAll.Text" xml:space="preserve">
+    <value>すべて選択</value>
+  </data>
+  <data name="Compose_ContextMenu_TableOptions.Text" xml:space="preserve">
+    <value>表オプション</value>
+  </data>
+  <data name="Compose_ContextMenu_Undo.Text" xml:space="preserve">
+    <value>元に戻す</value>
+  </data>
+  <data name="About_Zohocorp.Text" xml:space="preserve">
+    <value>© 2025, Zoho Corporation Pvt. Ltd.</value>
+  </data>
+  <data name="About_Version.Text" xml:space="preserve">
+    <value>バージョン</value>
+  </data>
+  <data name="Notifications_Close.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Notifications_Popout.Text" xml:space="preserve">
+    <value>ポップアウト</value>
+  </data>
+  <data name="App_FAQs.Text" xml:space="preserve">
+    <value>よくある質問</value>
+  </data>
+  <data name="App_OfflineIndicatior.Text" xml:space="preserve">
+    <value>ネットワーク接続できません</value>
+  </data>
+  <data name="Streams_Invite.Content" xml:space="preserve">
+    <value>招待</value>
+  </data>
+  <data name="General_Download_Downloaded_ToastDesc.Text" xml:space="preserve">
+    <value>{0}をダウンロードしました</value>
+  </data>
+  <data name="General_Download_OpenAttachment_ToastAction.Text" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="General_Download_ViewInExplorer_ToastAction.Text" xml:space="preserve">
+    <value>エクスプローラで表示</value>
+  </data>
+  <data name="Tag_Name.Text" xml:space="preserve">
+    <value>タグ名</value>
+  </data>
+  <data name="Tag_NameHolderText.PlaceholderText" xml:space="preserve">
+    <value>タグ名</value>
+  </data>
+  <data name="Tag_Color.Text" xml:space="preserve">
+    <value>タグ色</value>
+  </data>
+  <data name="General_Create.Text" xml:space="preserve">
+    <value>作成</value>
+  </data>
+  <data name="General_Save.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Create_Tag_Title.Text" xml:space="preserve">
+    <value>タグを作成</value>
+  </data>
+  <data name="Edit_Tag_Title.Text" xml:space="preserve">
+    <value>タグを編集</value>
+  </data>
+  <data name="Tag_As.Text" xml:space="preserve">
+    <value>名前を付けてタグ付け</value>
+  </data>
+  <data name="Search_Tag.PlaceholderText" xml:space="preserve">
+    <value>タグを検索</value>
+  </data>
+  <data name="UserSwitch_Timer_HRS.Text" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="SmartAssistant_High_Priority.Text" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="SmartAssistant_PriorityHeader.Text" xml:space="preserve">
+    <value>優先度</value>
+  </data>
+  <data name="SmartAssistant_Low_Priority.Text" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="SmartAssistant_Medium_Priority.Text" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Cliq_UserAvailabilityNotification_ChatButton.Text" xml:space="preserve">
+    <value>チャット</value>
+  </data>
+  <data name="General_LicenseError_SingleUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>Zoho Mail、Zoho Workplace、およびZoho One(Zoho Mailがアクティブ化されている)の有料および評価ユーザーのみTridentへのアクセス権があります。アクセスしようとしているアカウント（{0}）には有効なサブスクリプションが必要です。</value>
+  </data>
+  <data name="General_LicenseError_MultiUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>Zoho Mail、Zoho Workplace、およびZoho One(Zoho Mailがアクティブ化されている)の有料および評価ユーザーのみTridentへのアクセス権があります。アクセスしようとしているアカウント ({0} と {1}）には有効な購読が必要です。</value>
+  </data>
+  <data name="General_Delete.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Tag_Not_Created.Text" xml:space="preserve">
+    <value>タグが作成されていません</value>
+  </data>
+  <data name="General_CopiedLink_Info.Text" xml:space="preserve">
+    <value>リンクをクリップボードにコピーしました</value>
+  </data>
+  <data name="Attachment_WorkDrive_Header.Text" xml:space="preserve">
+    <value>WorkDrive添付ファイル</value>
+  </data>
+  <data name="Tag_EmptyTag_Info.Text" xml:space="preserve">
+    <value>タグが追加されていません</value>
+  </data>
+</root>

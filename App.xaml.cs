@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Security.ExchangeActiveSyncProvisioning;
+using Windows.Services.Maps;
+using Windows.Storage;
+using Windows.System.Profile;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -14,6 +20,14 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Zoho.Common.Analytics.Data;
+using Zoho.Common.Util;
+using Zoho.Logging;
+using Zoho.SSO.Adapter;
+using Zoho.UWP;
+using Zoho.UWP.Common.Error;
+using Zoho.UWP.Common.Util;
+using Zoho.UWP.Components.OnBoarding.View;
 
 namespace SemSeparation
 {
@@ -29,16 +43,46 @@ namespace SemSeparation
         public App()
         {
             this.InitializeComponent();
-            this.Suspending += OnSuspending;
+
+            EasClientDeviceInformation easDeviceInfo = new EasClientDeviceInformation();
+            string manufacturer = easDeviceInfo.SystemManufacturer;
+            if (!string.IsNullOrEmpty(easDeviceInfo.SystemSku))
+            {
+                manufacturer += $" ({easDeviceInfo.SystemSku})";
+            }
+
+            DeviceInfo.Initialize(easDeviceInfo.SystemProductName, manufacturer, AnalyticsInfo.VersionInfo.DeviceFamily, AnalyticsInfo.VersionInfo.DeviceFamilyVersion, Package.Current.Id.Architecture.ToString());
+            UWPAppInfo.Initialize("Trident");
+            ZAppInfoProvider.Initialize(UWPAppInfo.Instance);
+            this.UnhandledException += OnUnhandledException;
+            this.Suspending += OnAppSuspending;
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
+
+        private async void OnAppSuspending(object sender, SuspendingEventArgs e)
+        {
+         
+        }
+        private async void OnUnhandledException(object sender, Windows.UI.Xaml.UnhandledExceptionEventArgs e)
+        {
+            e.Handled = true;
+            var exception = e.Exception;
+            App.Current.UnhandledException -= OnUnhandledException;
+            await LogManager.GetCrashLogger().Log(new CrashLog(exception));
+            Current.Exit();
+        }
+
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
+
+
+            if (e.PrelaunchActivated) { return; }
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -59,18 +103,45 @@ namespace SemSeparation
                 Window.Current.Content = rootFrame;
             }
 
-            if (e.PrelaunchActivated == false)
+            if (rootFrame.Content == null)
             {
-                if (rootFrame.Content == null)
+                var accessToken = "Zoho-oauthtoken 1002.aa1bf035a4da7c6e772a873a95366a3b.220f7571372c1ecdf23ac648f78e918d";
+                //var isSignedIn =
+                //    await Task.Run(async () =>
+                //{
+                await InitializationManager.Instance.InitializeAppAsync();
+                var ssoAdapter = ZSSOProvider.Instance.GetService<IAuthenticationAdapter>();
+                var userAdapter = ZSSOProvider.Instance.GetService<ISSOUserAdapter>();
+
+                async Task<bool> isInvalidSession() => (await ssoAdapter.CheckAndLogOutAsync(userAdapter.GetCurrentUserZuid())).GetValueOrDefault(true);
+
+                var isSignedIn = ssoAdapter.IsUserLoggedIn();
+                //});
+
+                if (isSignedIn)
                 {
-                    // When the navigation stack isn't restored navigate to the first page,
-                    // configuring the new page by passing required information as a navigation
-                    // parameter
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    await InitializeYourServiceHere();
+                    rootFrame.Navigate(typeof(DemoPage), e.Arguments);
+                    // Ensure the current window is active
+                    Window.Current.Activate();
                 }
-                // Ensure the current window is active
-                Window.Current.Activate();
+                else
+                {
+                    var signIn = new SignIn();
+                    rootFrame.Content = signIn;
+                    // Ensure the current window is active
+                    Window.Current.Activate();
+                    await signIn.AuthenticateUserAsync();
+                    await InitializeYourServiceHere();
+                    rootFrame.Navigate(typeof(DemoPage), e.Arguments);
+                }
             }
+        }
+
+        public async Task InitializeYourServiceHere()
+        {
+            // NotesServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid());
+            await Task.CompletedTask;
         }
 
         /// <summary>

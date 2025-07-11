@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="sheet-a" d="M0,1.07464957 C0,0.481137002 0.485276699,0 1.06491995,0 L12,0 L16,4 L16,14.9350801 C16,15.5232191 15.5211518,16 14.9253504,16 L1.07464957,16 C0.481137002,16 0,15.5211518 0,14.9253504 L0,1.07464957 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24" fill="#F3F3F4" rx="4.4"/>
+    <g transform="translate(4 4)">
+      <mask id="sheet-b" fill="#fff">
+        <use xlink:href="#sheet-a"/>
+      </mask>
+      <use fill="#65C07C" xlink:href="#sheet-a"/>
+      <polygon fill="#FFF" points="11.2 .813 12 .813 12 4.88 11.2 4.88" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="12 4.067 15.2 4.067 15.2 4.88 12 4.88" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="2.803 6.11 10.003 6.11 10.003 6.923 2.803 6.923" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="2.403 8.552 12.4 8.552 12.4 9.366 2.4 9.366" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="2.4 10.986 12.4 10.986 12.4 11.803 2.4 11.803" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="2.4 13.437 12.4 13.437 12.4 14.25 2.4 14.25" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="6.006 6.108 6.806 6.108 6.806 14.241 6.006 14.241" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="9.221 6.118 10.021 6.118 10.021 14.251 9.221 14.251" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="12.414 8.548 13.214 8.548 13.214 14.25 12.838 14.25 12.414 14.25" mask="url(#sheet-b)"/>
+      <polygon fill="#FFF" points="2.411 6.107 3.211 6.107 3.211 14.241 2.411 14.241" mask="url(#sheet-b)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SC_LockApp.Text" xml:space="preserve">
+    <value>锁定应用</value>
+  </data>
+  <data name="General_Homepage_Loading.Text" xml:space="preserve">
+    <value>正在做好一切准备...</value>
+  </data>
+  <data name="General_HomePage_AppInitializing.Text" xml:space="preserve">
+    <value>正在初始化 Trident...</value>
+  </data>
+  <data name="General_HomePage_LoadingTakesFewMoments.Text" xml:space="preserve">
+    <value>就要成功了！这只需要几分钟...</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Desc.Text" xml:space="preserve">
+    <value>所有未保存的更改都将丢失。</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_ConfirmButton.Text" xml:space="preserve">
+    <value>放弃</value>
+  </data>
+  <data name="General_DiscardChanges_Dialog_Title.Text" xml:space="preserve">
+    <value>放弃 {0}？</value>
+  </data>
+  <data name="Streams_LoadMore.Text" xml:space="preserve">
+    <value>加载更多	</value>
+  </data>
+  <data name="AttachmentSizeExceedInMB_Alert_Tip.Text" xml:space="preserve">
+    <value>所有附加的文件的总大小不能超出 {0} MB</value>
+  </data>
+  <data name="General_Label_SettingUpTrident.Text" xml:space="preserve">
+    <value>正在安装 Trident...</value>
+  </data>
+  <data name="SC_OpenNewItem.Text" xml:space="preserve">
+    <value>新邮件、活动或记事</value>
+  </data>
+  <data name="General_Attribution.Text" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="General_PrivacyPolicy.Text" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="General_TermsOfService.Text" xml:space="preserve">
+    <value>服务条款</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_ConfirmationButton.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Description.Text" xml:space="preserve">
+    <value>要使用 Trident，您需要一个 Zoho Mail 帐户。您可访问 Zoho Mail 网站以开始。</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_DisclaimerNote.Text" xml:space="preserve">
+    <value>Trident is 仅向 Zoho Mail、Zoho Workplace 和 Zoho One 的付费用户提供。</value>
+  </data>
+  <data name="Mail_Account_Dialog_SetupMailAccount_Title.Text" xml:space="preserve">
+    <value>设置 Zoho Mail 帐户</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_RAMSize_Label.Text" xml:space="preserve">
+    <value>RAM 大小（以字节为单位）</value>
+  </data>
+  <data name="Streams_PrivateReply.Text" xml:space="preserve">
+    <value>私下回复</value>
+  </data>
+  <data name="Streams_AttachmentUploading_ToolTip.Text" xml:space="preserve">
+    <value>正在上传附件...</value>
+  </data>
+  <data name="Streams_PostComment.Text" xml:space="preserve">
+    <value>发布评论</value>
+  </data>
+  <data name="Notifications_YetToBeSupported.Text" xml:space="preserve">
+    <value>此通知仍未受支持。单击此处以在 {0} web 上查看。</value>
+  </data>
+  <data name="Genral_ServiceName_Cliq.Text" xml:space="preserve">
+    <value>Cliq</value>
+  </data>
+  <data name="Genral_ServiceName_Mail.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="AppTitle.Text" xml:space="preserve">
+    <value>Trident</value>
+  </data>
+  <data name="Service_CRM.Text" xml:space="preserve">
+    <value>Zoho CRM</value>
+  </data>
+  <data name="Service_Expense.Text" xml:space="preserve">
+    <value>Zoho Expense</value>
+  </data>
+  <data name="Service_Workdrive.Text" xml:space="preserve">
+    <value>WorkDrive</value>
+  </data>
+  <data name="Service_Mail.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="General_AppDisplayName.Text" xml:space="preserve">
+    <value>Trident</value>
+  </data>
+  <data name="Source_Mail.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Source_Workdrive.Text" xml:space="preserve">
+    <value>Workdrive</value>
+  </data>
+  <data name="SignOut_Loading.Text" xml:space="preserve">
+    <value>请稍等，您正在注销</value>
+  </data>
+  <data name="General_NoResultsFound.Text" xml:space="preserve">
+    <value>未找到结果</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppName_Label.Text" xml:space="preserve">
+    <value>应用名称</value>
+  </data>
+  <data name="Cliq_ServiceAction_NewChat_MenuFlyoutItem.Text" xml:space="preserve">
+    <value>新建聊天</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_AppVersion_Label.Text" xml:space="preserve">
+    <value>应用程序版本</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceFamily_Label.Text" xml:space="preserve">
+    <value>设备系列</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceManufacturer_Label.Text" xml:space="preserve">
+    <value>设备制造商</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_DeviceModel_Label.Text" xml:space="preserve">
+    <value>设备型号</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_OSVersion_Label.Text" xml:space="preserve">
+    <value>操作系统版本</value>
+  </data>
+  <data name="FeedbackDiagnosticInfo_SystemArchitecture_Label.Text" xml:space="preserve">
+    <value>系统架构</value>
+  </data>
+  <data name="SignIn_Failed_UserMessage.Text" xml:space="preserve">
+    <value>登录失败。请稍后重试</value>
+  </data>
+  <data name="SignIn_FailedMessageDialog_CloseButton.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="SignIn_RefreshTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>已达到刷新令牌限制。</value>
+  </data>
+  <data name="SignIn_AccessTokenLimitReached_UserMessage.Text" xml:space="preserve">
+    <value>已达到访问令牌限制。</value>
+  </data>
+  <data name="UserSwitch_Accounts.Text" xml:space="preserve">
+    <value>用户帐户</value>
+  </data>
+  <data name="DND_NotSupportedOffline_UserMessage.Text" xml:space="preserve">
+    <value>离线时不支持 DND</value>
+  </data>
+  <data name="General_About.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Rootshell_Flyout_CheckForUpdates.Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="Rootshell_Flyout_Feedback.Text" xml:space="preserve">
+    <value>反馈</value>
+  </data>
+  <data name="Rootshell_Flyout_GlobalSearch.Text" xml:space="preserve">
+    <value>全局搜索</value>
+  </data>
+  <data name="Rootshell_Flyout_GoTo.Text" xml:space="preserve">
+    <value>转到</value>
+  </data>
+  <data name="Rootshell_Flyout_Help.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="Rootshell_Flyout_KeyboardShortcuts.Text" xml:space="preserve">
+    <value>键盘快捷方式</value>
+  </data>
+  <data name="Rootshell_Flyout_NextModule.Text" xml:space="preserve">
+    <value>下一模块</value>
+  </data>
+  <data name="Rootshell_Flyout_PrevModule.Text" xml:space="preserve">
+    <value>前一个模块</value>
+  </data>
+  <data name="Rootshell_Flyout_ReleaseNotes.Text" xml:space="preserve">
+    <value>发行说明</value>
+  </data>
+  <data name="Rootshell_Flyout_Settings.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Rootshell_NoPrewiewDescription.Text" xml:space="preserve">
+    <value>请增大应用窗口的大小（高度/宽度）。</value>
+  </data>
+  <data name="Rootshell_OfflineButton.Text" xml:space="preserve">
+    <value>离线</value>
+  </data>
+  <data name="Rootshell_Tooltip_Search.Text" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Rootshell_Flyout_Calls.Text" xml:space="preserve">
+    <value>通话</value>
+  </data>
+  <data name="Rootshell_Flyout_Notifications.Text" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Rootshell_Flyout_Widgets.Text" xml:space="preserve">
+    <value>小部件</value>
+  </data>
+  <data name="SA_Label_Feedback.Text" xml:space="preserve">
+    <value>反馈</value>
+  </data>
+  <data name="ToolTip_Notifications.Text" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="ToolTip_Widgets.Text" xml:space="preserve">
+    <value>小部件</value>
+  </data>
+  <data name="RevisableAttachments_Header_Attachments.Text" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Genral_ServiceName_Calendar.Text" xml:space="preserve">
+    <value>日历</value>
+  </data>
+  <data name="Genral_ServiceName_Contacts.Text" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="Genral_ServiceName_Notes.Text" xml:space="preserve">
+    <value>笔记</value>
+  </data>
+  <data name="Genral_ServiceName_Tasks.Text" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="AttachmentViewer_Attachment.Text" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="AttachmentViewer_Attachments.Text" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Cancel_Text.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ChooseServiceProvider_Text.Text" xml:space="preserve">
+    <value>选择服务提供商</value>
+  </data>
+  <data name="DeleteConfirmation_Text.Text" xml:space="preserve">
+    <value>是否确定要删除该帐户？</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchCompleted.Text" xml:space="preserve">
+    <value>初始提取已完成</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchError.Text" xml:space="preserve">
+    <value>初始提取错误</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchInProgress.Text" xml:space="preserve">
+    <value>初始提取正在进行中...</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchRequested.Text" xml:space="preserve">
+    <value>初始提取已请求</value>
+  </data>
+  <data name="MailSyncStatus_InitialFetchSuspended.Text" xml:space="preserve">
+    <value>初始提取已暂停</value>
+  </data>
+  <data name="MailSyncStatus_NotSynced.Text" xml:space="preserve">
+    <value>未同步</value>
+  </data>
+  <data name="MailSyncStatus_SelectedForSyncing.Text" xml:space="preserve">
+    <value>已选择进行同步</value>
+  </data>
+  <data name="MailSyncStatus_Synced.Text" xml:space="preserve">
+    <value>已同步</value>
+  </data>
+  <data name="MailSyncStatus_SyncError.Text" xml:space="preserve">
+    <value>同步失败</value>
+  </data>
+  <data name="MailSyncStatus_SyncInProgress.Text" xml:space="preserve">
+    <value>正在同步...</value>
+  </data>
+  <data name="MailSyncStatus_SyncRequested.Text" xml:space="preserve">
+    <value>同步已请求</value>
+  </data>
+  <data name="MailSyncStatus_SyncSuspended.Text" xml:space="preserve">
+    <value>同步已暂停</value>
+  </data>
+  <data name="Ok_Text.Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="RootShell_Loading.Text" xml:space="preserve">
+    <value>正在载入，请稍候...</value>
+  </data>
+  <data name="Service_Invoice.Text" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="Service_Connect.Text" xml:space="preserve">
+    <value>Connect 帖子</value>
+  </data>
+  <data name="Service_Projects.Text" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="SignIn_LoginButton.Content" xml:space="preserve">
+    <value>登录您的帐户</value>
+  </data>
+  <data name="TAC_AgreeButton.Content" xml:space="preserve">
+    <value>同意</value>
+  </data>
+  <data name="TAC_CancelButton.Content" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="TermsAndConditions.Text" xml:space="preserve">
+    <value>条款和条件</value>
+  </data>
+  <data name="TAC_Description.Text" xml:space="preserve">
+    <value>要继续使用该软件，您必须同意软件许可协议的条款。</value>
+  </data>
+  <data name="Source_Chat.Text" xml:space="preserve">
+    <value>聊天</value>
+  </data>
+  <data name="Source_Connect.Text" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="Source_Contacts.Text" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="Source_Inline.Text" xml:space="preserve">
+    <value>嵌入式</value>
+  </data>
+  <data name="Source_Notes.Text" xml:space="preserve">
+    <value>笔记</value>
+  </data>
+  <data name="Source_ProfilePic.Text" xml:space="preserve">
+    <value>个人资料图片</value>
+  </data>
+  <data name="Source_Stream.Text" xml:space="preserve">
+    <value>数据流</value>
+  </data>
+  <data name="Source_Unknown.Text" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="UserMessage_NoInternet.Text" xml:space="preserve">
+    <value>无网络。连接至因特网并再次尝试。</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkDesc.Text" xml:space="preserve">
+    <value>使用内置 Cliq 应用与您的团队远程协作。发送音频或视频消息，通过启用屏幕共享来简化协作，以及通过会议通话与多个用户协作，{0} 集全部功能于一身。</value>
+  </data>
+  <data name="Onboarding_TourMenuBarDesc.Text" xml:space="preserve">
+    <value>使用 {0} 系统托盘应用快速访问数据及执行即时操作，同时您可在您的系统中处理其他应用。当参与语音或视频通话时，它还可用作您的控制中心。</value>
+  </data>
+  <data name="Onboarding_TourMenuBarTitle.Text" xml:space="preserve">
+    <value>系统托盘应用</value>
+  </data>
+  <data name="Onboarding_TourOfflineDesc.Text" xml:space="preserve">
+    <value>即使您的网络连接中断，只能离线访问时，也可以顺畅地处理您的电子邮件。浏览、撰写和搜索电子邮件等许多功能在离线模式下继续工作。</value>
+  </data>
+  <data name="Onboarding_TourOfflineTitle.Text" xml:space="preserve">
+    <value>离线访问</value>
+  </data>
+  <data name="Onboarding_TourRemoteWorkTitle.Text" xml:space="preserve">
+    <value>远程工作就绪</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantDesc.Text" xml:space="preserve">
+    <value>您可以使用智能助理快速执行任务和命令。例如，只要键入“给 John 打电话”或“明天下午 3 点与 Lucy 会面”即可打电话或安排会议。</value>
+  </data>
+  <data name="Onboarding_TourSmartAssistantTitle.Text" xml:space="preserve">
+    <value>智能助理</value>
+  </data>
+  <data name="Onboarding_TourSmartMailDesc.Text" xml:space="preserve">
+    <value>从收件箱内查看关联应用程序数据，快速处理来自其他 Zoho 应用程序的电子邮件通知。</value>
+  </data>
+  <data name="Onboarding_TourSmartMailTitle.Text" xml:space="preserve">
+    <value>智能邮件</value>
+  </data>
+  <data name="Onboarding_TourWidgetDesc.Text" xml:space="preserve">
+    <value>通过小组件访问和处理来自多个应用程序的数据，更有效地执行多任务。在 Cliq 中跟踪新的传入消息，使用“日历”跟踪您的日程安排，或通过从小组件库中选择适合的小组件，在“记事”中记下重要详细信息.</value>
+  </data>
+  <data name="Onboarding_TourWidgetTitle.Text" xml:space="preserve">
+    <value>小部件</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceDesc.Text" xml:space="preserve">
+    <value>{0} 是一款面向您所有生产、沟通和业务需要的综合解决方案。它捆绑了电子邮件、即时通讯、会议通话、日历管理、记事和任务管理，全部功能集于单一工作场所平台。</value>
+  </data>
+  <data name="Onboarding_TourWorkplaceTitle.Text" xml:space="preserve">
+    <value>一体化工作场所伴侣</value>
+  </data>
+  <data name="SignIn_Page1_Desc.Text" xml:space="preserve">
+    <value>{0} 是面向工作场所生产、沟通和业务需要的综合平台。</value>
+  </data>
+  <data name="SignIn_Page1_Title.Text" xml:space="preserve">
+    <value>您的一体化工作场所伴侣</value>
+  </data>
+  <data name="SignIn_Page4_Desc.Text" xml:space="preserve">
+    <value>Zoho 严格遵守行业安全和隐私标准，所以您可以自信地分享想法和信息，并且知道您的数据是安全的。</value>
+  </data>
+  <data name="SignIn_Page4_Title.Text" xml:space="preserve">
+    <value>无与伦比的隐私与安全</value>
+  </data>
+  <data name="SignIn_Page5_Desc.Text" xml:space="preserve">
+    <value>浏览收件箱、起草电子邮件和搜索信息，即使离线时也可完成这些操作。</value>
+  </data>
+  <data name="SignIn_Page5_Title.Text" xml:space="preserve">
+    <value>离线工作</value>
+  </data>
+  <data name="SignIn_Page3_Desc.Text" xml:space="preserve">
+    <value>在一个地方管理所有电子邮件帐户（来自 Zoho、Gmail、Outlook、Yahoo、iCloud 等）。</value>
+  </data>
+  <data name="SignIn_Page3_Title.Text" xml:space="preserve">
+    <value>管理多个邮箱</value>
+  </data>
+  <data name="SignIn_Page2_Desc.Text" xml:space="preserve">
+    <value>使用 Cliq 与您的同事协作，Cliq 是我们具有音频和视频会议功能的内置即时消息服务。</value>
+  </data>
+  <data name="SignIn_Page2_Title.Text" xml:space="preserve">
+    <value>远程工作就绪</value>
+  </data>
+  <data name="Onboarding_Default.Text" xml:space="preserve">
+    <value>跳过</value>
+  </data>
+  <data name="Onboarding_Personalize.Content" xml:space="preserve">
+    <value>立即自定义</value>
+  </data>
+  <data name="Onboarding_Welcome.Text" xml:space="preserve">
+    <value>欢迎，</value>
+  </data>
+  <data name="Onboarding_WelcomeDesc.Text" xml:space="preserve">
+    <value>我们非常高兴您的加入！{0} 将强大的功能与一系列个性化选项结合起来，帮助您保持效率。</value>
+  </data>
+  <data name="Onboarding_WelcomePersonalize.Text" xml:space="preserve">
+    <value>立即自定义您的工作区。</value>
+  </data>
+  <data name="Onboarding_AccentColor.Text" xml:space="preserve">
+    <value>选择重点色</value>
+  </data>
+  <data name="Onboarding_AllSetDesc.Text" xml:space="preserve">
+    <value>您可以使用该应用完成的其他令人兴奋的事情。</value>
+  </data>
+  <data name="Onboarding_AllSetTitle.Text" xml:space="preserve">
+    <value>一切准备就绪</value>
+  </data>
+  <data name="Onboarding_Colored.Content" xml:space="preserve">
+    <value>彩色</value>
+  </data>
+  <data name="Onboarding_Continue.Content" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="Onboarding_DarkTheme.Text" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="Onboarding_LightTheme.Text" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="Onboarding_MaybeLater.Text" xml:space="preserve">
+    <value>可能稍后</value>
+  </data>
+  <data name="Onboarding_ModuleDesc.Text" xml:space="preserve">
+    <value>您希望将邮件、日历、记事和其他模块图标放置在哪里？</value>
+  </data>
+  <data name="Onboarding_ModuleLeft.Content" xml:space="preserve">
+    <value>左</value>
+  </data>
+  <data name="Onboarding_ModuleTitle.Text" xml:space="preserve">
+    <value>模块图标位置</value>
+  </data>
+  <data name="Onboarding_ModuleTop.Content" xml:space="preserve">
+    <value>顶部</value>
+  </data>
+  <data name="Onboarding_Native.Content" xml:space="preserve">
+    <value>本地</value>
+  </data>
+  <data name="Onboarding_OtherModules3.Text" xml:space="preserve">
+    <value>还有更多的快速导览。</value>
+  </data>
+  <data name="Onboarding_OtherModules1.Text" xml:space="preserve">
+    <value>了解应用功能，例如</value>
+  </data>
+  <data name="Onboarding_OtherModules2.Text" xml:space="preserve">
+    <value>离线模式、小组件、智能助理、智能邮件</value>
+  </data>
+  <data name="Onboarding_Style.Text" xml:space="preserve">
+    <value>选择风格</value>
+  </data>
+  <data name="Onboarding_SystemTheme.Text" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="Onboarding_TakeQuickTour.Content" xml:space="preserve">
+    <value>导览</value>
+  </data>
+  <data name="Onboarding_ThemeDesc.Text" xml:space="preserve">
+    <value>以后您可在应用设置中进行更改</value>
+  </data>
+  <data name="Onboarding_ThemeTitle.Text" xml:space="preserve">
+    <value>自定义您的工作区</value>
+  </data>
+  <data name="Onboarding_ThemMode.Text" xml:space="preserve">
+    <value>主题模式</value>
+  </data>
+  <data name="Onboarding_White.Content" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="SignIn_LoginWebview.Content" xml:space="preserve">
+    <value>登录时显示 Web 视图</value>
+  </data>
+  <data name="SignIn_NetworkUnavailable.Text" xml:space="preserve">
+    <value>无网络。请连接互联网。</value>
+  </data>
+  <data name="SignIn_SettingUpMail.Text" xml:space="preserve">
+    <value>正在设置 {0}...</value>
+  </data>
+  <data name="SignIn_SetUpMail.Text" xml:space="preserve">
+    <value>设置邮件</value>
+  </data>
+  <data name="SignIn_SetUpMailDescription.Text" xml:space="preserve">
+    <value>要使用应用，您必须访问 Zoho Mail 网站，设置 Zoho 电子邮件帐户。</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountButton.Content" xml:space="preserve">
+    <value>设置邮件帐户</value>
+  </data>
+  <data name="SignIn_SetUpMailAccountCancelButton.Content" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="EnhanceScope.Text" xml:space="preserve">
+    <value>要继续使用该应用，请点击“重试”，然后输入您的密码</value>
+  </data>
+  <data name="TryEnhanceScopeAgain_Button.Content" xml:space="preserve">
+    <value>请重试</value>
+  </data>
+  <data name="SignIn_AlmostReady.Text" xml:space="preserve">
+    <value>差不多准备就绪...</value>
+  </data>
+  <data name="Onboarding_Replay.Text" xml:space="preserve">
+    <value>重播</value>
+  </data>
+  <data name="ResetOnboarding.Text" xml:space="preserve">
+    <value>重置加入</value>
+  </data>
+  <data name="Shell_ApiTracker.Text" xml:space="preserve">
+   <value>API追踪器</value>
+  </data>
+  <data name="SC_GlobalSearch.Text" xml:space="preserve">
+    <value>打开全局搜索窗口</value>
+  </data>
+  <data name="SC_ModuleSearch.Text" xml:space="preserve">
+    <value>在模块中启用搜索</value>
+  </data>
+  <data name="SC_OpenCallHistory.Text" xml:space="preserve">
+    <value>打开通话历史记录</value>
+  </data>
+  <data name="SC_OpenNotifications.Text" xml:space="preserve">
+    <value>打开通知</value>
+  </data>
+  <data name="SC_SmartCompose.Text" xml:space="preserve">
+    <value>启动智能助理</value>
+  </data>
+  <data name="SC_SmartComposeCollapse.Text" xml:space="preserve">
+    <value>关闭智能助理</value>
+  </data>
+  <data name="SC_ToggleDND.Text" xml:space="preserve">
+    <value>启用/禁用 DND</value>
+  </data>
+  <data name="SC_ToggleWidgetRHS.Text" xml:space="preserve">
+    <value>显示/隐藏右窗格</value>
+  </data>
+  <data name="SC_Delete.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SC_GoToCalendar.Text" xml:space="preserve">
+    <value>转至日历</value>
+  </data>
+  <data name="SC_GoToCliq.Text" xml:space="preserve">
+    <value>转至 Cliq</value>
+  </data>
+  <data name="SC_GoToContacts.Text" xml:space="preserve">
+    <value>转至联系人</value>
+  </data>
+  <data name="SC_GoToMail.Text" xml:space="preserve">
+    <value>转至邮件</value>
+  </data>
+  <data name="SC_GoToNextModule.Text" xml:space="preserve">
+    <value>转至下一模块</value>
+  </data>
+  <data name="SC_GoToNotes.Text" xml:space="preserve">
+    <value>转至记事</value>
+  </data>
+  <data name="SC_GoToPreviousModule.Text" xml:space="preserve">
+    <value>转至上一模块</value>
+  </data>
+  <data name="SC_GoToTasks.Text" xml:space="preserve">
+    <value>转至任务</value>
+  </data>
+  <data name="SC_OpenSettings.Text" xml:space="preserve">
+    <value>打开设置</value>
+  </data>
+  <data name="SC_SwitchView.Text" xml:space="preserve">
+    <value>切换视图 - 垂直分割、水平分割、无分割</value>
+  </data>
+  <data name="Onboarding_TakeMeToApp.Content" xml:space="preserve">
+    <value>带我进入应用</value>
+  </data>
+  <data name="SC_GoToFeedback.Text" xml:space="preserve">
+    <value>打开反馈</value>
+  </data>
+  <data name="DND_DND.Text" xml:space="preserve">
+    <value>请勿打扰</value>
+  </data>
+  <data name="DND_DNDEnabled.Text" xml:space="preserve">
+    <value>启用 DND 时：</value>
+  </data>
+  <data name="DND_MuteChats.Text" xml:space="preserve">
+    <value>警报声将会静音</value>
+  </data>
+  <data name="DND_NotificationsPaused.Text" xml:space="preserve">
+    <value>所有通知将会暂停</value>
+  </data>
+  <data name="UserSwitch_Users.Text" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="UserSwitch_CheckIn.Text" xml:space="preserve">
+    <value>签到</value>
+  </data>
+  <data name="UserSwitch_CheckOut.Text" xml:space="preserve">
+    <value>签退</value>
+  </data>
+  <data name="DND_AlwaysOn.Text" xml:space="preserve">
+    <value>始终开启</value>
+  </data>
+  <data name="DND_OneHour.Text" xml:space="preserve">
+    <value>1 小时</value>
+  </data>
+  <data name="DND_UntilEvng.Text" xml:space="preserve">
+    <value>直到今天晚上</value>
+  </data>
+  <data name="DND_UntilTmrw.Text" xml:space="preserve">
+    <value>直到明天</value>
+  </data>
+  <data name="DND_ChatStatusToBusy.Text" xml:space="preserve">
+    <value>Cliq 状态将更改为“请勿打扰”</value>
+  </data>
+  <data name="UserSwitch_Off.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="UserSwitch_On.Text" xml:space="preserve">
+    <value>于</value>
+  </data>
+  <data name="UserSwitch_Text.Text" xml:space="preserve">
+    <value>用户切换</value>
+  </data>
+  <data name="Release_Notes.Text" xml:space="preserve">
+    <value>发行说明</value>
+  </data>
+  <data name="SC_OpenNew.Text" xml:space="preserve">
+    <value>新电子邮件、记事、任务、活动、联系人</value>
+  </data>
+  <data name="SC_OpenUserSwitch.Text" xml:space="preserve">
+    <value>打开用户切换</value>
+  </data>
+  <data name="SC_ToggleLHS.Text" xml:space="preserve">
+    <value>切换左侧窗格</value>
+  </data>
+  <data name="DND_TurnOff.Text" xml:space="preserve">
+    <value>关闭 DND</value>
+  </data>
+  <data name="Service_ServiceDisabled.Text" xml:space="preserve">
+    <value>作为服务禁用</value>
+  </data>
+  <data name="ExtendedSplashScreenLoading.Text" xml:space="preserve">
+    <value>正在载入...</value>
+  </data>
+  <data name="DND_EveningMsg.Text" xml:space="preserve">
+    <value>开启直至今天下午 7:00</value>
+  </data>
+  <data name="DND_MorningMsg.Text" xml:space="preserve">
+    <value>开启直至明天上午 7:00</value>
+  </data>
+  <data name="DND_OneHourMsg.Text" xml:space="preserve">
+    <value>开启直至 {0}</value>
+  </data>
+  <data name="UserSwitch_Cancel.Content" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UserSwitch_Switch.Content" xml:space="preserve">
+    <value>切换和重新启动</value>
+  </data>
+  <data name="UserSwitch_SwitchUser.Text" xml:space="preserve">
+    <value>切换用户</value>
+  </data>
+  <data name="UserSwitch_SwitchUserDisclaimer.Text" xml:space="preserve">
+    <value>将主用户切换为另一个用户将重新启动应用。是否确定要切换？</value>
+  </data>
+  <data name="DeleteConfirmation_Cancel.Content" xml:space="preserve">
+    <value>不，我要保留</value>
+  </data>
+  <data name="DeleteConfirmation_Delete.Content" xml:space="preserve">
+    <value>删除评论</value>
+  </data>
+  <data name="DeleteConfirmation_DeleteText.Text" xml:space="preserve">
+    <value>删除此评论</value>
+  </data>
+  <data name="DeleteConfirmation_Disclaimer.Text" xml:space="preserve">
+    <value>您将要删除此评论。是否确定要完成此操作？</value>
+  </data>
+  <data name="SA_FeebackIdea.Text" xml:space="preserve">
+    <value>我有个主意，推荐一个功能</value>
+  </data>
+  <data name="SA_FeedbackAngry.Text" xml:space="preserve">
+    <value>无法使用应用。尽快联系我！我包括了诊断和日志</value>
+  </data>
+  <data name="SA_FeedbackBoquet.Text" xml:space="preserve">
+    <value>喜欢该应用！送上祝贺花束</value>
+  </data>
+  <data name="SA_FeedbackBug.Text" xml:space="preserve">
+    <value>报告问题 - 我包括了诊断和日志</value>
+  </data>
+  <data name="SA_FeedbackDesc.Text" xml:space="preserve">
+    <value>共享关于该应用的反馈</value>
+  </data>
+  <data name="SA_FeedbackError.Text" xml:space="preserve">
+    <value>发送反馈时出错</value>
+  </data>
+  <data name="SA_FeedbackSending.Text" xml:space="preserve">
+    <value>正在发送您的反馈</value>
+  </data>
+  <data name="SA_FeedbackThankYou.Text" xml:space="preserve">
+    <value>感谢您的反馈</value>
+  </data>
+  <data name="SA_Placeholder.Text" xml:space="preserve">
+    <value>正在等待您输入...</value>
+  </data>
+  <data name="SA_AllFilter.Text" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="SA_ChannelFilter.Text" xml:space="preserve">
+    <value>聊天室</value>
+  </data>
+  <data name="SA_GroupFilter.Text" xml:space="preserve">
+    <value>组</value>
+  </data>
+  <data name="SA_PersonalFilter.Text" xml:space="preserve">
+    <value>个人</value>
+  </data>
+  <data name="Mail_SharedSuccessfully.Text" xml:space="preserve">
+    <value>已成功共享邮件</value>
+  </data>
+  <data name="ClearedLogs_Success.Text" xml:space="preserve">
+    <value>已清除应用日志文件</value>
+  </data>
+  <data name="ServiceAction_NewContact.Text" xml:space="preserve">
+    <value>新建联系方式</value>
+  </data>
+  <data name="ServiceAction_NewEvent.Text" xml:space="preserve">
+    <value>新活动</value>
+  </data>
+  <data name="ServiceAction_NewMail.Text" xml:space="preserve">
+    <value>新邮件</value>
+  </data>
+  <data name="ServiceAction_NewNote.Text" xml:space="preserve">
+    <value>新记事</value>
+  </data>
+  <data name="ServiceAction_NewTask.Text" xml:space="preserve">
+    <value>新任务</value>
+  </data>
+  <data name="App_HideFolders.Text" xml:space="preserve">
+    <value>隐藏文件夹窗格</value>
+  </data>
+  <data name="App_More.Text" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="App_ShowFolders.Text" xml:space="preserve">
+    <value>显示文件夹窗格</value>
+  </data>
+  <data name="More_Text.Text" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="Onboarding_Back.Text" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Onboarding_Skip.Content" xml:space="preserve">
+    <value>跳过</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColLeft.Text" xml:space="preserve">
+    <value>在左侧插入列</value>
+  </data>
+  <data name="Compose_ContextMenu_AddColRight.Text" xml:space="preserve">
+    <value>在右侧插入列</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowAbove.Text" xml:space="preserve">
+    <value>在上面插入行</value>
+  </data>
+  <data name="Compose_ContextMenu_AddRowBelow.Text" xml:space="preserve">
+    <value>在下面插入行</value>
+  </data>
+  <data name="Compose_ContextMenu_Copy.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="General_CopyLink.Text" xml:space="preserve">
+    <value>复制链接</value>
+  </data>
+  <data name="Compose_ContextMenu_Cut.Text" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="Compose_ContextMenu_DelCol.Text" xml:space="preserve">
+    <value>删除列</value>
+  </data>
+  <data name="Compose_ContextMenu_Delete.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Compose_ContextMenu_DelRow.Text" xml:space="preserve">
+    <value>删除行</value>
+  </data>
+  <data name="Compose_ContextMenu_DelTable.Text" xml:space="preserve">
+    <value>删除表格</value>
+  </data>
+  <data name="Compose_ContextMenu_EditLink.Text" xml:space="preserve">
+    <value>编辑链接</value>
+  </data>
+  <data name="Compose_ContextMenu_Link.Text" xml:space="preserve">
+    <value>链接</value>
+  </data>
+  <data name="Compose_ContextMenu_OpenLink.Text" xml:space="preserve">
+    <value>打开链接</value>
+  </data>
+  <data name="Compose_ContextMenu_Paste.Text" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteSource.Text" xml:space="preserve">
+    <value>粘贴源格式</value>
+  </data>
+  <data name="Compose_ContextMenu_PasteText.Text" xml:space="preserve">
+    <value>仅粘贴文本</value>
+  </data>
+  <data name="Compose_ContextMenu_Redo.Text" xml:space="preserve">
+    <value>重做</value>
+  </data>
+  <data name="Compose_ContextMenu_RemoveLink.Text" xml:space="preserve">
+    <value>删除链接</value>
+  </data>
+  <data name="Compose_ContextMenu_SelectAll.Text" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="Compose_ContextMenu_TableOptions.Text" xml:space="preserve">
+    <value>表选项</value>
+  </data>
+  <data name="Compose_ContextMenu_Undo.Text" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="About_AllRightsReserved.Text" xml:space="preserve">
+    <value>保留所有权利</value>
+  </data>
+  <data name="About_Zohocorp.Text" xml:space="preserve">
+    <value>© 2025, Zoho Corporation Pvt. Ltd.</value>
+  </data>
+  <data name="About_Version.Text" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Notifications_Close.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Notifications_Popout.Text" xml:space="preserve">
+    <value>弹出窗口</value>
+  </data>
+  <data name="App_FAQs.Text" xml:space="preserve">
+    <value>常见问题解答</value>
+  </data>
+  <data name="App_OfflineIndicatior.Text" xml:space="preserve">
+    <value>网络连接不可用</value>
+  </data>
+  <data name="Streams_Invite.Content" xml:space="preserve">
+    <value>邀请</value>
+  </data>
+  <data name="General_Download_Downloaded_ToastDesc.Text" xml:space="preserve">
+    <value>已下载 {0}</value>
+  </data>
+  <data name="General_Download_OpenAttachment_ToastAction.Text" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="General_Download_ViewInExplorer_ToastAction.Text" xml:space="preserve">
+    <value>在资源管理器中查看</value>
+  </data>
+  <data name="Tag_Name.Text" xml:space="preserve">
+    <value>标签名称</value>
+  </data>
+  <data name="Tag_NameHolderText.PlaceholderText" xml:space="preserve">
+    <value>标签名称</value>
+  </data>
+  <data name="Tag_Color.Text" xml:space="preserve">
+    <value>标签颜色</value>
+  </data>
+  <data name="General_Create.Text" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="General_Save.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Create_Tag_Title.Text" xml:space="preserve">
+    <value>创建标签</value>
+  </data>
+  <data name="Edit_Tag_Title.Text" xml:space="preserve">
+    <value>编辑标签</value>
+  </data>
+  <data name="Tag_As.Text" xml:space="preserve">
+    <value>标记为</value>
+  </data>
+  <data name="Search_Tag.PlaceholderText" xml:space="preserve">
+    <value>搜索标签</value>
+  </data>
+  <data name="UserSwitch_Timer_HRS.Text" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="SmartAssistant_High_Priority.Text" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="SmartAssistant_PriorityHeader.Text" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="SmartAssistant_Low_Priority.Text" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="SmartAssistant_Medium_Priority.Text" xml:space="preserve">
+    <value>中等</value>
+  </data>
+  <data name="Cliq_UserAvailabilityNotification_ChatButton.Text" xml:space="preserve">
+    <value>聊天</value>
+  </data>
+  <data name="General_LicenseError_SingleUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>只有 Zoho Mail、Zoho Workplace 和 Zoho One（已激活 Zoho Mail）的付费用户和评估用户才有权访问 Trident。您尝试访问的帐户 ({0}) 需要有效的订阅。</value>
+  </data>
+  <data name="General_LicenseError_MultiUserLicenseExpired_Description.Text" xml:space="preserve">
+    <value>只有 Zoho Mail、Zoho Workplace 和 Zoho One（已激活 Zoho Mail）的付费用户和评估用户才有权访问 Trident。您尝试访问的帐户 ({0} 和 {1}) 需要有效的订阅。</value>
+  </data>
+  <data name="General_Delete.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Tag_Not_Created.Text" xml:space="preserve">
+    <value>未创建标签</value>
+  </data>
+  <data name="General_CopiedLink_Info.Text" xml:space="preserve">
+    <value>复制链接到剪贴板</value>
+  </data>
+  <data name="Attachment_WorkDrive_Header.Text" xml:space="preserve">
+    <value>WorkDrive 附件</value>
+  </data>
+  <data name="Tag_EmptyTag_Info.Text" xml:space="preserve">
+    <value>未添加标签</value>
+  </data>
+</root>

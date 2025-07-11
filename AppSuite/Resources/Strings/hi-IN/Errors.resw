@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Trident_AppUpgrade_Error.Text" xml:space="preserve">
+    <value>ऐप अपडेट त्रुटि</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Desc.Text" xml:space="preserve">
+    <value>ऐप को अपडेट करते समय कोई त्रुटि उत्पन्न हुई। ऐप अपडेट को पूरा करने और ट्राइडेंट का उपयोग जारी रखने के लिए कृपया ऐप डेटा रीसेट करें।</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note.Text" xml:space="preserve">
+    <value>सभी अनुकूलन अपनी डिफ़ॉल्ट सेटिंग पर रीसेट हो जाएँगे, और इस प्रक्रिया के दौरान अनसिंक किया गया स्थानीय डेटा खो सकता है।</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Reset.Text" xml:space="preserve">
+    <value>ऐप डेटा रीसेट करें</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_QuitApp.Text" xml:space="preserve">
+    <value>ऐप से बाहर निकलें</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_Head.Text" xml:space="preserve">
+    <value>नोट:</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Note_LearnMore.Text" xml:space="preserve">
+    <value>और अधिक जानें</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_Guide.Text" xml:space="preserve">
+    <value>ऐप डेटा रीसेट करने के लिए इस सहायता मार्गदर्शिका में दिए गए चरणों का पालन करें।</value>
+  </data>
+  <data name="Trident_AppUpgrade_Error_OK.Text" xml:space="preserve">
+    <value>ठीक है</value>
+  </data>
+  <data name="API_ThresholdLimitExceeded.Text" xml:space="preserve">
+    <value>{0} में नहीं कर पाएँ। बाद में फिर से कोशिश करें।</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Description.Text" xml:space="preserve">
+    <value>Trident का पुराना वर्जन अब भी आपके डिवाइस पर इंस्टॉल किया हुआ है। हम साइन इन करने से पूर्व पुराने वर्जन को अनइंस्टॉल करने की अनुशंसा करते हैं।</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_Title.Text" xml:space="preserve">
+    <value>Trident के पुराने वर्जन को अनइंस्टॉल करें</value>
+  </data>
+  <data name="App_PreProcess_UninstallError_OK_Button.Content" xml:space="preserve">
+    <value> ठीक है</value>
+  </data>
+  <data name="ErrorType_NoInternetAccess.Text" xml:space="preserve">
+    <value>कोई नेटवर्क नहीं. कृपया इंटरनेट से कनेक्ट करें.</value>
+  </data>
+  <data name="SignIn_AuthtokenLimitExceeded.Text" xml:space="preserve">
+    <value>आप अपनी ऑथटोकन टोकन की सीमा पार कर चुके हैं</value>
+  </data>
+  <data name="SignIn_NoNetwork.Text" xml:space="preserve">
+    <value>कोई नेटवर्क नहीं. कृपया इंटरनेट से कनेक्ट करें और फिर से कोशिश करें.</value>
+  </data>
+  <data name="PageLoadingError.Text" xml:space="preserve">
+    <value>पेज लोड करते समय कोई त्रुटि हुई</value>
+  </data>
+  <data name="AppSuite_Offline" xml:space="preserve">
+    <value>ऑफ़लाइन</value>
+  </data>
+  <data name="General_NoNetwork.Text" xml:space="preserve">
+    <value>कोई नेटवर्क नहीं. कृपया इंटरनेट से कनेक्ट करें और फिर से कोशिश करें.</value>
+  </data>
+  <data name="No_Default_User_Available.Text" xml:space="preserve">
+    <value>कोई डिफ़ॉल्ट उपयोगकर्ता उपलब्ध नहीं है</value>
+  </data>
+  <data name="Invalid_Tag_Name.Text" xml:space="preserve">
+    <value>टैग नाम में अमान्य वर्ण मिले</value>
+  </data>
+  <data name="Tag_Name_AlreadyExist.Text" xml:space="preserve">
+    <value>यह टैग पहले से मौजूद है. कृपया कोई दूसरा टैग नाम चुनें.</value>
+  </data>
+  <data name="Connectivity_Error_Info.Text" xml:space="preserve">
+    <value>नेटवर्क कनेक्शन टूट गया. अपडेट की जाँच नहीं कर पाए.</value>
+  </data>
+  <data name="Error_Info.Text" xml:space="preserve">
+    <value>अपडेट के लिए जाँच करते समय कोई त्रुटि उत्पन्न हुई. कृपया बाद में फिर से कोशिश करें.</value>
+  </data>
+  <data name="No_Updates_Info.Text" xml:space="preserve">
+    <value>आप अप-टू-डेट हैं</value>
+  </data>
+  <data name="ErrorType_AuthenticationFailed.Text" xml:space="preserve">
+    <value>प्रमाणीकरण विफल</value>
+  </data>
+  <data name="ErrorType_FailedServerResponse.Text" xml:space="preserve">
+    <value>सर्वर त्रुटि</value>
+  </data>
+  <data name="ErrorType_RequestTimeOut.Text" xml:space="preserve">
+    <value>अनुरोध का समय समाप्त हो गया</value>
+  </data>
+  <data name="ErrorType_Unknown.Text" xml:space="preserve">
+    <value>कोई अज्ञात त्रुटि हुई</value>
+  </data>
+  <data name="ErrorType_InvalidRequest.Text" xml:space="preserve">
+    <value>अमान्य अनुरोध</value>
+  </data>
+  <data name="ErrorType_SomethingWentWrong.Text" xml:space="preserve">
+    <value>कुछ गड़बड़ हुई है. कृपया दोबारा कोशिश करें.</value>
+  </data>
+  <data name="Streams_AddCommentOffline.Text" xml:space="preserve">
+    <value>टिप्पणियाँ जोड़ना ऑफ़लाइन समर्थित नहीं है</value>
+  </data>
+  <data name="Streams_LockPostOffline.Text" xml:space="preserve">
+    <value>पोस्ट लॉक/अनलॉक करें, ऑफ़लाइन समर्थित नहीं है</value>
+  </data>
+  <data name="Stream_AddInviteeOffline.Text" xml:space="preserve">
+    <value>आमंत्रित लोगों को जोड़ना ऑफ़लाइन समर्थित नहीं है</value>
+  </data>
+  <data name="Stream_LikeOffline.Text" xml:space="preserve">
+    <value>पसंद ऑफ़लाइन समर्थित नहीं हैं</value>
+  </data>
+  <data name="UserSwitch_ErrorInfo.Text" xml:space="preserve">
+    <value>प्राथमिक उपयोगकर्ता स्विच करते समय कोई त्रुटि हुई</value>
+  </data>
+  <data name="AppSuite_HomePageStillTakingLongerToLoad.Text" xml:space="preserve">
+    <value>लोड हो रहा है, कृपया प्रतीक्षा करें...</value>
+  </data>
+  <data name="AppSuite_HomePageTakesLongerToLoad.Text" xml:space="preserve">
+    <value>ऐसा लगता है कि इसमें सामान्य से थोड़ा ज़्यादा समय लग रहा है</value>
+  </data>
+  <data name="Mail_UnprocessedMultipleImages.Text" xml:space="preserve">
+    <value>कुछ छवियों को संसाधित नहीं कर पाए</value>
+  </data>
+  <data name="Mail_UnprocessedSingleImage.Text" xml:space="preserve">
+    <value>छवि संसाधित नहीं कर पाए</value>
+  </data>
+  <data name="AllNotificationsReadStatus_ErrorInfo.Text" xml:space="preserve">
+    <value>पढ़े के रूप में सभी अधिसूचनाओं को चिह्नित करते समय कोई त्रुटि हुई</value>
+  </data>
+  <data name="NotificationReadStatus_ErrorInfo.Text" xml:space="preserve">
+    <value>पढ़े के रूप में अधिसूचना चिह्नित करते समय कोई त्रुटि हुई</value>
+  </data>
+</root>
