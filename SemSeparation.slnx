@@ -10,8 +10,35 @@
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
   </Project>
+  <Project Path="../ZComponents/Comments/ZComponents.Comments.Entities/ZComponents.Comments.Entities.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/Comments/ZComponents.Comments.Views.UWP/ZComponents.Comments.Views.UWP.csproj" Id="4c1cc18d-e739-4b91-b588-381dfc0a8e09">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
   <Project Path="../ZComponents/Core/ZCoreComponents.UWP/ZCoreComponents.UWP.csproj" Id="ff5aa7cb-37ba-42ba-906d-cde7f8c8e97e">
     <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZComponents.Core.Contracts/ZComponents.Core.Contracts.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZComponents.Core.UWP/ZComponents.Core.UWP.csproj" Id="9d55afc0-2415-4c14-b067-58ae8f916821">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZFolder/ZFolder.Entities/ZFolder.Entities.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
@@ -26,6 +53,24 @@
   </Project>
   <Project Path="../ZComponents/ZInAppToast/ZInAppToast.Views.UWP/ZInAppToast.Views.UWP.csproj" Id="856f2fc6-d653-4280-8120-a3393cd5409d">
     <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZRichTextEditor/ZRichTextEditor.Entities/ZRichTextEditor.Entities.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+  <Project Path="../ZComponents/ZRichTextEditor/ZRichTextEditor.ViewContracts/ZRichTextEditor.ViewContracts.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZRichTextEditor/ZRichTextEditor.Views.UWP/ZRichTextEditor.Views.UWP.csproj" Id="e0bc32ee-cd0a-40fe-b546-4664e82ce1fb">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZComponents/ZTags/ZTags.Entities/ZTags.Entities.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
@@ -113,6 +158,33 @@
     <Platform Solution="*|x86" Project="x86" />
   </Project>
   <Project Path="../ZSSOAdapter/ZSSOAdapter/ZSSOAdapter.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZStreamsCollaboration/ZStreams.Collaboration.Entities/ZStreams.Collaboration.Entities.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZStreamsCollaboration/ZStreams.Collaboration.Library/ZStreams.Collaboration.Library.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZStreamsCollaboration/ZStreams.Collaboration.ViewContracts/ZStreams.Collaboration.ViewContracts.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZStreamsCollaboration/ZStreams.Collaboration.ViewModels.UWP/ZStreams.Collaboration.ViewModels.UWP.csproj" Id="25b27368-7041-4a19-9108-ec9f61af2e8e">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../ZStreamsCollaboration/ZStreams.Collaboration.Views.UWP/ZStreams.Collaboration.Views.UWP.csproj" Id="b9ffb509-21b6-4dee-bf23-8289b0c97907">
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
   </Project>

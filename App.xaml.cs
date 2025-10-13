@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,12 +23,16 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Zoho.Common.Analytics.Data;
 using Zoho.Common.Util;
+using Zoho.FileSystem.Adapter.Contracts;
+using Zoho.FileSystem.Adapter.DI;
 using Zoho.Logging;
 using Zoho.SSO.Adapter;
+using Zoho.Streams.Collaboration.ViewModels.UWP;
 using Zoho.UWP;
 using Zoho.UWP.Common.Error;
 using Zoho.UWP.Common.Util;
 using Zoho.UWP.Components.OnBoarding.View;
+using Zoho.UWP.Contacts.Lib;
 using Zoho.UWP.Tasks;
 
 namespace SemSeparation
@@ -112,7 +117,7 @@ namespace SemSeparation
                 //{
                 await InitializationManager.Instance.InitializeAppAsync();
                 var ssoAdapter = ZSSOProvider.Instance.GetService<IAuthenticationAdapter>();
-                var userAdapter = ZSSOProvider.Instance.GetService<ISSOUserAdapter>();
+                ISSOUserAdapter userAdapter = ZSSOProvider.Instance.GetService<ISSOUserAdapter>();
 
                 async Task<bool> isInvalidSession() => (await ssoAdapter.CheckAndLogOutAsync(userAdapter.GetCurrentUserZuid())).GetValueOrDefault(true);
 
@@ -121,7 +126,7 @@ namespace SemSeparation
 
                 if (isSignedIn)
                 {
-                    await InitializeYourServiceHere();
+                    await InitializeYourServiceHere(userAdapter);
                     rootFrame.Navigate(typeof(DemoPage), e.Arguments);
                     // Ensure the current window is active
                     Window.Current.Activate();
@@ -133,15 +138,21 @@ namespace SemSeparation
                     // Ensure the current window is active
                     Window.Current.Activate();
                     await signIn.AuthenticateUserAsync();
-                    await InitializeYourServiceHere();
+                    await InitializeYourServiceHere(userAdapter);
                     rootFrame.Navigate(typeof(DemoPage), e.Arguments);
                 }
+
             }
         }
 
-        public async Task InitializeYourServiceHere()
+        public async Task InitializeYourServiceHere(ISSOUserAdapter userAdapter)
         {
-            TasksServiceManager.Instance.InitializeAsync();
+            await StreamsCollabServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid());
+
+            IZAppFolderProvider appFolderProvider = FileSystemProvider.Instance.GetRequiredService<IZAppFolderProvider>();
+            string rootFolderPath = (await appFolderProvider.GetAppLocalFolderAsync().ConfigureAwait(false)).Path;
+
+            await ContactsServiceManager.InitializeAsync(rootFolderPath, default, userAdapter.GetCurrentUserZuid());
             // NotesServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid());
         }
 

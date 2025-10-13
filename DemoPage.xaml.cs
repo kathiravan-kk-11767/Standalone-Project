@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SemSeparation;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,6 +30,8 @@ namespace Zoho.UWP
     public sealed partial class DemoPage : Page
     {
 
+        public CommentsSampleViewModel CommentViewModel { get; } = new CommentsSampleViewModel();
+
         public ZThemeFont ZThemeFont = ZThemeUtil.GetAppThemeFont();
         public DemoPage()
         {
@@ -37,9 +40,12 @@ namespace Zoho.UWP
 
         private async void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ITasksNetHandler tasksNetHandler = (ITasksNetHandler)TasksDIServiceProvider.Instance.GetService(typeof(ITasksNetHandler));
 
-            var data = await tasksNetHandler.FetchTagsFromServerAsync("743880918");
+            CommentViewModel.InitializeComments();
+
+            //ITasksNetHandler tasksNetHandler = (ITasksNetHandler)TasksDIServiceProvider.Instance.GetService(typeof(ITasksNetHandler));
+
+            //var data = await tasksNetHandler.FetchTagsFromServerAsync("743880918");
         }
 
 

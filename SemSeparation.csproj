@@ -131,10 +131,16 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SemSeparation\CommentsModel.cs" />
+    <Compile Include="SemSeparation\CommentsSampleViewModel.cs" />
+    <Compile Include="SemSeparation\CommentThreadingUtil.cs" />
     <Compile Include="TasksNetHandler.cs" />
     <Compile Include="Tasks\ITasksNetHandler.cs" />
     <Compile Include="Tasks\TasksDIServiceProvider.cs" />
     <Compile Include="Tasks\TasksServiceManager.cs" />
+    <Compile Include="ZStreamsCollaboration\StreamsControl.xaml.cs">
+      <DependentUpon>StreamsControl.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -616,6 +622,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ZStreamsCollaboration\StreamsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
@@ -623,13 +633,33 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ZComponents\Comments\ZComponents.Comments.Entities\ZComponents.Comments.Entities.csproj">
+      <Project>{d57284f7-eac6-32f7-ffc9-0ee4faa4ae28}</Project>
+      <Name>ZComponents.Comments.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\Comments\ZComponents.Comments.Views.UWP\ZComponents.Comments.Views.UWP.csproj">
+      <Project>{4c1cc18d-e739-4b91-b588-381dfc0a8e09}</Project>
+      <Name>ZComponents.Comments.Views.UWP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZComponents\Core\ZCoreComponents.UWP\ZCoreComponents.UWP.csproj">
       <Project>{ff5aa7cb-37ba-42ba-906d-cde7f8c8e97e}</Project>
       <Name>ZCoreComponents.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ZComponents\ZInAppToast\ZInAppToast.Views.UWP\ZInAppToast.Views.UWP.csproj">
-      <Project>{856f2fc6-d653-4280-8120-a3393cd5409d}</Project>
-      <Name>ZInAppToast.Views.UWP</Name>
+    <ProjectReference Include="..\ZComponents\ZComponents.Core.Contracts\ZComponents.Core.Contracts.csproj">
+      <Project>{abfdf3d5-c5ce-07a2-c1ba-3b17c6e7ea5d}</Project>
+      <Name>ZComponents.Core.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\ZComponents.Core.UWP\ZComponents.Core.UWP.csproj">
+      <Project>{9d55afc0-2415-4c14-b067-58ae8f916821}</Project>
+      <Name>ZComponents.Core.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\ZFolder\ZFolder.Entities\ZFolder.Entities.csproj">
+      <Project>{3d97f56c-df40-c3ef-179a-67e9d912d470}</Project>
+      <Name>ZFolder.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZContacts\ZContacts.ServiceContracts\ZContacts.ServiceContracts.csproj">
+      <Project>{3400c778-5c58-7cf7-065a-1a6fca8abb2c}</Project>
+      <Name>ZContacts.ServiceContracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZFileSystemAdapter\ZFileSystemAdapter.UWP\ZFileSystemAdapter.UWP.csproj">
       <Project>{70DEFEDE-3C7C-40A2-8DA6-68A15C2DCE6E}</Project>
@@ -646,6 +676,10 @@
     <ProjectReference Include="..\ZohoUWPComponents\ZohoUWPComponents.csproj">
       <Project>{dc34e0e9-79bf-4762-8b32-cd55df13c5be}</Project>
       <Name>ZohoUWPComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZohoUWPContactsLibrary\ZohoUWPContactsLibrary.csproj">
+      <Project>{73B6E81C-E77C-4DF9-A6E8-652F1E14F31A}</Project>
+      <Name>ZohoUWPContactsLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZohoWinCommon\ZohoWinCommon.csproj">
       <Project>{75bbe2cb-1c56-48d4-ee3e-893882098e65}</Project>
@@ -671,9 +705,34 @@
       <Project>{9400391b-357b-83dc-6f3b-80164d085193}</Project>
       <Name>ZSSOAdapter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZStreamsCollaboration\ZStreams.Collaboration.Entities\ZStreams.Collaboration.Entities.csproj">
+      <Project>{5b4265fb-179c-12ce-2f23-efe4c2e16088}</Project>
+      <Name>ZStreams.Collaboration.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZStreamsCollaboration\ZStreams.Collaboration.Library\ZStreams.Collaboration.Library.csproj">
+      <Project>{b7cbffc3-9aae-7fb5-2fc7-9812e93c99c4}</Project>
+      <Name>ZStreams.Collaboration.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZStreamsCollaboration\ZStreams.Collaboration.ViewContracts\ZStreams.Collaboration.ViewContracts.csproj">
+      <Project>{fa689bb0-4dce-451d-9892-73412ab9d7fd}</Project>
+      <Name>ZStreams.Collaboration.ViewContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZStreamsCollaboration\ZStreams.Collaboration.ViewModels.UWP\ZStreams.Collaboration.ViewModels.UWP.csproj">
+      <Project>{25b27368-7041-4a19-9108-ec9f61af2e8e}</Project>
+      <Name>ZStreams.Collaboration.ViewModels.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZStreamsCollaboration\ZStreams.Collaboration.Views.UWP\ZStreams.Collaboration.Views.UWP.csproj">
+      <Project>{b9ffb509-21b6-4dee-bf23-8289b0c97907}</Project>
+      <Name>ZStreams.Collaboration.Views.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZWidgets\ZWidgetEntities\ZWidgetEntities.csproj">
+      <Project>{c8f819a6-c420-dc26-7d9c-f3f6e40bbd60}</Project>
+      <Name>ZWidgetEntities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SemSeparation\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="ZStreamsCollaboration\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\accentColor.json" />

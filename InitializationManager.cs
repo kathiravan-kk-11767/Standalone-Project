@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Windows.Web.AtomPub;
 using Zoho.Common.BackgroundTransfer;
 using Zoho.Common.BackgroundTransfer.Filters;
+using Zoho.Common.DateTimeFormatter.Contract;
 using Zoho.Common.L10N;
 using Zoho.Common.Util;
 using Zoho.FileSystem.Adapter.Contracts;
@@ -19,9 +20,11 @@ using Zoho.Logging.Util;
 using Zoho.SSO.Adapter;
 using Zoho.SSO.Adapter.Constants;
 using Zoho.SSO.Adapter.UWP.Util;
+using Zoho.Streams.Collaboration.Library;
 using Zoho.UWP.Common;
 using Zoho.UWP.Common.BackgroundTransfer1;
 using Zoho.UWP.Common.BackgroundTransfer1.Filters;
+using Zoho.UWP.Common.SystemDateTimeFormatter;
 using Zoho.UWP.Common.Util;
 using Zoho.UWP.Components.Theme;
 using Zoho.UWP.DI;
@@ -49,9 +52,9 @@ namespace Zoho.UWP
             InitializeLogger();
 
 
-           await ZThemeManager.Instance.InitializeAppTheme("ms-appx:///Assets/accentColor.json", string.Empty);
+            await ZThemeManager.Instance.InitializeAppTheme("ms-appx:///Assets/accentColor.json", string.Empty);
             ZThemeManager.Instance.InitializeViewTheme();
-            ZThemeManager.Instance.ChangeThemeMode(ThemeMode.Dark);
+            ZThemeManager.Instance.ChangeThemeMode(ThemeMode.Light);
 
             await InitializeSSOKitAsync().ConfigureAwait(false);
         }
@@ -75,13 +78,15 @@ namespace Zoho.UWP
 
             FileSystemProvider.Initialize(FileSystemProviderUtil.GetDefaultServices(new ServiceCollection().AddSingleton<IFileSystemAppInfo>(ZAppInfoProvider.ZAppInfo)));
 
-            ZCommonServiceManager.InitializeWinCommonDI(new ServiceCollection()
-                .AddSingleton<IBackgroundTransferFilterFactory, BackgroundTransferFilterFactory>()
-                .AddSingleton<IBackgroundTransferManager, BackgroundTransferManager>());
+            ZCommonServiceManager.InitializeWinCommonDI(new ServiceCollection()        
+                .AddSingleton<IDateTimeFormatter, ZSystemDateTimeFormatter>());
             //ComponentsDIServiceProvider.Initialize(new ServiceCollection()
             //    .AddSingleton<IZL10NServiceParams>(new ZL10NServiceParams("ZComponents.Controls.UWP/Resources", string.Empty)));
             //.AddSingleton<IZComponentsL10NService>(serviceProvider => serviceProvider.GetService<IZL10NService>() as IZComponentsL10NService));
             AppDIServiceProvider.Initialize(new ServiceCollection());
+
+          
+
         }
 
         private void InitializeLogger()
