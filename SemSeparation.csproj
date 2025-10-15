@@ -641,9 +641,9 @@
       <Project>{4c1cc18d-e739-4b91-b588-381dfc0a8e09}</Project>
       <Name>ZComponents.Comments.Views.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ZComponents\Core\ZCoreComponents.UWP\ZCoreComponents.UWP.csproj">
+    <ProjectReference Include="..\ZComponents\ZComponents.Controls.UWP\ZComponents.Controls.UWP.csproj">
       <Project>{ff5aa7cb-37ba-42ba-906d-cde7f8c8e97e}</Project>
-      <Name>ZCoreComponents.UWP</Name>
+      <Name>ZComponents.Controls.UWP</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZComponents\ZComponents.Core.Contracts\ZComponents.Core.Contracts.csproj">
       <Project>{abfdf3d5-c5ce-07a2-c1ba-3b17c6e7ea5d}</Project>

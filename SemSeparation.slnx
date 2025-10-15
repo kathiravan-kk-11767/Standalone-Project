@@ -21,7 +21,7 @@
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
   </Project>
-  <Project Path="../ZComponents/Core/ZCoreComponents.UWP/ZCoreComponents.UWP.csproj" Id="ff5aa7cb-37ba-42ba-906d-cde7f8c8e97e">
+  <Project Path="../ZComponents/ZComponents.Controls.UWP/ZComponents.Controls.UWP.csproj" Id="ff5aa7cb-37ba-42ba-906d-cde7f8c8e97e">
     <Platform Solution="*|ARM" Project="ARM" />
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
