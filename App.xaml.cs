@@ -22,14 +22,17 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Zoho.Common.Analytics.Data;
+using Zoho.Common.BackgroundTransfer;
 using Zoho.Common.CrashLogs;
 using Zoho.Common.Util;
+using Zoho.Contacts.ServiceContracts;
 using Zoho.FileSystem.Adapter.Contracts;
 using Zoho.FileSystem.Adapter.DI;
 using Zoho.Logging;
 using Zoho.SSO.Adapter;
 using Zoho.Streams.Collaboration.ViewModels.UWP;
 using Zoho.UWP;
+using Zoho.UWP.Common.BackgroundTransfer1;
 using Zoho.UWP.Common.Util;
 using Zoho.UWP.Components.OnBoarding.View;
 using Zoho.UWP.Contacts.Lib;
@@ -111,7 +114,6 @@ namespace SemSeparation
 
             if (rootFrame.Content == null)
             {
-                var accessToken = "Zoho-oauthtoken 1002.aa1bf035a4da7c6e772a873a95366a3b.220f7571372c1ecdf23ac648f78e918d";
                 //var isSignedIn =
                 //    await Task.Run(async () =>
                 //{
@@ -147,7 +149,15 @@ namespace SemSeparation
 
         public async Task InitializeYourServiceHere(ISSOUserAdapter userAdapter)
         {
-            await StreamsCollabServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid());
+
+            ServiceCollection viewModelCollection = new ServiceCollection();
+            viewModelCollection.AddTransient<IContactsSearchProvider, ContactsSearchProvider>();
+
+            ServiceCollection libraryModelCollection = new ServiceCollection();
+            libraryModelCollection.AddSingleton<IZContactsServiceProvider, ZContactsServiceProvider>()
+                    .AddSingleton<IBackgroundTransferManager, BackgroundTransferManager>();
+
+            await StreamsCollabServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid(), viewModelServiceCollection: viewModelCollection, libraryServiceCollection: libraryModelCollection);
 
             IZAppFolderProvider appFolderProvider = FileSystemProvider.Instance.GetRequiredService<IZAppFolderProvider>();
             string rootFolderPath = (await appFolderProvider.GetAppLocalFolderAsync().ConfigureAwait(false)).Path;
