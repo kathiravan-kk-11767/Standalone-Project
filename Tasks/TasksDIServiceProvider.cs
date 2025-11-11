@@ -15,14 +15,10 @@ namespace Zoho.UWP.Tasks
     {
         public static TasksDIServiceProvider Instance { get { return TasksDIServiceProviderSingleton.Instance; } }
 
-        private TasksDIServiceProvider()
-        {
-
-        }
-
+     
         public void Initialize(IServiceCollection tasksServices)
         {
-            tasksServices.AddSingleton<ITasksNetHandler, TasksNetHandler>();
+            //tasksServices.AddSingleton<ITasksNetHandler, TasksNetHandler>();
             tasksServices.AddSingleton(typeof(INetworkAdapter), new ZNetworkAdapter(ZNetworkHandlerFactory.Instance));
             BuildServiceProvider(tasksServices, false);
 

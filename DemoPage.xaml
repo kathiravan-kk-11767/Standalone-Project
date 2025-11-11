@@ -1,18 +1,18 @@
-﻿<Page
-    x:Class="Zoho.UWP.DemoPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:ResourceServices="using:Zoho.Components.Controls.UWP.Resources"
-    xmlns:controls="using:Zoho.UWP.Components.Controls"
-    xmlns:controls1="using:Zoho.Components.Comments.Views.UWP.Controls"
-    xmlns:controls11="using:Zoho.Components.Controls.UWP"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="using:Zoho.UWP"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:semseparation="using:SemSeparation"
-    xmlns:styles="using:Zoho.Components.Comments.Views.UWP.Resources.Styles"
-    xmlns:zstreamscollaboration="using:Zoho.UWP.ZStreamsCollaboration"
-    mc:Ignorable="d">
+﻿<Page x:Class="Zoho.UWP.DemoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:ResourceServices="using:Zoho.Components.Controls.UWP.Resources"
+      xmlns:controls="using:Zoho.UWP.Components.Controls"
+      xmlns:controls1="using:Zoho.Components.Comments.Views.UWP.Controls"
+      xmlns:controls11="using:Zoho.Components.Controls.UWP"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:Zoho.UWP"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:semseparation="using:SemSeparation"
+      xmlns:styles="using:Zoho.Components.Comments.Views.UWP.Resources.Styles"
+      xmlns:tasksfolderview="using:Zoho.Tasks.Views.UWP.TasksFolderView"
+      xmlns:zstreamscollaboration="using:Zoho.UWP.ZStreamsCollaboration"
+      mc:Ignorable="d">
 
     <Page.Resources>
 
@@ -21,10 +21,7 @@
                 <styles:BubbleCommentControlStyleDictionary />
             </ResourceDictionary.MergedDictionaries>
 
-            <Style
-                x:Key="SumaStyle"
-                BasedOn="{StaticResource BubbleCommentControlStyle}"
-                TargetType="controls1:CommentControl">
+            <Style x:Key="SumaStyle" BasedOn="{StaticResource BubbleCommentControlStyle}" TargetType="controls1:CommentControl">
                 <Style.Setters>
                     <Setter Property="ResourceServices:ResourcesServices.Resources">
                         <Setter.Value>
@@ -37,28 +34,24 @@
                 </Style.Setters>
             </Style>
 
-            <DataTemplate
-                x:Key="ZBubbleCommentControlTemplate"
-                x:Name="ZBubbleCommentControlTemplate"
-                x:DataType="semseparation:CommentModel">
-                <controls1:CommentControl
-                    CornerRadius="{StaticResource ZCornerRadius}"
-                    DataContext="{x:Bind}"
-                    HasReply="{x:Bind HasReply, Mode=OneWay}"
-                    IsLastReply="{x:Bind IsLastReply, Mode=OneWay}"
-                    IsPrivateComment="False"
-                    IsReply="{x:Bind IsReply, Mode=OneWay}"
-                    IsThreadView="True"
-                    Level="{x:Bind Level, Mode=OneWay}"
-                    Style="{StaticResource BubbleCommentControlStyle}">
+            <DataTemplate x:Key="ZBubbleCommentControlTemplate" x:Name="ZBubbleCommentControlTemplate"
+                          x:DataType="semseparation:CommentModel">
+                <controls1:CommentControl CornerRadius="{StaticResource ZCornerRadius}"
+                                          DataContext="{x:Bind}"
+                                          HasReply="{x:Bind HasReply, Mode=OneWay}"
+                                          IsLastReply="{x:Bind IsLastReply, Mode=OneWay}"
+                                          IsPrivateComment="False"
+                                          IsReply="{x:Bind IsReply, Mode=OneWay}"
+                                          IsThreadView="True"
+                                          Level="{x:Bind Level, Mode=OneWay}"
+                                          Style="{StaticResource BubbleCommentControlStyle}">
 
                     <controls1:CommentControl.CommentContentTemplate>
                         <DataTemplate x:DataType="semseparation:CommentModel">
                             <Grid>
-                                <TextBlock
-                                    Width="500"
-                                    Text="{x:Bind Content, Mode=OneWay}"
-                                    TextWrapping="WrapWholeWords" />
+                                <TextBlock Width="500"
+                                           Text="{x:Bind Content, Mode=OneWay}"
+                                           TextWrapping="WrapWholeWords" />
                             </Grid>
                         </DataTemplate>
                     </controls1:CommentControl.CommentContentTemplate>
@@ -73,16 +66,62 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <zstreamscollaboration:StreamsControl />
+        <zstreamscollaboration:StreamsControl Grid.Row="1"
+                                              Visibility="Collapsed" />
+
+        <StackPanel Spacing="20" Orientation="Horizontal">
+            <TextBlock Foreground="Red"
+                       Tapped="TextBlock_Tapped">
+                GetFolders da
+            </TextBlock>
+
+            <TextBlock Foreground="Red"
+             Tapped="TextBlock_Tapped_1">
+      GetFolders Picker of all Folder
+            </TextBlock>
+
+            <TextBlock Foreground="Red"
+       Tapped="TextBlock_Tapped_2">
+GetFolders Picker of all Groups
+            </TextBlock>
+
+
+            <TextBox x:Name="GroupIdTextBox" PlaceholderText="GroupId of anything placing winmail QA" Text="60045559962"></TextBox>
+            <TextBlock Foreground="Red"
+       Tapped="TextBlock_Tapped_3">
+GetFolders Picker of all Categories
+            </TextBlock>
+
+            <TextBlock Foreground="Red"
+       Tapped="TextBlock_Tapped_4">
+GetFolders Picker of all Tags
+            </TextBlock>        </StackPanel>
+
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <tasksfolderview:TasksFolderListViewControl x:Name="TasksFolder"
+                                                        Margin="6,0" />
+
+            <tasksfolderview:TasksFolderPickerControl x:Name="TasksFolderPicker"
+                                                      Grid.Column="1"
+                                                      Margin="6,0" />
+
+        </Grid>
 
 
 
-        <controls1:CommentsView
+
+
+        <!--<controls1:CommentsView
             x:Name="TaskFolderList"
-            Grid.Row="1"
+            Grid.Row="0"
             Margin="20"
             Padding="10"
             HorizontalAlignment="Stretch"
@@ -94,7 +133,7 @@
             ScrollViewer.HorizontalScrollMode="Disabled"
             SelectionMode="None">
             <controls1:CommentsView.Header>
-                <TextBlock Tapped="TextBlock_Tapped">Header da</TextBlock>
+                <TextBlock Foreground="Red" Tapped="TextBlock_Tapped">Header da</TextBlock>
             </controls1:CommentsView.Header>
 
 
@@ -109,7 +148,7 @@
 
 
 
-        </controls1:CommentsView>
+        </controls1:CommentsView>-->
     </Grid>
 
 

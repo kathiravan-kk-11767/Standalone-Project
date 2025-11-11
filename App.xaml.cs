@@ -22,14 +22,18 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Zoho.Common.Analytics.Data;
+using Zoho.Common.BackgroundTransfer;
 using Zoho.Common.CrashLogs;
 using Zoho.Common.Util;
+using Zoho.Contacts.ServiceContracts;
 using Zoho.FileSystem.Adapter.Contracts;
 using Zoho.FileSystem.Adapter.DI;
 using Zoho.Logging;
 using Zoho.SSO.Adapter;
 using Zoho.Streams.Collaboration.ViewModels.UWP;
+using Zoho.Tasks.ViewModels;
 using Zoho.UWP;
+using Zoho.UWP.Common.BackgroundTransfer1;
 using Zoho.UWP.Common.Util;
 using Zoho.UWP.Components.OnBoarding.View;
 using Zoho.UWP.Contacts.Lib;
@@ -147,7 +151,24 @@ namespace SemSeparation
 
         public async Task InitializeYourServiceHere(ISSOUserAdapter userAdapter)
         {
-            await StreamsCollabServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid());
+            ServiceCollection streamsCollabViewModelCollection = new ServiceCollection();
+            streamsCollabViewModelCollection.AddTransient<IContactsSearchProvider, ContactsSearchProvider>();
+
+            ServiceCollection streamsLibraryModelCollection = new ServiceCollection();
+            streamsLibraryModelCollection.AddSingleton<IZContactsServiceProvider, ZContactsServiceProvider>()
+                    .AddSingleton<IBackgroundTransferManager, BackgroundTransferManager>();
+
+            await StreamsCollabServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid(), viewModelServiceCollection: streamsCollabViewModelCollection, libraryServiceCollection: streamsLibraryModelCollection);
+
+
+            ServiceCollection tasksViewModelCollection = new ServiceCollection();
+            tasksViewModelCollection.AddTransient<IContactsSearchProvider, ContactsSearchProvider>();
+
+            ServiceCollection tasksLibraryModelCollection = new ServiceCollection();
+            tasksLibraryModelCollection.AddSingleton<IZContactsServiceProvider, ZContactsServiceProvider>()
+                    .AddSingleton<IBackgroundTransferManager, BackgroundTransferManager>();
+
+            await TasksServiceManager.Instance.InitializeUserAsync(userAdapter.GetCurrentUserZuid(), viewModelServiceCollection: tasksViewModelCollection, libraryServiceCollection: tasksLibraryModelCollection);
 
             IZAppFolderProvider appFolderProvider = FileSystemProvider.Instance.GetRequiredService<IZAppFolderProvider>();
             string rootFolderPath = (await appFolderProvider.GetAppLocalFolderAsync().ConfigureAwait(false)).Path;

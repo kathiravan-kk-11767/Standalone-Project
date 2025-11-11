@@ -134,7 +134,6 @@
     <Compile Include="SemSeparation\CommentsModel.cs" />
     <Compile Include="SemSeparation\CommentsSampleViewModel.cs" />
     <Compile Include="SemSeparation\CommentThreadingUtil.cs" />
-    <Compile Include="TasksNetHandler.cs" />
     <Compile Include="Tasks\ITasksNetHandler.cs" />
     <Compile Include="Tasks\TasksDIServiceProvider.cs" />
     <Compile Include="Tasks\TasksServiceManager.cs" />
@@ -641,6 +640,30 @@
       <Project>{4c1cc18d-e739-4b91-b588-381dfc0a8e09}</Project>
       <Name>ZComponents.Comments.Views.UWP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZComponents\Folder\ZComponents.Folder.Entities\ZComponents.Folder.Entities.csproj">
+      <Project>{25c1404e-8793-f733-dc73-49c657e32e14}</Project>
+      <Name>ZComponents.Folder.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\Folder\ZComponents.Folder.ViewContracts\ZComponents.Folder.ViewContracts.csproj">
+      <Project>{984abab6-6d64-9191-ab42-d69d685d0f87}</Project>
+      <Name>ZComponents.Folder.ViewContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\Tags\ZComponents.Tags.Entities\ZComponents.Tags.Entities.csproj">
+      <Project>{53da3467-7038-6a4f-1a7e-9e5b3a29ac65}</Project>
+      <Name>ZComponents.Tags.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\Tags\ZComponents.Tags.ViewContracts\ZComponents.Tags.ViewContracts.csproj">
+      <Project>{74ddc511-2071-ebf5-4e76-a0e6932d2001}</Project>
+      <Name>ZComponents.Tags.ViewContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\Tags\ZComponents.Tags.ViewModels.UWP\ZComponents.Tags.ViewModels.UWP.csproj">
+      <Project>{96a4582d-3288-4efa-ac75-647dbfae5f66}</Project>
+      <Name>ZComponents.Tags.ViewModels.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZComponents\Tags\ZComponents.Tags.Views.UWP\ZComponents.Tags.Views.UWP.csproj">
+      <Project>{607983d2-deef-4a0f-92b4-667d945283ab}</Project>
+      <Name>ZComponents.Tags.Views.UWP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZComponents\ZComponents.Controls.UWP\ZComponents.Controls.UWP.csproj">
       <Project>{ff5aa7cb-37ba-42ba-906d-cde7f8c8e97e}</Project>
       <Name>ZComponents.Controls.UWP</Name>
@@ -652,10 +675,6 @@
     <ProjectReference Include="..\ZComponents\ZComponents.Core.UWP\ZComponents.Core.UWP.csproj">
       <Project>{9d55afc0-2415-4c14-b067-58ae8f916821}</Project>
       <Name>ZComponents.Core.UWP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZComponents\ZFolder\ZFolder.Entities\ZFolder.Entities.csproj">
-      <Project>{3d97f56c-df40-c3ef-179a-67e9d912d470}</Project>
-      <Name>ZFolder.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZContacts\ZContacts.ServiceContracts\ZContacts.ServiceContracts.csproj">
       <Project>{3400c778-5c58-7cf7-065a-1a6fca8abb2c}</Project>
@@ -724,6 +743,26 @@
     <ProjectReference Include="..\ZStreamsCollaboration\ZStreams.Collaboration.Views.UWP\ZStreams.Collaboration.Views.UWP.csproj">
       <Project>{b9ffb509-21b6-4dee-bf23-8289b0c97907}</Project>
       <Name>ZStreams.Collaboration.Views.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZTasks\ZTasks.Entities\ZTasks.Entities.csproj">
+      <Project>{881cdf57-65dc-dacc-e279-512fd6abfc03}</Project>
+      <Name>ZTasks.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZTasks\ZTasks.Library\ZTasks.Library.csproj">
+      <Project>{51cbb3eb-7b79-234c-0645-fcb7de961994}</Project>
+      <Name>ZTasks.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZTasks\ZTasks.View.UWP\ZTasks.Views.UWP.csproj">
+      <Project>{e123ba45-caf5-4bb6-bfbc-93388652f30c}</Project>
+      <Name>ZTasks.Views.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZTasks\ZTasks.ViewContracts\ZTasks.ViewContracts.csproj">
+      <Project>{9e896fac-73f5-2459-03d6-ed3acefe04da}</Project>
+      <Name>ZTasks.ViewContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZTasks\ZTasks.ViewModels\ZTasks.ViewModels.csproj">
+      <Project>{3ce4cf52-e47d-3bed-0338-4a856902ea5f}</Project>
+      <Name>ZTasks.ViewModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZWidgets\ZWidgetEntities\ZWidgetEntities.csproj">
       <Project>{c8f819a6-c420-dc26-7d9c-f3f6e40bbd60}</Project>

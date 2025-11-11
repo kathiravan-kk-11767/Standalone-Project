@@ -9,35 +9,36 @@ using Zoho.Common.Util;
 
 namespace Zoho.UWP.Tasks
 {
-    public sealed class TasksServiceManager 
-    {
-        /// <summary>Singleton instance of this class</summary>
-        public static TasksServiceManager Instance { get { return TasksServiceManagerSingleton.Instance; } }
+    //public sealed class TasksServiceManager 
+    //{
+    //    /// <summary>Singleton instance of this class</summary>
+    //    public static TasksServiceManager Instance { get { return TasksServiceManagerSingleton.Instance; } }
 
-        private TasksServiceManager() { }
+    //    private TasksServiceManager() { }
 
-        public async Task InitializeAsync()
-        {
-            IServiceCollection tasksServices = new ServiceCollection();
-            TasksDIServiceProvider.Instance.Initialize(tasksServices);
-        }
+    //    public async Task InitializeAsync()
+    //    {
+    //        IServiceCollection tasksServices = new ServiceCollection();
+    //        TasksDIServiceProvider.Instance.Initialize(tasksServices);
 
-        public async Task InitializeUserAsync(string zuid)
-        {
-            await TasksServiceManager.Instance.InitializeAsync().ConfigureAwait(false);
-        }
+    //    }
+
+    //    public async Task InitializeUserAsync(string zuid)
+    //    {
+    //        await TasksServiceManager.Instance.InitializeAsync().ConfigureAwait(false);
+    //    }
 
      
 
-        #region NotesServiceManager Singleton class
-        private class TasksServiceManagerSingleton
-        {
-            //Marked as internal as it will be accessed from the enclosing class. It doesn't raise any problem, as the class itself is private.
-            internal static readonly TasksServiceManager Instance = new TasksServiceManager();
+    //    #region NotesServiceManager Singleton class
+    //    private class TasksServiceManagerSingleton
+    //    {
+    //        //Marked as internal as it will be accessed from the enclosing class. It doesn't raise any problem, as the class itself is private.
+    //        internal static readonly TasksServiceManager Instance = new TasksServiceManager();
 
-            // Explicit static constructor
-            static TasksServiceManagerSingleton() { }
-        }
-        #endregion
-    }
+    //        // Explicit static constructor
+    //        static TasksServiceManagerSingleton() { }
+    //    }
+    //    #endregion
+    //}
 }

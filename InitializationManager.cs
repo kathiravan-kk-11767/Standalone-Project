@@ -98,8 +98,9 @@ namespace Zoho.UWP
             IZAppFolderProvider appFolderProvider = FileSystemProvider.Instance.GetService<IZAppFolderProvider>();
             //LogLevel.GetLogLevelByInt(logLevel)
             LogManager.Instance.Init(LoggingTarget.File, LogLevel.All, UWPCommonUtil.GetLogsFolderPath(), UWPCommonUtil.GetLogFileBaseName(), includeCallerDetails: true);
+
             LogManager.Instance.IsSQLLoggingEnabled = isSQLLoggingEnabled;
-            LogManager.Instance.IsPerformanceLoggingEnabled = isPerformanceLoggingEnabled;
+            LogManager.Instance.IsPerformanceLoggingEnabled = true;
             Logger.Debug(LogManager.GetCallerInfo(), "Logger initialized");
         }
 
