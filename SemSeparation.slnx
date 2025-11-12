@@ -44,7 +44,18 @@
     </Project>
   </Folder>
   <Folder Name="/Components/Folder/">
-    <Project Path="../ZComponents/ZFolder/ZFolder.Entities/ZFolder.Entities.csproj">
+    <Project Path="../ZComponents/Folder/ZComponents.Folder.Entities/ZComponents.Folder.Entities.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../ZComponents/Folder/ZComponents.Folder.ViewContracts/ZComponents.Folder.ViewContracts.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../ZComponents/Folder/ZComponents.Folder.Views.UWP/ZComponents.Folder.Views.UWP.csproj" Id="402cd378-36ab-4719-94e8-8862b03307e5">
+      <Platform Solution="*|ARM" Project="ARM" />
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|x64" Project="x64" />
       <Platform Solution="*|x86" Project="x86" />
@@ -82,7 +93,24 @@
     </Project>
   </Folder>
   <Folder Name="/Components/Tags/">
-    <Project Path="../ZComponents/ZTags/ZTags.Entities/ZTags.Entities.csproj">
+    <Project Path="../ZComponents/Tags/ZComponents.Tags.Entities/ZComponents.Tags.Entities.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../ZComponents/Tags/ZComponents.Tags.ViewContracts/ZComponents.Tags.ViewContracts.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../ZComponents/Tags/ZComponents.Tags.ViewModels.UWP/ZComponents.Tags.ViewModels.UWP.csproj" Id="96a4582d-3288-4efa-ac75-647dbfae5f66">
+      <Platform Solution="*|ARM" Project="ARM" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../ZComponents/Tags/ZComponents.Tags.Views.UWP/ZComponents.Tags.Views.UWP.csproj" Id="607983d2-deef-4a0f-92b4-667d945283ab">
+      <Platform Solution="*|ARM" Project="ARM" />
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|x64" Project="x64" />
       <Platform Solution="*|x86" Project="x86" />

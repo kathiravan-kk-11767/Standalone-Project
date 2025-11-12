@@ -653,10 +653,6 @@
       <Project>{9d55afc0-2415-4c14-b067-58ae8f916821}</Project>
       <Name>ZComponents.Core.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ZComponents\ZFolder\ZFolder.Entities\ZFolder.Entities.csproj">
-      <Project>{3d97f56c-df40-c3ef-179a-67e9d912d470}</Project>
-      <Name>ZFolder.Entities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ZContacts\ZContacts.ServiceContracts\ZContacts.ServiceContracts.csproj">
       <Project>{3400c778-5c58-7cf7-065a-1a6fca8abb2c}</Project>
       <Name>ZContacts.ServiceContracts</Name>
