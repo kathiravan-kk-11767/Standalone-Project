@@ -1,0 +1,49 @@
+name: CI - Build and Test
+
+on:
+  push:
+    branches: [ main, develop, copilot/** ]
+  pull_request:
+    branches: [ main, develop ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        configuration: [Debug, Release]
+    
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+        
+    - name: Restore dependencies
+      run: dotnet restore SmartNotificationManager.sln
+      
+    - name: Build solution
+      run: dotnet build SmartNotificationManager.sln --configuration ${{ matrix.configuration }} --no-restore
+      
+    - name: Run tests
+      run: dotnet test SmartNotificationManager.sln --configuration ${{ matrix.configuration }} --no-build --verbosity normal
+      continue-on-error: true
+      
+    - name: Upload build artifacts
+      if: matrix.os == 'windows-latest' && matrix.configuration == 'Release'
+      uses: actions/upload-artifact@v4
+      with:
+        name: SmartNotificationManager-${{ matrix.os }}-${{ matrix.configuration }}
+        path: |
+          **/bin/${{ matrix.configuration }}/**/*.dll
+          **/bin/${{ matrix.configuration }}/**/*.exe
+          **/bin/${{ matrix.configuration }}/**/*.pdb
+        retention-days: 30

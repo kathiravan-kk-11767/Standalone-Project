@@ -1,0 +1,65 @@
+name: CD - Deploy
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to deploy'
+        required: true
+        default: '1.0.0'
+
+permissions:
+  contents: write  # Need write permission to create releases
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+        
+    - name: Restore dependencies
+      run: dotnet restore SmartNotificationManager.sln
+      
+    - name: Build solution for Release
+      run: dotnet build SmartNotificationManager.sln --configuration Release --no-restore
+      
+    - name: Publish application
+      run: dotnet publish SmartNotificationManager/SmartNotificationManager.csproj --configuration Release --output ./publish --no-build
+      
+    - name: Create deployment package
+      run: |
+        $version = "${{ github.ref_name }}"
+        if ("${{ github.event_name }}" -eq "workflow_dispatch") {
+          $version = "v${{ github.event.inputs.version }}"
+        }
+        Compress-Archive -Path ./publish/* -DestinationPath "./SmartNotificationManager-$version.zip"
+      shell: pwsh
+      
+    - name: Create GitHub Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: SmartNotificationManager-*.zip
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Upload deployment artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: SmartNotificationManager-Deployment
+        path: |
+          ./publish/**/*
+          SmartNotificationManager-*.zip
+        retention-days: 90

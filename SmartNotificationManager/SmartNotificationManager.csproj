@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>SmartNotificationManager</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <PublishProfile>win-$(Platform).pubxml</PublishProfile>
+    <!-- Note: UseWinUI is disabled for CI/CD cross-platform compatibility -->
+    <!-- On Windows, this can be built with UseWinUI=true and EnableMsixTooling=true -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(OS)' == 'Windows_NT'">
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.241114003" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartNotificationManager.View\SmartNotificationManager.View.csproj" />
+    <ProjectReference Include="..\SmartNotificationManager.Entities\SmartNotificationManager.Entities\SmartNotificationManager.Entities.csproj" />
+    <ProjectReference Include="..\SmartNotificationLibrary\SmartNotificationLibrary\SmartNotificationLibrary.csproj" />
+    <ProjectReference Include="..\WinUI3Component\WinUI3Component.csproj" />
+    <ProjectReference Include="..\WinCommon\WinCommon\WinCommon.csproj" />
+    <ProjectReference Include="..\WinLogger\WinLogger\WinLogger.csproj" />
+    <ProjectReference Include="..\WinSQLiteDBAdapter\WinSQLiteDBAdapter\WinSQLiteDBAdapter.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+</Project>

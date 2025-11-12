@@ -6,3 +6,40 @@
 /bin/x64/Debug
 /obj
 /bin/x64/Release
+
+# .NET build artifacts
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
+
+# NuGet packages
+**/packages/
+*.nupkg
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+ARM/
+ARM64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# MSTest test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
