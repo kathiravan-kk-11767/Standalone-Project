@@ -1,15 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Windows.Web.AtomPub;
-using Zoho.Common.BackgroundTransfer;
-using Zoho.Common.BackgroundTransfer.Filters;
 using Zoho.Common.DateTimeFormatter.Contract;
-using Zoho.Common.L10N;
 using Zoho.Common.Util;
+using Zoho.Components.Core.Contracts;
+using Zoho.Components.Core.Contracts.DI;
+using Zoho.Components.Core.UWP.Adapter;
 using Zoho.FileSystem.Adapter.Contracts;
 using Zoho.FileSystem.Adapter.Contracts.Models;
 using Zoho.FileSystem.Adapter.DI;
@@ -20,10 +16,7 @@ using Zoho.Logging.Util;
 using Zoho.SSO.Adapter;
 using Zoho.SSO.Adapter.Constants;
 using Zoho.SSO.Adapter.UWP.Util;
-using Zoho.Streams.Collaboration.Library;
 using Zoho.UWP.Common;
-using Zoho.UWP.Common.BackgroundTransfer1;
-using Zoho.UWP.Common.BackgroundTransfer1.Filters;
 using Zoho.UWP.Common.SystemDateTimeFormatter;
 using Zoho.UWP.Common.Util;
 using Zoho.UWP.Components.Theme;
@@ -78,14 +71,18 @@ namespace Zoho.UWP
 
             FileSystemProvider.Initialize(FileSystemProviderUtil.GetDefaultServices(new ServiceCollection().AddSingleton<IFileSystemAppInfo>(ZAppInfoProvider.ZAppInfo)));
 
-            ZCommonServiceManager.InitializeWinCommonDI(new ServiceCollection()        
+            ZCommonServiceManager.InitializeWinCommonDI(new ServiceCollection()
                 .AddSingleton<IDateTimeFormatter, ZSystemDateTimeFormatter>());
             //ComponentsDIServiceProvider.Initialize(new ServiceCollection()
             //    .AddSingleton<IZL10NServiceParams>(new ZL10NServiceParams("ZComponents.Controls.UWP/Resources", string.Empty)));
             //.AddSingleton<IZComponentsL10NService>(serviceProvider => serviceProvider.GetService<IZL10NService>() as IZComponentsL10NService));
             AppDIServiceProvider.Initialize(new ServiceCollection());
 
-          
+            ComponentsDIServiceProvider.Initialize(new ServiceCollection()
+                         .AddSingleton<IViewExtensionAdapter>(UWPViewExtensionAdapter.Instance)
+                     );
+
+
 
         }
 
