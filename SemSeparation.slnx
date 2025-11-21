@@ -54,7 +54,7 @@
       <Platform Solution="*|x64" Project="x64" />
       <Platform Solution="*|x86" Project="x86" />
     </Project>
-    <Project Path="../ZComponents/Folder/ZComponents.Folder.Views.UWP/ZComponents.Folder.Views.UWP.csproj">
+    <Project Path="../ZComponents/Folder/ZComponents.Folder.Views.UWP/ZComponents.Folder.Views.UWP.csproj" Id="402cd378-36ab-4719-94e8-8862b03307e5">
       <Platform Solution="*|ARM" Project="ARM" />
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|x64" Project="x64" />
@@ -176,6 +176,10 @@
       <Platform Solution="*|x86" Project="x86" />
     </Project>
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../.editorconfig" />
+    <File Path="../Settings.XamlStyler" />
+  </Folder>
   <Folder Name="/SSO/">
     <Project Path="../accounts_windows_ssoframework/Accounts_Windows_SsoFramework/Windows_SsoFramework.csproj" Id="6ab3cf06-826d-4de7-9866-555bf86d1215">
       <Platform Solution="*|ARM" Project="ARM" />
@@ -275,10 +279,7 @@
       <Platform Solution="*|x86" Project="x86" />
     </Project>
   </Folder>
-  <Folder Name="/_BuildProps/">
-    <File Path="../.editorconfig" />
-    <File Path="../Settings.XamlStyler" />
-  </Folder>
+  <Folder Name="/_BuildProps/" />
   <Folder Name="/_MainFolder/">
     <Project Path="SemSeparation.csproj" Id="d47a3f8e-1a33-4978-8a2c-6700fbaec88b">
       <Platform Solution="*|ARM" Project="ARM" />
