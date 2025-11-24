@@ -10,6 +10,9 @@ using Zoho.Common.BackgroundTransfer.Filters;
 using Zoho.Common.DateTimeFormatter.Contract;
 using Zoho.Common.L10N;
 using Zoho.Common.Util;
+using Zoho.Components.Core.Contracts;
+using Zoho.Components.Core.Contracts.DI;
+using Zoho.Components.Core.UWP.Adapter;
 using Zoho.FileSystem.Adapter.Contracts;
 using Zoho.FileSystem.Adapter.Contracts.Models;
 using Zoho.FileSystem.Adapter.DI;
@@ -85,7 +88,9 @@ namespace Zoho.UWP
             //.AddSingleton<IZComponentsL10NService>(serviceProvider => serviceProvider.GetService<IZL10NService>() as IZComponentsL10NService));
             AppDIServiceProvider.Initialize(new ServiceCollection());
 
-          
+            ComponentsDIServiceProvider.Initialize(new ServiceCollection()
+                        .AddSingleton<IViewExtensionAdapter>(UWPViewExtensionAdapter.Instance)
+                    );
 
         }
 
